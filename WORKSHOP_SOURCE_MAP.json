@@ -1,0 +1,1806 @@
+{
+  "root": "5-Workshop",
+  "compact": false,
+  "hierarchicalSteps": true,
+  "setupCourse": true,
+  "chapterCount": 16,
+  "practicalArticles": 40,
+  "pages": [
+    {
+      "num": "5",
+      "slug": "5-Workshop",
+      "viTitle": "Workshop",
+      "enTitle": "Workshop",
+      "refs": []
+    },
+    {
+      "num": "5.1",
+      "slug": "5-Workshop/5.1-Introduction",
+      "viTitle": "Giới thiệu",
+      "enTitle": "Introduction",
+      "refs": []
+    },
+    {
+      "num": "5.2",
+      "slug": "5-Workshop/5.2-Prerequisites",
+      "viTitle": "Các bước chuẩn bị",
+      "enTitle": "Prerequisites",
+      "refs": [
+        "README.md",
+        "requirements.txt",
+        "requirements.lock.txt",
+        "deploy/ec2/provision.py",
+        "deploy/ec2/build_stack.py",
+        "deploy/ec2/run_pipeline.py",
+        "config/user_data_iam_policy.json",
+        "config/moderation_dynamodb_iam_policy.json"
+      ]
+    },
+    {
+      "num": "5.2.1",
+      "slug": "5-Workshop/5.2-Prerequisites/5.2.1-step1",
+      "viTitle": "Chuẩn bị tài khoản AWS, Region và công cụ",
+      "enTitle": "Step 1",
+      "refs": [
+        "README.md",
+        "requirements.txt",
+        "requirements.lock.txt",
+        "deploy/ec2/provision.py"
+      ]
+    },
+    {
+      "num": "5.2.2",
+      "slug": "5-Workshop/5.2-Prerequisites/5.2.2-step2",
+      "viTitle": "Dữ liệu sử dụng và IAM Role cho EC2",
+      "enTitle": "Step 2",
+      "refs": [
+        "deploy/ec2/build_stack.py",
+        "deploy/ec2/run_pipeline.py",
+        "config/user_data_iam_policy.json",
+        "config/moderation_dynamodb_iam_policy.json"
+      ]
+    },
+    {
+      "num": "5.3",
+      "slug": "5-Workshop/5.3-S3-Storage",
+      "viTitle": "Thiết lập lưu trữ trên Amazon S3",
+      "enTitle": "Amazon S3 storage",
+      "refs": [
+        "dashboard/s3_store.py",
+        "dashboard/job_data.py",
+        "deploy/ec2/runtime.env.example",
+        "deploy/ec2/run_pipeline.py",
+        "data/control/ec2_seed_and_smoke.sh",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.3.1",
+      "slug": "5-Workshop/5.3-S3-Storage/5.3.1-step1",
+      "viTitle": "Bucket và cấu trúc lưu trữ S3",
+      "enTitle": "Step 1",
+      "refs": [
+        "dashboard/s3_store.py",
+        "dashboard/job_data.py",
+        "deploy/ec2/runtime.env.example"
+      ]
+    },
+    {
+      "num": "5.3.2",
+      "slug": "5-Workshop/5.3-S3-Storage/5.3.2-step2",
+      "viTitle": "Dữ liệu Parquet và dữ liệu nền triển khai EC2",
+      "enTitle": "Step 2",
+      "refs": [
+        "deploy/ec2/run_pipeline.py",
+        "data/control/ec2_seed_and_smoke.sh",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.4",
+      "slug": "5-Workshop/5.4-Catalog-Athena",
+      "viTitle": "Thiết lập Glue Data Catalog và Athena",
+      "enTitle": "Glue Data Catalog and Athena",
+      "refs": [
+        "sql/create_itviec_table.sql",
+        "processors/export_itviec_parquet.py",
+        "dashboard/job_data.py",
+        "deploy/ec2/build_stack.py",
+        "dashboard/deploy_moderation_phase3.py"
+      ]
+    },
+    {
+      "num": "5.4.1",
+      "slug": "5-Workshop/5.4-Catalog-Athena/5.4.1-step1",
+      "viTitle": "Database, bảng nguồn và cấu hình Athena",
+      "enTitle": "Step 1",
+      "refs": [
+        "sql/create_itviec_table.sql",
+        "processors/export_itviec_parquet.py",
+        "dashboard/job_data.py",
+        "deploy/ec2/build_stack.py"
+      ]
+    },
+    {
+      "num": "5.4.2",
+      "slug": "5-Workshop/5.4-Catalog-Athena/5.4.2-step2",
+      "viTitle": "Truy vấn dữ liệu kỹ năng bằng Athena",
+      "enTitle": "Step 2",
+      "refs": [
+        "sql/create_itviec_table.sql",
+        "dashboard/deploy_moderation_phase3.py"
+      ]
+    },
+    {
+      "num": "5.5",
+      "slug": "5-Workshop/5.5-DynamoDB-Moderation",
+      "viTitle": "Thiết lập DynamoDB và dữ liệu kiểm duyệt",
+      "enTitle": "DynamoDB moderation",
+      "refs": [
+        "dashboard/deploy_moderation_phase3.py",
+        "dashboard/dynamo_moderation_store.py",
+        "docs/SOFT_DELETE_PHASE3.md",
+        "dashboard/deploy_moderation_phase2.py",
+        ".streamlit/secrets.toml.example",
+        "sql/create_itviec_active_jobs_v3_view.sql",
+        "dashboard/moderation_config.py"
+      ]
+    },
+    {
+      "num": "5.5.1",
+      "slug": "5-Workshop/5.5-DynamoDB-Moderation/5.5.1-step1",
+      "viTitle": "Hai bảng DynamoDB của dự án",
+      "enTitle": "Step 1",
+      "refs": [
+        "dashboard/deploy_moderation_phase3.py",
+        "dashboard/dynamo_moderation_store.py",
+        "docs/SOFT_DELETE_PHASE3.md"
+      ]
+    },
+    {
+      "num": "5.5.2",
+      "slug": "5-Workshop/5.5-DynamoDB-Moderation/5.5.2-step2",
+      "viTitle": "Bản ghi điều khiển và đồng bộ kiểm duyệt lên S3",
+      "enTitle": "Step 2",
+      "refs": [
+        "dashboard/deploy_moderation_phase3.py",
+        "dashboard/dynamo_moderation_store.py",
+        "docs/SOFT_DELETE_PHASE3.md",
+        "dashboard/deploy_moderation_phase2.py"
+      ]
+    },
+    {
+      "num": "5.5.3",
+      "slug": "5-Workshop/5.5-DynamoDB-Moderation/5.5.3-step3",
+      "viTitle": "Kết nối backend kiểm duyệt và kiểm tra dữ liệu hiển thị",
+      "enTitle": "Step 3",
+      "refs": [
+        ".streamlit/secrets.toml.example",
+        "sql/create_itviec_active_jobs_v3_view.sql",
+        "dashboard/moderation_config.py"
+      ]
+    },
+    {
+      "num": "5.6",
+      "slug": "5-Workshop/5.6-EC2-Deployment",
+      "viTitle": "Triển khai source và runtime trên EC2",
+      "enTitle": "EC2 deployment",
+      "refs": [
+        "deploy/ec2/build_stack.py",
+        "deploy/ec2/build_release.py",
+        "deploy/ec2/provision.py",
+        "deploy/ec2/stack.json",
+        "deploy/ec2/install.sh",
+        ".streamlit/secrets.toml.example",
+        "deploy/ec2/runtime.env.example",
+        "deploy/ec2/streamlit.service",
+        "data/control/ec2_seed_and_smoke.sh"
+      ]
+    },
+    {
+      "num": "5.6.1",
+      "slug": "5-Workshop/5.6-EC2-Deployment/5.6.1-step1",
+      "viTitle": "Source release và hạ tầng EC2",
+      "enTitle": "Step 1",
+      "refs": [
+        "deploy/ec2/build_stack.py",
+        "deploy/ec2/build_release.py",
+        "deploy/ec2/provision.py",
+        "deploy/ec2/stack.json"
+      ]
+    },
+    {
+      "num": "5.6.2",
+      "slug": "5-Workshop/5.6-EC2-Deployment/5.6.2-step2",
+      "viTitle": "Cài runtime và cấu hình ứng dụng trên EC2",
+      "enTitle": "Step 2",
+      "refs": [
+        "deploy/ec2/stack.json",
+        "deploy/ec2/install.sh",
+        ".streamlit/secrets.toml.example",
+        "deploy/ec2/runtime.env.example"
+      ]
+    },
+    {
+      "num": "5.6.3",
+      "slug": "5-Workshop/5.6-EC2-Deployment/5.6.3-step3",
+      "viTitle": "Đưa seed vào runtime và khởi động dashboard",
+      "enTitle": "Step 3",
+      "refs": [
+        "deploy/ec2/streamlit.service",
+        "data/control/ec2_seed_and_smoke.sh",
+        "deploy/ec2/install.sh"
+      ]
+    },
+    {
+      "num": "5.7",
+      "slug": "5-Workshop/5.7-ITviec-Collection",
+      "viTitle": "Thiết lập và chạy thu thập ITviec",
+      "enTitle": "ITviec collection",
+      "refs": [
+        "collectors/discover_itviec_jobs.py",
+        "collectors/crawl_support.py",
+        "deploy/ec2/run_pipeline.py",
+        "deploy/ec2/pipeline.service",
+        "collectors/itviec_batch_collector.py",
+        "deploy/ec2/pipeline_state.py"
+      ]
+    },
+    {
+      "num": "5.7.1",
+      "slug": "5-Workshop/5.7-ITviec-Collection/5.7.1-step1",
+      "viTitle": "Chạy pipeline và khám phá URL",
+      "enTitle": "Step 1",
+      "refs": [
+        "collectors/discover_itviec_jobs.py",
+        "collectors/crawl_support.py",
+        "deploy/ec2/run_pipeline.py",
+        "deploy/ec2/pipeline.service"
+      ]
+    },
+    {
+      "num": "5.7.2",
+      "slug": "5-Workshop/5.7-ITviec-Collection/5.7.2-step2",
+      "viTitle": "Thu thập từng batch và kiểm liên kết discovery",
+      "enTitle": "Step 2",
+      "refs": [
+        "collectors/itviec_batch_collector.py",
+        "deploy/ec2/run_pipeline.py"
+      ]
+    },
+    {
+      "num": "5.7.3",
+      "slug": "5-Workshop/5.7-ITviec-Collection/5.7.3-step3",
+      "viTitle": "Kiểm tra toàn bộ lượt thu thập trước ETL",
+      "enTitle": "Step 3",
+      "refs": [
+        "deploy/ec2/run_pipeline.py",
+        "deploy/ec2/pipeline_state.py",
+        "collectors/crawl_support.py"
+      ]
+    },
+    {
+      "num": "5.8",
+      "slug": "5-Workshop/5.8-Data-Processing",
+      "viTitle": "Thiết lập ETL và công bố Parquet",
+      "enTitle": "ETL and publication",
+      "refs": [
+        "deploy/ec2/run_pipeline.py",
+        "processors/sync_itviec_current.py",
+        "processors/clean_itviec.py",
+        "processors/export_itviec_parquet.py",
+        "sql/create_itviec_table.sql",
+        "deploy/ec2/pipeline_state.py",
+        "deploy/ec2/runtime.env.example"
+      ]
+    },
+    {
+      "num": "5.8.1",
+      "slug": "5-Workshop/5.8-Data-Processing/5.8.1-step1",
+      "viTitle": "Đồng bộ current và history bằng runner",
+      "enTitle": "Step 1",
+      "refs": [
+        "deploy/ec2/run_pipeline.py",
+        "processors/sync_itviec_current.py"
+      ]
+    },
+    {
+      "num": "5.8.2",
+      "slug": "5-Workshop/5.8-Data-Processing/5.8.2-step2",
+      "viTitle": "Làm sạch, cấu hình data root và xuất Parquet",
+      "enTitle": "Step 2",
+      "refs": [
+        "processors/sync_itviec_current.py",
+        "processors/clean_itviec.py",
+        "processors/export_itviec_parquet.py",
+        "sql/create_itviec_table.sql"
+      ]
+    },
+    {
+      "num": "5.8.3",
+      "slug": "5-Workshop/5.8-Data-Processing/5.8.3-step3",
+      "viTitle": "Công bố dữ liệu Parquet lên S3",
+      "enTitle": "Step 3",
+      "refs": [
+        "deploy/ec2/run_pipeline.py",
+        "deploy/ec2/pipeline_state.py",
+        "deploy/ec2/runtime.env.example"
+      ]
+    },
+    {
+      "num": "5.9",
+      "slug": "5-Workshop/5.9-Streamlit-Dashboard",
+      "viTitle": "Cấu hình và triển khai Streamlit Dashboard",
+      "enTitle": "Streamlit dashboard",
+      "refs": [
+        "dashboard/app.py",
+        "dashboard/job_data.py",
+        "deploy/ec2/streamlit.service",
+        "deploy/ec2/open_private.ps1",
+        "dashboard/market_dashboard.py",
+        "dashboard/weekly_metrics.py",
+        "docs/WEEKLY_KPIS.md"
+      ]
+    },
+    {
+      "num": "5.9.1",
+      "slug": "5-Workshop/5.9-Streamlit-Dashboard/5.9.1-step1",
+      "viTitle": "Kết nối nguồn dữ liệu và khởi chạy ứng dụng",
+      "enTitle": "Step 1",
+      "refs": [
+        "dashboard/app.py",
+        "dashboard/job_data.py",
+        "deploy/ec2/streamlit.service",
+        "deploy/ec2/open_private.ps1"
+      ]
+    },
+    {
+      "num": "5.9.2",
+      "slug": "5-Workshop/5.9-Streamlit-Dashboard/5.9.2-step2",
+      "viTitle": "Hiển thị KPI và biểu đồ Plotly",
+      "enTitle": "Step 2",
+      "refs": [
+        "dashboard/market_dashboard.py",
+        "dashboard/weekly_metrics.py",
+        "docs/WEEKLY_KPIS.md"
+      ]
+    },
+    {
+      "num": "5.9.3",
+      "slug": "5-Workshop/5.9-Streamlit-Dashboard/5.9.3-step3",
+      "viTitle": "Tìm kiếm, lọc và xem chi tiết việc làm",
+      "enTitle": "Step 3",
+      "refs": [
+        "dashboard/market_dashboard.py",
+        "dashboard/job_data.py"
+      ]
+    },
+    {
+      "num": "5.10",
+      "slug": "5-Workshop/5.10-Users-Administration",
+      "viTitle": "Thiết lập tài khoản và chức năng quản trị",
+      "enTitle": "Accounts and administration",
+      "refs": [
+        "dashboard/bootstrap_admin.py",
+        "dashboard/auth.py",
+        "dashboard/app.py",
+        ".streamlit/secrets.toml.example",
+        "dashboard/registration.py",
+        "dashboard/personal_service.py",
+        "dashboard/user_storage.py",
+        "dashboard/s3_store.py",
+        "dashboard/personal_pages.py",
+        "dashboard/account_security.py",
+        "dashboard/account_security_ui.py",
+        "dashboard/passwords.py",
+        "dashboard/deploy_moderation_phase3.py",
+        "dashboard/dynamo_moderation_store.py",
+        "docs/SOFT_DELETE_PHASE3.md",
+        "dashboard/job_management.py",
+        "dashboard/sync_moderation_projection.py",
+        "deploy/ec2/projection.timer"
+      ]
+    },
+    {
+      "num": "5.10.1",
+      "slug": "5-Workshop/5.10-Users-Administration/5.10.1-step1",
+      "viTitle": "Cấu hình xác thực và tài khoản quản trị ban đầu",
+      "enTitle": "Step 1",
+      "refs": [
+        "dashboard/bootstrap_admin.py",
+        "dashboard/auth.py",
+        "dashboard/app.py",
+        ".streamlit/secrets.toml.example"
+      ]
+    },
+    {
+      "num": "5.10.2",
+      "slug": "5-Workshop/5.10-Users-Administration/5.10.2-step2",
+      "viTitle": "Đăng ký USER, lưu việc làm và theo dõi ứng tuyển",
+      "enTitle": "Step 2",
+      "refs": [
+        "dashboard/registration.py",
+        "dashboard/personal_service.py",
+        "dashboard/user_storage.py",
+        "dashboard/s3_store.py"
+      ]
+    },
+    {
+      "num": "5.10.3",
+      "slug": "5-Workshop/5.10-Users-Administration/5.10.3-step3",
+      "viTitle": "Hồ sơ, mật khẩu và quản lý USER",
+      "enTitle": "Step 3",
+      "refs": [
+        "dashboard/personal_pages.py",
+        "dashboard/account_security.py",
+        "dashboard/account_security_ui.py",
+        "dashboard/passwords.py"
+      ]
+    },
+    {
+      "num": "5.11",
+      "slug": "5-Workshop/5.11-Nginx-HTTPS",
+      "viTitle": "Thiết lập Nginx và HTTPS theo IP",
+      "enTitle": "Nginx and HTTPS",
+      "refs": [
+        "deploy/ec2/enable_public.py",
+        "deploy/ec2/proxy.inc",
+        "deploy/ec2/nginx.conf",
+        "deploy/ec2/configure_public_https.sh",
+        "deploy/ec2/auto_https.py",
+        "data/control/ec2_https_current.sh",
+        "docs/AUTO_HTTPS.md",
+        "docs/EC2_PUBLIC_ACCESS.md"
+      ]
+    },
+    {
+      "num": "5.11.1",
+      "slug": "5-Workshop/5.11-Nginx-HTTPS/5.11.1-step1",
+      "viTitle": "Cấu hình cổng truy cập và Nginx",
+      "enTitle": "Step 1",
+      "refs": [
+        "deploy/ec2/enable_public.py",
+        "deploy/ec2/proxy.inc",
+        "deploy/ec2/nginx.conf"
+      ]
+    },
+    {
+      "num": "5.11.2",
+      "slug": "5-Workshop/5.11-Nginx-HTTPS/5.11.2-step2",
+      "viTitle": "Cài Certbot và cấu hình HTTPS tự động",
+      "enTitle": "Step 2",
+      "refs": [
+        "deploy/ec2/configure_public_https.sh",
+        "deploy/ec2/auto_https.py",
+        "data/control/ec2_https_current.sh",
+        "docs/AUTO_HTTPS.md"
+      ]
+    },
+    {
+      "num": "5.11.3",
+      "slug": "5-Workshop/5.11-Nginx-HTTPS/5.11.3-step3",
+      "viTitle": "Kiểm tra HTTP, HTTPS và WebSocket",
+      "enTitle": "Step 3",
+      "refs": [
+        "docs/AUTO_HTTPS.md",
+        "docs/EC2_PUBLIC_ACCESS.md",
+        "deploy/ec2/proxy.inc"
+      ]
+    },
+    {
+      "num": "5.12",
+      "slug": "5-Workshop/5.12-Pipeline-Automation",
+      "viTitle": "Thiết lập lịch pipeline và Operations Worker",
+      "enTitle": "Pipeline scheduling and operations",
+      "refs": [
+        "deploy/ec2/pipeline.timer",
+        "deploy/ec2/pipeline.service",
+        "deploy/ec2/activate_pipeline.sh",
+        "deploy/ec2/install_recovery.sh",
+        "deploy/ec2/operations_worker.py",
+        "deploy/ec2/operations.timer",
+        "dashboard/operations.py",
+        "deploy/ec2/run_pipeline.py",
+        "deploy/ec2/pipeline_state.py"
+      ]
+    },
+    {
+      "num": "5.12.1",
+      "slug": "5-Workshop/5.12-Pipeline-Automation/5.12.1-step1",
+      "viTitle": "Lập lịch pipeline lúc 02:00 giờ Việt Nam",
+      "enTitle": "Step 1",
+      "refs": [
+        "deploy/ec2/pipeline.timer",
+        "deploy/ec2/pipeline.service",
+        "deploy/ec2/activate_pipeline.sh"
+      ]
+    },
+    {
+      "num": "5.12.2",
+      "slug": "5-Workshop/5.12-Pipeline-Automation/5.12.2-step2",
+      "viTitle": "Cài Operations Worker và bật chức năng vận hành",
+      "enTitle": "Step 2",
+      "refs": [
+        "deploy/ec2/install_recovery.sh",
+        "deploy/ec2/operations_worker.py",
+        "deploy/ec2/operations.timer",
+        "dashboard/operations.py"
+      ]
+    },
+    {
+      "num": "5.12.3",
+      "slug": "5-Workshop/5.12-Pipeline-Automation/5.12.3-step3",
+      "viTitle": "Kiểm tra cơ chế chạy bù và kết quả pipeline",
+      "enTitle": "Step 3",
+      "refs": [
+        "deploy/ec2/run_pipeline.py",
+        "deploy/ec2/pipeline_state.py",
+        "deploy/ec2/operations_worker.py"
+      ]
+    },
+    {
+      "num": "5.13",
+      "slug": "5-Workshop/5.13-Monitoring",
+      "viTitle": "Thiết lập CloudWatch và giám sát",
+      "enTitle": "CloudWatch monitoring",
+      "refs": [
+        "deploy/ec2/configure_monitoring.py",
+        "deploy/ec2/install_monitoring.sh",
+        "dashboard/admin_monitoring.py",
+        "dashboard/pages/system_status.py",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.13.1",
+      "slug": "5-Workshop/5.13-Monitoring/5.13.1-step1",
+      "viTitle": "Log group, metric và alarm CloudWatch",
+      "enTitle": "Step 1",
+      "refs": [
+        "deploy/ec2/configure_monitoring.py"
+      ]
+    },
+    {
+      "num": "5.13.2",
+      "slug": "5-Workshop/5.13-Monitoring/5.13.2-step2",
+      "viTitle": "Cài CloudWatch Agent và bộ xuất log",
+      "enTitle": "Step 2",
+      "refs": [
+        "deploy/ec2/install_monitoring.sh",
+        "deploy/ec2/configure_monitoring.py"
+      ]
+    },
+    {
+      "num": "5.13.3",
+      "slug": "5-Workshop/5.13-Monitoring/5.13.3-step3",
+      "viTitle": "Theo dõi ứng dụng và xử lý sự cố",
+      "enTitle": "Step 3",
+      "refs": [
+        "dashboard/admin_monitoring.py",
+        "dashboard/pages/system_status.py",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.14",
+      "slug": "5-Workshop/5.14-Testing-Results",
+      "viTitle": "Kiểm thử và nghiệm thu triển khai",
+      "enTitle": "Testing and acceptance",
+      "refs": [
+        ".github/workflows/offline-tests.yml",
+        "README.md",
+        "docs/EC2_DEPLOYMENT_2026-11-02.md",
+        "docs/OPERATIONS_RUNBOOK.md",
+        "docs/EC2_DEPLOYMENT.md",
+        "docs/AUTO_HTTPS.md"
+      ]
+    },
+    {
+      "num": "5.14.1",
+      "slug": "5-Workshop/5.14-Testing-Results/5.14.1-step1",
+      "viTitle": "Chạy kiểm thử source trước phát hành",
+      "enTitle": "Step 1",
+      "refs": [
+        ".github/workflows/offline-tests.yml",
+        "README.md"
+      ]
+    },
+    {
+      "num": "5.14.2",
+      "slug": "5-Workshop/5.14-Testing-Results/5.14.2-step2",
+      "viTitle": "Nghiệm thu dữ liệu, quyền và web trên AWS",
+      "enTitle": "Step 2",
+      "refs": [
+        "docs/EC2_DEPLOYMENT_2026-11-02.md",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.14.3",
+      "slug": "5-Workshop/5.14-Testing-Results/5.14.3-step3",
+      "viTitle": "Đối chiếu kết quả đã có của dự án",
+      "enTitle": "Step 3",
+      "refs": [
+        "docs/EC2_DEPLOYMENT.md",
+        "docs/EC2_DEPLOYMENT_2026-11-02.md",
+        "docs/AUTO_HTTPS.md"
+      ]
+    },
+    {
+      "num": "5.15",
+      "slug": "5-Workshop/5.15-Backup-Recovery",
+      "viTitle": "Sao lưu và kiểm tra phục hồi dữ liệu",
+      "enTitle": "Backup and recovery",
+      "refs": [
+        "deploy/ec2/backup_data.py",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.15.1",
+      "slug": "5-Workshop/5.15-Backup-Recovery/5.15.1-step1",
+      "viTitle": "Sao lưu dữ liệu và kiểm tra khả năng phục hồi",
+      "enTitle": "Step 1",
+      "refs": [
+        "deploy/ec2/backup_data.py",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.16",
+      "slug": "5-Workshop/5.16-Cleanup-Conclusion",
+      "viTitle": "Dọn dẹp tài nguyên và kết luận",
+      "enTitle": "Cleanup and conclusion",
+      "refs": [
+        "deploy/ec2/stack.json",
+        "deploy/ec2/enable_public.py",
+        "deploy/ec2/configure_monitoring.py",
+        "docs/EC2_DEPLOYMENT.md",
+        "README.md",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    },
+    {
+      "num": "5.16.1",
+      "slug": "5-Workshop/5.16-Cleanup-Conclusion/5.16.1-step1",
+      "viTitle": "Lập kế hoạch dọn tài nguyên an toàn",
+      "enTitle": "Step 1",
+      "refs": [
+        "deploy/ec2/stack.json",
+        "deploy/ec2/enable_public.py",
+        "deploy/ec2/configure_monitoring.py",
+        "docs/EC2_DEPLOYMENT.md"
+      ]
+    },
+    {
+      "num": "5.16.2",
+      "slug": "5-Workshop/5.16-Cleanup-Conclusion/5.16.2-step2",
+      "viTitle": "Tổng kết và bàn giao",
+      "enTitle": "Step 2",
+      "refs": [
+        "README.md",
+        "docs/OPERATIONS_RUNBOOK.md"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "5.1-ARCH",
+      "chapter": "5.1",
+      "page": "5-Workshop/5.1-Introduction",
+      "position": "Kiến trúc hệ thống",
+      "description": "Sơ đồ kiến trúc dự án đã chọn",
+      "filename": "vietnam-it-job-market-selected-architecture.png",
+      "status": "Đã có sơ đồ"
+    },
+    {
+      "id": "5.4-01",
+      "chapter": "5.4",
+      "page": "5-Workshop/5.4-Catalog-Athena/5.4.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.4.1",
+      "description": "Ảnh Glue Table details: database, bảng itviec_current_jobs, columns/types và S3 location.",
+      "filename": "setup-5-4-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.5-01",
+      "chapter": "5.5",
+      "page": "5-Workshop/5.5-DynamoDB-Moderation/5.5.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.5.1",
+      "description": "Ảnh DynamoDB Console: hai bảng moderation/audit và cấu hình trạng thái, bảo vệ dữ liệu.",
+      "filename": "setup-5-5-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.5-02",
+      "chapter": "5.5",
+      "page": "5-Workshop/5.5-DynamoDB-Moderation/5.5.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.5.3",
+      "description": "Ảnh Athena: SQL, kết quả tổng số/thống kê và leaked_deleted_jobs, kèm Query ID/thời điểm.",
+      "filename": "setup-5-5-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.6-01",
+      "chapter": "5.6",
+      "page": "5-Workshop/5.6-EC2-Deployment/5.6.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.6.1",
+      "description": "Ảnh AWS Console: Region Singapore, EC2 của dự án và IAM Role gắn với instance.",
+      "filename": "setup-5-6-01.png",
+      "status": "Đã có ảnh thực tế"
+    },
+    {
+      "id": "5.6-02",
+      "chapter": "5.6",
+      "page": "5-Workshop/5.6-EC2-Deployment/5.6.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.6.3",
+      "description": "Ảnh terminal SSM: kết quả Python version, pip check và trạng thái vnjob-dashboard.",
+      "filename": "setup-5-6-02.png",
+      "status": "Đã có ảnh thực tế"
+    },
+    {
+      "id": "5.6-03",
+      "chapter": "5.6",
+      "page": "5-Workshop/5.6-EC2-Deployment/5.6.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.6.3",
+      "description": "Ảnh EC2/IAM Role/Security Group và kết quả ARN runtime trong SSM; che định danh không cần thiết.",
+      "filename": "setup-5-6-03.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.7-01",
+      "chapter": "5.7",
+      "page": "5-Workshop/5.7-ITviec-Collection/5.7.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.7.1",
+      "description": "Ảnh file discovery JSON: thời điểm quét, tổng URL, coverage_checked, failed_pages và một phần job_urls.",
+      "filename": "setup-5-7-01.png",
+      "status": "Đã có ảnh thực tế"
+    },
+    {
+      "id": "5.7-02",
+      "chapter": "5.7",
+      "page": "5-Workshop/5.7-ITviec-Collection/5.7.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.7.2",
+      "description": "Ảnh kết quả batch và metadata JSON: số batch, discovery_file, số thành công/thất bại và cờ hoàn tất.",
+      "filename": "setup-5-7-02.png",
+      "status": "Đã có ảnh thực tế"
+    },
+    {
+      "id": "5.8-01",
+      "chapter": "5.8",
+      "page": "5-Workshop/5.8-Data-Processing/5.8.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.8.1",
+      "description": "Ảnh current/history của cùng job_id và summary; thể hiện first_seen, last_seen hoặc reason hết hạn nếu có.",
+      "filename": "setup-5-8-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.8-02",
+      "chapter": "5.8",
+      "page": "5-Workshop/5.8-Data-Processing/5.8.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.8.2",
+      "description": "Ảnh kết quả clean và kiểm Parquet trên bản sao: schema, số dòng và thông báo đối chiếu thành công.",
+      "filename": "setup-5-8-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.8-03",
+      "chapter": "5.8",
+      "page": "5-Workshop/5.8-Data-Processing/5.8.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.8.3",
+      "description": "Ảnh S3: canonical Parquet và Properties/Metadata hiển thị run-id, sha256, Last modified.",
+      "filename": "setup-5-8-03.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.9-01",
+      "chapter": "5.9",
+      "page": "5-Workshop/5.9-Streamlit-Dashboard/5.9.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.9.2",
+      "description": "Ảnh dashboard hiển thị đủ 8 KPI, khoảng ngày so sánh tuần và thời điểm dữ liệu.",
+      "filename": "setup-5-9-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.9-02",
+      "chapter": "5.9",
+      "page": "5-Workshop/5.9-Streamlit-Dashboard/5.9.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.9.2",
+      "description": "Ảnh các biểu đồ Plotly với nhãn/tooltip rõ; chia hai ảnh nếu cần để đọc được nội dung.",
+      "filename": "setup-5-9-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.9-03",
+      "chapter": "5.9",
+      "page": "5-Workshop/5.9-Streamlit-Dashboard/5.9.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.9.3",
+      "description": "Ảnh bộ lọc và bảng kết quả, tiếp theo là chi tiết cùng tin đã chọn với URL ITviec.",
+      "filename": "setup-5-9-03.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.10-01",
+      "chapter": "5.10",
+      "page": "5-Workshop/5.10-Users-Administration/5.10.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.10.2",
+      "description": "Ảnh form đăng ký/đăng nhập và menu USER; để trống hoặc che mật khẩu và email thử.",
+      "filename": "setup-5-10-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.10-02",
+      "chapter": "5.10",
+      "page": "5-Workshop/5.10-Users-Administration/5.10.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.10.2",
+      "description": "Ảnh Việc làm đã lưu và Lịch sử ứng tuyển của tài khoản thử, thể hiện tin và trạng thái đã cập nhật.",
+      "filename": "setup-5-10-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.10-03",
+      "chapter": "5.10",
+      "page": "5-Workshop/5.10-Users-Administration/5.10.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.10.3",
+      "description": "Ảnh Hồ sơ cá nhân và phần Đổi mật khẩu ở trạng thái trống/đã che, kèm thông báo đăng nhập lại nếu có.",
+      "filename": "setup-5-10-03.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.10-04",
+      "chapter": "5.10",
+      "page": "5-Workshop/5.10-Users-Administration/5.10.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.10.3",
+      "description": "Ảnh menu ADMIN và Quản lý người dùng, thể hiện khóa/mở hoặc thu hồi phiên của USER thử.",
+      "filename": "setup-5-10-04.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.10-05",
+      "chapter": "5.10",
+      "page": "5-Workshop/5.10-Users-Administration/5.10.4-step4",
+      "position": "Trong phần kiểm tra kết quả của 5.10.4",
+      "description": "Ảnh cùng job_id khi Delete/Restore, audit tương ứng và log/snapshot revision sau Projection Worker đồng bộ.",
+      "filename": "setup-5-10-05.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.11-01",
+      "chapter": "5.11",
+      "page": "5-Workshop/5.11-Nginx-HTTPS/5.11.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.11.2",
+      "description": "Ảnh nginx -t, service dashboard và chứng chỉ SAN IP/hạn dùng, kèm timer hoặc log HTTPS reconcile.",
+      "filename": "setup-5-11-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.11-02",
+      "chapter": "5.11",
+      "page": "5-Workshop/5.11-Nginx-HTTPS/5.11.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.11.3",
+      "description": "Ảnh HTTP redirect, HTTPS health và Network WebSocket của dashboard trên IP hiện tại, có ngày kiểm tra.",
+      "filename": "setup-5-11-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.12-01",
+      "chapter": "5.12",
+      "page": "5-Workshop/5.12-Pipeline-Automation/5.12.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.12.1",
+      "description": "Thư mục runtime thuộc vnjob, projection timer và pipeline đang thu thập tại thời điểm chụp.",
+      "filename": "setup-5-12-01.png",
+      "status": "Đã có ảnh thực tế"
+    },
+    {
+      "id": "5.12-02",
+      "chapter": "5.12",
+      "page": "5-Workshop/5.12-Pipeline-Automation/5.12.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.12.1",
+      "description": "Ảnh unit/timer hiển thị OnCalendar, Persistent, enabled và next/last trigger; chú thích giờ Việt Nam.",
+      "filename": "setup-5-12-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.12-03",
+      "chapter": "5.12",
+      "page": "5-Workshop/5.12-Pipeline-Automation/5.12.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.12.2",
+      "description": "Ảnh Operations Worker timer/log và request/result của ADMIN thử, đối chiếu với trạng thái service/run thực tế.",
+      "filename": "setup-5-12-03.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.12-04",
+      "chapter": "5.12",
+      "page": "5-Workshop/5.12-Pipeline-Automation/5.12.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.12.3",
+      "description": "Ảnh journal và status cùng run_id, có thời điểm bắt đầu/kết thúc, trạng thái cuối và published; chỉ ghi là chạy bù khi có log thể hiện trigger và trạng thái cuối tương ứng.",
+      "filename": "setup-5-12-04.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.13-01",
+      "chapter": "5.13",
+      "page": "5-Workshop/5.13-Monitoring/5.13.2-step2",
+      "position": "Trong phần kiểm tra kết quả của 5.13.2",
+      "description": "Ảnh CloudWatch log stream có timestamp/run_id và alarm details: metric, threshold, trạng thái và actions.",
+      "filename": "setup-5-13-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.13-02",
+      "chapter": "5.13",
+      "page": "5-Workshop/5.13-Monitoring/5.13.3-step3",
+      "position": "Trong phần kiểm tra kết quả của 5.13.3",
+      "description": "Ảnh các trang System Status, Crawl Status và Data Quality: run_id, thời điểm, bộ đếm và nhóm kiểm thực tế.",
+      "filename": "setup-5-13-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.14-01",
+      "chapter": "5.14",
+      "page": "5-Workshop/5.14-Testing-Results/5.14.1-step1",
+      "position": "Trong phần kiểm tra kết quả của 5.14.1",
+      "description": "Ảnh log kiểm thử có ngày/source version và kết quả từng bộ; kèm bảng nghiệm thu dữ liệu, giao diện và vận hành.",
+      "filename": "setup-5-14-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.2-01",
+      "chapter": "5.2",
+      "page": "5-Workshop/5.2-Prerequisites/5.2.1-step1",
+      "position": "Sau bước thiết lập 5.2.1",
+      "description": "Kết quả danh tính AWS và dependency của máy quản trị; không chụp credential/token.",
+      "filename": "setup-5-2-01.png",
+      "status": "Đã có ảnh thực tế"
+    },
+    {
+      "id": "5.3-01",
+      "chapter": "5.3",
+      "page": "5-Workshop/5.3-S3-Storage/5.3.1-step1",
+      "position": "Sau bước thiết lập 5.3.1",
+      "description": "S3 bucket Region, Block Public Access và Default encryption cùng cấu trúc prefix.",
+      "filename": "setup-5-3-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.3-02",
+      "chapter": "5.3",
+      "page": "5-Workshop/5.3-S3-Storage/5.3.2-step2",
+      "position": "Sau bước thiết lập 5.3.2",
+      "description": "Seed current và checksum/key S3 dùng cho máy mới; không chụp dữ liệu cá nhân.",
+      "filename": "setup-5-3-02.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.5-03",
+      "chapter": "5.5",
+      "page": "5-Workshop/5.5-DynamoDB-Moderation/5.5.2-step2",
+      "position": "Sau bước thiết lập 5.5.2",
+      "description": "Ảnh metadata control DynamoDB và các table/view moderation v3 trong Athena/Glue đang sử dụng.",
+      "filename": "setup-5-5-03.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.6-04",
+      "chapter": "5.6",
+      "page": "5-Workshop/5.6-EC2-Deployment/5.6.1-step1",
+      "position": "Sau bước thiết lập 5.6.1",
+      "description": "Ảnh CloudFormation stack/Outputs và checksum release hiện có; không tạo lại EC2.",
+      "filename": "setup-5-6-04.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.6-05",
+      "chapter": "5.6",
+      "page": "5-Workshop/5.6-EC2-Deployment/5.6.2-step2",
+      "position": "Sau bước thiết lập 5.6.2",
+      "description": "Log bootstrap/install runtime và cấu hình backend/env đã che nội dung nhạy cảm.",
+      "filename": "setup-5-6-05.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.10-06",
+      "chapter": "5.10",
+      "page": "5-Workshop/5.10-Users-Administration/5.10.1-step1",
+      "position": "Sau bước thiết lập 5.10.1",
+      "description": "Kết quả tạo ADMIN ban đầu hoặc tài khoản ADMIN hiện hữu đăng nhập đúng vai trò; che thông tin riêng tư.",
+      "filename": "setup-5-10-06.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.13-03",
+      "chapter": "5.13",
+      "page": "5-Workshop/5.13-Monitoring/5.13.1-step1",
+      "position": "Sau bước thiết lập 5.13.1",
+      "description": "Ảnh log group, retention, metric filter và alarm CloudWatch đã cấu hình.",
+      "filename": "setup-5-13-03.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.15-01",
+      "chapter": "5.15",
+      "page": "5-Workshop/5.15-Backup-Recovery/5.15.1-step1",
+      "position": "Sau bước thiết lập 5.15.1",
+      "description": "Log backup và verify-restore cùng archive, số file/checksum và destination mới.",
+      "filename": "setup-5-15-01.png",
+      "status": "Chưa có"
+    },
+    {
+      "id": "5.2-CONSOLE",
+      "chapter": "5.2",
+      "page": "5-Workshop/5.2-Prerequisites/5.2.1-step1",
+      "position": "Sau thao tác đăng nhập và chọn Singapore",
+      "description": "AWS Console đã đăng nhập tài khoản dự án, Region Asia Pacific (Singapore).",
+      "filename": "setup-5-2-console.png",
+      "status": "Đã có ảnh thực tế"
+    },
+    {
+      "id": "5.2-02",
+      "chapter": "5.2",
+      "page": "5-Workshop/5.2-Prerequisites/5.2.2-step2",
+      "position": "Sau phần phân quyền runtime",
+      "description": "IAM Role của EC2 và danh sách ba policy thực tế trên tab Permissions.",
+      "filename": "setup-5-2-02.png",
+      "status": "Đã có ảnh thực tế"
+    }
+  ],
+  "oldToNew": [
+    {
+      "old": "/5-workshop/5.2-prerequisites/5.2.3-step3/",
+      "new": "/5-workshop/5.2-prerequisites/5.2.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.2-prerequisites/5.2.4-step4/",
+      "new": "/5-workshop/5.2-prerequisites/5.2.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.3-itviec-collection/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.3-itviec-collection/5.3.1-step1/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.3-itviec-collection/5.3.2-step2/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.3-itviec-collection/5.3.3-step3/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.3-itviec-collection/5.3.4-step4/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.3-itviec-collection/5.3.5-step5/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.4-data-processing/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.4-data-processing/5.4.1-step1/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.4-data-processing/5.4.2-step2/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.4-data-processing/5.4.3-step3/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.4-data-processing/5.4.4-step4/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.4-data-processing/5.4.5-step5/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.5-s3-storage/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.5-s3-storage/5.5.1-step1/",
+      "new": "/5-workshop/5.3-s3-storage/5.3.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.5-s3-storage/5.5.2-step2/",
+      "new": "/5-workshop/5.8-data-processing/5.8.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.6-glue-catalog/",
+      "new": "/5-workshop/5.4-catalog-athena/5.4.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.6-glue-catalog/5.6.1-step1/",
+      "new": "/5-workshop/5.4-catalog-athena/5.4.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.6-glue-catalog/5.6.2-step2/",
+      "new": "/5-workshop/5.4-catalog-athena/5.4.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.7-athena/",
+      "new": "/5-workshop/5.4-catalog-athena/"
+    },
+    {
+      "old": "/5-workshop/5.7-athena/5.7.1-step1/",
+      "new": "/5-workshop/5.4-catalog-athena/5.4.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.7-athena/5.7.2-step2/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.7-athena/5.7.3-step3/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/5.8.1-step1/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/5.8.2-step2/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/5.8.3-step3/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/5.8.4-step4/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/5.8.5-step5/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.9-user-features/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.9-user-features/5.9.1-step1/",
+      "new": "/5-workshop/5.10-users-administration/5.10.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.9-user-features/5.9.2-step2/",
+      "new": "/5-workshop/5.10-users-administration/5.10.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.9-user-features/5.9.3-step3/",
+      "new": "/5-workshop/5.10-users-administration/5.10.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.9-user-features/5.9.4-step4/",
+      "new": "/5-workshop/5.10-users-administration/5.10.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.9-user-features/5.9.5-step5/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.10-administration/5.10.1-step1/",
+      "new": "/5-workshop/5.10-users-administration/5.10.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.10-administration/5.10.2-step2/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.10-administration/5.10.4-step4/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.10-administration/5.10.5-step5/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.11-ec2-deployment/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.11-ec2-deployment/5.11.1-step1/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.11-ec2-deployment/5.11.2-step2/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.11-ec2-deployment/5.11.3-step3/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.11-ec2-deployment/5.11.4-step4/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.12-nginx-https/",
+      "new": "/5-workshop/5.11-nginx-https/5.11.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.12-nginx-https/5.12.1-step1/",
+      "new": "/5-workshop/5.11-nginx-https/5.11.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.12-nginx-https/5.12.2-step2/",
+      "new": "/5-workshop/5.11-nginx-https/5.11.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.12-nginx-https/5.12.3-step3/",
+      "new": "/5-workshop/5.11-nginx-https/5.11.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.13-pipeline-automation/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.13-pipeline-automation/5.13.1-step1/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.13-pipeline-automation/5.13.2-step2/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.13-pipeline-automation/5.13.3-step3/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.13-pipeline-automation/5.13.4-step4/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.13-pipeline-automation/5.13.5-step5/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring/",
+      "new": "/5-workshop/5.13-monitoring/5.13.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring/5.14.1-step1/",
+      "new": "/5-workshop/5.13-monitoring/5.13.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring/5.14.2-step2/",
+      "new": "/5-workshop/5.13-monitoring/5.13.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring/5.14.3-step3/",
+      "new": "/5-workshop/5.13-monitoring/5.13.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.15-testing-results/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.15-testing-results/5.15.1-step1/",
+      "new": "/5-workshop/5.14-testing-results/5.14.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.15-testing-results/5.15.2-step2/",
+      "new": "/5-workshop/5.14-testing-results/5.14.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.15-testing-results/5.15.3-step3/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.16-cleanup-conclusion/5.16.3-step3/",
+      "new": "/5-workshop/5.16-cleanup-conclusion/5.16.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.1-overview/",
+      "new": "/5-workshop/5.1-introduction/"
+    },
+    {
+      "old": "/5-workshop/5.1-overview/5.1.1-step1/",
+      "new": "/5-workshop/5.1-introduction/"
+    },
+    {
+      "old": "/5-workshop/5.1-overview/5.1.2-step2/",
+      "new": "/5-workshop/5.2-prerequisites/5.2.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.1-overview/5.1.3-step3/",
+      "new": "/5-workshop/5.2-prerequisites/5.2.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.1-overview/5.1.4-step4/",
+      "new": "/5-workshop/5.2-prerequisites/5.2.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.1-overview/5.1.5-step5/",
+      "new": "/5-workshop/5.2-prerequisites/5.2.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.2-itviec-collection/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.2-itviec-collection/5.2.1-step1/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.2-itviec-collection/5.2.2-step2/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.2-itviec-collection/5.2.3-step3/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.2-itviec-collection/5.2.4-step4/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.2-itviec-collection/5.2.5-step5/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.3-data-processing/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.3-data-processing/5.3.1-step1/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.3-data-processing/5.3.2-step2/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.3-data-processing/5.3.3-step3/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.3-data-processing/5.3.4-step4/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.3-data-processing/5.3.5-step5/",
+      "new": "/5-workshop/5.8-data-processing/5.8.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.4-s3-glue-athena/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.4-s3-glue-athena/5.4.1-step1/",
+      "new": "/5-workshop/5.8-data-processing/5.8.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.4-s3-glue-athena/5.4.2-step2/",
+      "new": "/5-workshop/5.4-catalog-athena/5.4.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.4-s3-glue-athena/5.4.3-step3/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.4-s3-glue-athena/5.4.4-step4/",
+      "new": "/5-workshop/5.4-catalog-athena/5.4.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.4-s3-glue-athena/5.4.5-step5/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.5-streamlit-dashboard/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.5-streamlit-dashboard/5.5.1-step1/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.5-streamlit-dashboard/5.5.2-step2/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.5-streamlit-dashboard/5.5.3-step3/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.5-streamlit-dashboard/5.5.4-step4/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.5-streamlit-dashboard/5.5.5-step5/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.6-user-features/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.6-user-features/5.6.1-step1/",
+      "new": "/5-workshop/5.10-users-administration/5.10.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.6-user-features/5.6.2-step2/",
+      "new": "/5-workshop/5.10-users-administration/5.10.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.6-user-features/5.6.3-step3/",
+      "new": "/5-workshop/5.10-users-administration/5.10.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.6-user-features/5.6.4-step4/",
+      "new": "/5-workshop/5.10-users-administration/5.10.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.6-user-features/5.6.5-step5/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.7-administration/5.7.1-step1/",
+      "new": "/5-workshop/5.10-users-administration/5.10.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.7-administration/5.7.2-step2/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.7-administration/5.7.4-step4/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.7-administration/5.7.5-step5/",
+      "new": "/5-workshop/5.5-dynamodb-moderation/5.5.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.8-ec2-https/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.8-ec2-https/5.8.1-step1/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.8-ec2-https/5.8.2-step2/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.8-ec2-https/5.8.3-step3/",
+      "new": "/5-workshop/5.11-nginx-https/5.11.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.8-ec2-https/5.8.4-step4/",
+      "new": "/5-workshop/5.11-nginx-https/5.11.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.8-ec2-https/5.8.5-step5/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.8-ec2-https/5.8.6-step6/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.9-pipeline-automation/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.9-pipeline-automation/5.9.1-step1/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.9-pipeline-automation/5.9.2-step2/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.9-pipeline-automation/5.9.3-step3/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.9-pipeline-automation/5.9.4-step4/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.9-pipeline-automation/5.9.5-step5/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/5.10.1-step1/",
+      "new": "/5-workshop/5.13-monitoring/5.13.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/5.10.2-step2/",
+      "new": "/5-workshop/5.13-monitoring/5.13.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/5.10.3-step3/",
+      "new": "/5-workshop/5.14-testing-results/5.14.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/5.10.4-step4/",
+      "new": "/5-workshop/5.14-testing-results/5.14.3-step3/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/5.10.5-step5/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/5.10.6-step6/",
+      "new": "/5-workshop/5.16-cleanup-conclusion/5.16.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.10-monitoring-results/5.10.7-step7/",
+      "new": "/5-workshop/5.16-cleanup-conclusion/5.16.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.4-data-processing/5.4.6-step6/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.5-s3-storage/5.5.3-step3/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.5-s3-storage/5.5.4-step4/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.5-s3-storage/5.5.5-step5/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.6-glue-catalog/5.6.3-step3/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.6-glue-catalog/5.6.4-step4/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.7-athena/5.7.4-step4/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.7-athena/5.7.5-step5/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.7-athena/5.7.6-step6/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/5.8.6-step6/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.8-streamlit-dashboard/5.8.7-step7/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.9-user-features/5.9.6-step6/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.11-ec2-deployment/5.11.5-step5/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.12-nginx-https/5.12.4-step4/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.13-pipeline-automation/5.13.6-step6/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring-operations/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring-operations/5.14.1-step1/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring-operations/5.14.2-step2/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring-operations/5.14.3-step3/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring-operations/5.14.4-step4/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.14-monitoring-operations/5.14.5-step5/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.15-testing-results/5.15.4-step4/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.15-testing-results/5.15.5-step5/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/5-workshop/5.15-testing-results/5.15.6-step6/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/4-workshop/",
+      "new": "/5-workshop/"
+    },
+    {
+      "old": "/4-workshop/4.1-workshop-overview/",
+      "new": "/5-workshop/5.1-introduction/"
+    },
+    {
+      "old": "/4-workshop/4.10-ec2-deployment/4.10.1-step1/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.10-ec2-deployment/4.10.2-step2/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.10-ec2-deployment/4.10.3-step3/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.10-ec2-deployment/4.10.4-step4/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.10-ec2-deployment/",
+      "new": "/5-workshop/5.6-ec2-deployment/5.6.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.11-pipeline-monitoring/4.11.1-step1/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.11-pipeline-monitoring/4.11.2-step2/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.11-pipeline-monitoring/4.11.3-step3/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.11-pipeline-monitoring/4.11.4-step4/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/4-workshop/4.11-pipeline-monitoring/",
+      "new": "/5-workshop/5.12-pipeline-automation/5.12.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.12-testing-results/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/4-workshop/4.13-cleanup-conclusion/",
+      "new": "/5-workshop/5.14-testing-results/5.14.2-step2/"
+    },
+    {
+      "old": "/4-workshop/4.2-prerequisites/",
+      "new": "/5-workshop/5.1-introduction/"
+    },
+    {
+      "old": "/4-workshop/4.3-itviec-collection/4.3.1-step1/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.3-itviec-collection/4.3.2-step2/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.3-itviec-collection/4.3.3-step3/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.3-itviec-collection/",
+      "new": "/5-workshop/5.7-itviec-collection/5.7.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.4-data-processing/4.4.1-step1/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.4-data-processing/4.4.2-step2/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.4-data-processing/4.4.3-step3/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.4-data-processing/",
+      "new": "/5-workshop/5.8-data-processing/5.8.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.5-s3-storage/4.5.1-step1/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.5-s3-storage/4.5.2-step2/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.5-s3-storage/4.5.3-step3/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.5-s3-storage/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.6-glue-catalog/4.6.1-step1/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.6-glue-catalog/4.6.2-step2/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.6-glue-catalog/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.7-athena/4.7.1-step1/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.7-athena/4.7.2-step2/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.7-athena/",
+      "new": "/5-workshop/5.3-s3-storage/"
+    },
+    {
+      "old": "/4-workshop/4.8-streamlit-dashboard/4.8.1-step1/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.8-streamlit-dashboard/4.8.2-step2/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.8-streamlit-dashboard/4.8.3-step3/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.8-streamlit-dashboard/",
+      "new": "/5-workshop/5.9-streamlit-dashboard/5.9.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.9-user-administration/4.9.1-step1/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.9-user-administration/4.9.2-step2/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    },
+    {
+      "old": "/4-workshop/4.9-user-administration/",
+      "new": "/5-workshop/5.10-users-administration/5.10.1-step1/"
+    }
+  ]
+}

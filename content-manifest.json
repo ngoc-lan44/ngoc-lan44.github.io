@@ -1,0 +1,298 @@
+[
+  {
+    "slug": "1-Worklog",
+    "title": "Nhật ký công việc"
+  },
+  {
+    "slug": "1-Worklog/1.1-Week1",
+    "title": "Tuần 1: Tài khoản AWS, Budgets và Support"
+  },
+  {
+    "slug": "1-Worklog/1.2-Week2",
+    "title": "Tuần 2: AWS IAM và nguyên tắc cấp quyền"
+  },
+  {
+    "slug": "1-Worklog/1.3-Week3",
+    "title": "Tuần 3: Amazon VPC, subnet và bảo mật mạng"
+  },
+  {
+    "slug": "1-Worklog/1.4-Week4",
+    "title": "Tuần 4: Amazon EC2, EBS và quản lý máy chủ"
+  },
+  {
+    "slug": "1-Worklog/1.5-Week5",
+    "title": "Tuần 5: IAM Role cho EC2 và Session Manager"
+  },
+  {
+    "slug": "1-Worklog/1.6-Week6",
+    "title": "Tuần 6: Amazon S3 và thao tác bằng AWS CLI"
+  },
+  {
+    "slug": "1-Worklog/1.7-Week7",
+    "title": "Tuần 7: Bảo mật S3 và bảo vệ dữ liệu"
+  },
+  {
+    "slug": "1-Worklog/1.8-Week8",
+    "title": "Tuần 8: Amazon DynamoDB và mô hình dữ liệu NoSQL"
+  },
+  {
+    "slug": "1-Worklog/1.9-Week9",
+    "title": "Tuần 9: Python SDK và transaction DynamoDB"
+  },
+  {
+    "slug": "1-Worklog/1.10-Week10",
+    "title": "Tuần 10: Dữ liệu trên S3 và AWS Glue Data Catalog"
+  },
+  {
+    "slug": "1-Worklog/1.11-Week11",
+    "title": "Tuần 11: Amazon Athena và phân tích dữ liệu bằng SQL"
+  },
+  {
+    "slug": "1-Worklog/1.12-Week12",
+    "title": "Tuần 12: Amazon CloudWatch: Metrics, Logs và Alarms"
+  },
+  {
+    "slug": "2-Proposal",
+    "title": "Bản đề xuất"
+  },
+  {
+    "slug": "3-EventParticipated",
+    "title": "Các sự kiện meetup đã tham gia"
+  },
+  {
+    "slug": "3-EventParticipated/3.1-Event1",
+    "title": "Mini Meetup – First Cloud AI Journey"
+  },
+  {
+    "slug": "5-Workshop",
+    "title": "Workshop"
+  },
+  {
+    "slug": "5-Workshop/5.1-Introduction",
+    "title": "Giới thiệu"
+  },
+  {
+    "slug": "5-Workshop/5.2-Prerequisites",
+    "title": "Các bước chuẩn bị"
+  },
+  {
+    "slug": "5-Workshop/5.2-Prerequisites/5.2.1-step1",
+    "title": "Chuẩn bị tài khoản AWS, Region và công cụ"
+  },
+  {
+    "slug": "5-Workshop/5.2-Prerequisites/5.2.2-step2",
+    "title": "Dữ liệu sử dụng và IAM Role cho EC2"
+  },
+  {
+    "slug": "5-Workshop/5.3-S3-Storage",
+    "title": "Thiết lập lưu trữ trên Amazon S3"
+  },
+  {
+    "slug": "5-Workshop/5.3-S3-Storage/5.3.1-step1",
+    "title": "Bucket và cấu trúc lưu trữ S3"
+  },
+  {
+    "slug": "5-Workshop/5.3-S3-Storage/5.3.2-step2",
+    "title": "Dữ liệu Parquet và dữ liệu nền triển khai EC2"
+  },
+  {
+    "slug": "5-Workshop/5.4-Catalog-Athena",
+    "title": "Thiết lập Glue Data Catalog và Athena"
+  },
+  {
+    "slug": "5-Workshop/5.4-Catalog-Athena/5.4.1-step1",
+    "title": "Database, bảng nguồn và cấu hình Athena"
+  },
+  {
+    "slug": "5-Workshop/5.4-Catalog-Athena/5.4.2-step2",
+    "title": "Truy vấn dữ liệu kỹ năng bằng Athena"
+  },
+  {
+    "slug": "5-Workshop/5.5-DynamoDB-Moderation",
+    "title": "Thiết lập DynamoDB và dữ liệu kiểm duyệt"
+  },
+  {
+    "slug": "5-Workshop/5.5-DynamoDB-Moderation/5.5.1-step1",
+    "title": "Hai bảng DynamoDB của dự án"
+  },
+  {
+    "slug": "5-Workshop/5.5-DynamoDB-Moderation/5.5.2-step2",
+    "title": "Bản ghi điều khiển và đồng bộ kiểm duyệt lên S3"
+  },
+  {
+    "slug": "5-Workshop/5.5-DynamoDB-Moderation/5.5.3-step3",
+    "title": "Kết nối backend kiểm duyệt và kiểm tra dữ liệu hiển thị"
+  },
+  {
+    "slug": "5-Workshop/5.6-EC2-Deployment",
+    "title": "Triển khai mã nguồn và môi trường chạy trên EC2"
+  },
+  {
+    "slug": "5-Workshop/5.6-EC2-Deployment/5.6.1-step1",
+    "title": "Source release và hạ tầng EC2"
+  },
+  {
+    "slug": "5-Workshop/5.6-EC2-Deployment/5.6.2-step2",
+    "title": "Cài runtime và cấu hình ứng dụng trên EC2"
+  },
+  {
+    "slug": "5-Workshop/5.6-EC2-Deployment/5.6.3-step3",
+    "title": "Dữ liệu hiện tại và dịch vụ dashboard trên EC2"
+  },
+  {
+    "slug": "5-Workshop/5.7-ITviec-Collection",
+    "title": "Thiết lập và chạy thu thập ITviec"
+  },
+  {
+    "slug": "5-Workshop/5.7-ITviec-Collection/5.7.1-step1",
+    "title": "Chạy pipeline và khám phá URL"
+  },
+  {
+    "slug": "5-Workshop/5.7-ITviec-Collection/5.7.2-step2",
+    "title": "Thu thập từng batch và kiểm liên kết discovery"
+  },
+  {
+    "slug": "5-Workshop/5.7-ITviec-Collection/5.7.3-step3",
+    "title": "Kiểm tra toàn bộ lượt thu thập trước ETL"
+  },
+  {
+    "slug": "5-Workshop/5.8-Data-Processing",
+    "title": "Thiết lập ETL và công bố Parquet"
+  },
+  {
+    "slug": "5-Workshop/5.8-Data-Processing/5.8.1-step1",
+    "title": "Đồng bộ current và history bằng runner"
+  },
+  {
+    "slug": "5-Workshop/5.8-Data-Processing/5.8.2-step2",
+    "title": "Làm sạch dữ liệu và xuất Parquet"
+  },
+  {
+    "slug": "5-Workshop/5.8-Data-Processing/5.8.3-step3",
+    "title": "Công bố dữ liệu Parquet lên S3"
+  },
+  {
+    "slug": "5-Workshop/5.9-Streamlit-Dashboard",
+    "title": "Cấu hình và triển khai Streamlit Dashboard"
+  },
+  {
+    "slug": "5-Workshop/5.9-Streamlit-Dashboard/5.9.1-step1",
+    "title": "Kết nối nguồn dữ liệu và khởi chạy ứng dụng"
+  },
+  {
+    "slug": "5-Workshop/5.9-Streamlit-Dashboard/5.9.2-step2",
+    "title": "Hiển thị KPI và biểu đồ Plotly"
+  },
+  {
+    "slug": "5-Workshop/5.9-Streamlit-Dashboard/5.9.3-step3",
+    "title": "Tìm kiếm, lọc và xem chi tiết việc làm"
+  },
+  {
+    "slug": "5-Workshop/5.10-Users-Administration",
+    "title": "Thiết lập tài khoản và chức năng quản trị"
+  },
+  {
+    "slug": "5-Workshop/5.10-Users-Administration/5.10.1-step1",
+    "title": "Tài khoản và phân quyền"
+  },
+  {
+    "slug": "5-Workshop/5.10-Users-Administration/5.10.2-step2",
+    "title": "Đăng ký USER, lưu việc làm và theo dõi ứng tuyển"
+  },
+  {
+    "slug": "5-Workshop/5.10-Users-Administration/5.10.3-step3",
+    "title": "Hồ sơ, mật khẩu và quản lý USER"
+  },
+  {
+    "slug": "5-Workshop/5.11-Nginx-HTTPS",
+    "title": "Thiết lập Nginx và HTTPS theo IP"
+  },
+  {
+    "slug": "5-Workshop/5.11-Nginx-HTTPS/5.11.1-step1",
+    "title": "Cấu hình cổng truy cập và Nginx"
+  },
+  {
+    "slug": "5-Workshop/5.11-Nginx-HTTPS/5.11.2-step2",
+    "title": "Cài Certbot và cấu hình HTTPS tự động"
+  },
+  {
+    "slug": "5-Workshop/5.11-Nginx-HTTPS/5.11.3-step3",
+    "title": "Kiểm tra HTTP, HTTPS và WebSocket"
+  },
+  {
+    "slug": "5-Workshop/5.12-Pipeline-Automation",
+    "title": "Thiết lập lịch pipeline và Operations Worker"
+  },
+  {
+    "slug": "5-Workshop/5.12-Pipeline-Automation/5.12.1-step1",
+    "title": "Lập lịch pipeline lúc 02:00 giờ Việt Nam"
+  },
+  {
+    "slug": "5-Workshop/5.12-Pipeline-Automation/5.12.2-step2",
+    "title": "Cài Operations Worker và bật chức năng vận hành"
+  },
+  {
+    "slug": "5-Workshop/5.12-Pipeline-Automation/5.12.3-step3",
+    "title": "Kiểm tra kết quả vận hành pipeline"
+  },
+  {
+    "slug": "5-Workshop/5.13-Monitoring",
+    "title": "Thiết lập CloudWatch và giám sát"
+  },
+  {
+    "slug": "5-Workshop/5.13-Monitoring/5.13.1-step1",
+    "title": "Log group, metric và alarm CloudWatch"
+  },
+  {
+    "slug": "5-Workshop/5.13-Monitoring/5.13.2-step2",
+    "title": "Cài CloudWatch Agent và bộ xuất log"
+  },
+  {
+    "slug": "5-Workshop/5.13-Monitoring/5.13.3-step3",
+    "title": "Theo dõi ứng dụng và xử lý sự cố"
+  },
+  {
+    "slug": "5-Workshop/5.14-Testing-Results",
+    "title": "Kiểm thử và nghiệm thu triển khai"
+  },
+  {
+    "slug": "5-Workshop/5.14-Testing-Results/5.14.1-step1",
+    "title": "Kiểm thử mã nguồn và giao diện"
+  },
+  {
+    "slug": "5-Workshop/5.14-Testing-Results/5.14.2-step2",
+    "title": "Nghiệm thu hệ thống trên AWS"
+  },
+  {
+    "slug": "5-Workshop/5.14-Testing-Results/5.14.3-step3",
+    "title": "Tổng hợp kết quả thực hiện"
+  },
+  {
+    "slug": "5-Workshop/5.15-Backup-Recovery",
+    "title": "Sao lưu và kiểm tra phục hồi dữ liệu"
+  },
+  {
+    "slug": "5-Workshop/5.15-Backup-Recovery/5.15.1-step1",
+    "title": "Sao lưu dữ liệu và kiểm tra khả năng phục hồi"
+  },
+  {
+    "slug": "5-Workshop/5.16-Cleanup-Conclusion",
+    "title": "Dọn dẹp tài nguyên và kết luận"
+  },
+  {
+    "slug": "5-Workshop/5.16-Cleanup-Conclusion/5.16.1-step1",
+    "title": "Lập kế hoạch dọn tài nguyên an toàn"
+  },
+  {
+    "slug": "5-Workshop/5.16-Cleanup-Conclusion/5.16.2-step2",
+    "title": "Tổng kết và bàn giao"
+  },
+  {
+    "slug": "5-Self-evaluation",
+    "title": "Tự đánh giá"
+  },
+  {
+    "slug": "6-Feedback",
+    "title": "Chia sẻ, đóng góp ý kiến"
+  }
+]

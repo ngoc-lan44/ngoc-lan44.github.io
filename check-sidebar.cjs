@@ -1,0 +1,22 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const html=fs.readFileSync('vietnam-it-job-market-review.html','utf8');
+const elements=new Map();
+function el(id,dataset={}){const classes=new Set();return{id,dataset,style:{},value:'',innerHTML:'',listeners:{},classList:{toggle(k,on){if(on)classes.add(k);else classes.delete(k);},contains(k){return classes.has(k);}},addEventListener(k,fn){this.listeners[k]=fn;},focus(){}};}
+const items=[...html.matchAll(/<li class="dd-item" data-page="([^"]+)" data-slug="([^"]+)"/g)].map(m=>el('',{page:m[1],slug:m[2]}));
+const articles=[...html.matchAll(/<article id="([^"]+)"/g)].map(m=>el(m[1]));
+for(const id of ['search-by','select-language','clear-history','fb-link-label'])elements.set(id,el(id));
+const nav=el('topics'),clear=el('search-clear');const storage=new Map(),events={};
+const context=vm.createContext({document:{documentElement:{lang:''},querySelector(s){if(s==='.topics')return nav;if(s==='[data-search-clear]')return clear;return null;},querySelectorAll(s){return s==='article'?articles:s==='[data-page]'?items:[];},getElementById(id){return elements.get(id);}},location:{hash:''},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},window:{scrollTo(){}},addEventListener(k,fn){events[k]=fn;}});
+vm.runInContext(fs.readFileSync('preview-behavior-check.js','utf8'),context);
+assert.equal(items.filter(x=>!x.dataset.slug.includes('/')).length,6);
+assert.equal(items.filter(x=>x.dataset.slug.startsWith('1-Worklog/')).length,12);
+const worklog=items.find(x=>x.dataset.slug==='1-Worklog');
+context.location.hash='#'+worklog.dataset.page;events.hashchange();assert(worklog.classList.contains('active'));
+const week=items.find(x=>x.dataset.slug.endsWith('1.12-Week12'));context.location.hash='#'+week.dataset.page;events.hashchange();assert(worklog.classList.contains('parent'));assert(week.classList.contains('active'));
+elements.get('select-language').listeners.change({target:{value:'en'}});assert.equal(context.document.documentElement.lang,'en');assert(articles.find(a=>a.id===week.dataset.page).innerHTML.includes('Learning outcomes'));
+elements.get('clear-history').listeners.click({preventDefault(){}});assert.equal(items.filter(x=>x.classList.contains('visited')).length,0);assert.equal(storage.get('clouddocs-report-history'),'[]');
+elements.get('search-by').value='no-match-928273';elements.get('search-by').listeners.input();assert(items.every(x=>x.style.display==='none'));
+clear.listeners.click();assert(items.every(x=>x.style.display===''));
+for(const url of ['http://awsstudygroup.com','https://www.facebook.com/groups/awsstudygroupfcj','https://www.facebook.com/groups/660548818043427'])assert(html.includes('href="'+url+'"'));
+assert(html.includes('Last Updated'));assert(html.includes('07-11-2026'));assert(html.includes('Worklog Tuần 12'));
+console.log('PASS: six sections, twelve nested weeks, active branch, language switching, search, clear history and original external links.');

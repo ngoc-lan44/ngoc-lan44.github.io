@@ -1,0 +1,15 @@
+{
+  "languagePairs": 29,
+  "tablesInEachLanguage": 27,
+  "dataRowsInEachLanguage": 170,
+  "checks": [
+    "heading structure",
+    "table rows and columns",
+    "ordered and unordered lists",
+    "code blocks",
+    "link targets",
+    "remaining Vietnamese",
+    "English diagram"
+  ],
+  "errors": []
+}

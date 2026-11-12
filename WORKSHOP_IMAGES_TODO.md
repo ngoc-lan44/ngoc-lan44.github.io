@@ -1,0 +1,46 @@
+# Ảnh Workshop cần bổ sung
+
+Đã có 8 ảnh thực tế và sơ đồ; còn 31 nhóm ảnh chờ bổ sung.
+
+| Mã | Chương | Trang | Vị trí | Nội dung | File | Trạng thái |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5.1-ARCH | 5.1 | 5-Workshop/5.1-Introduction | Kiến trúc hệ thống | Sơ đồ kiến trúc dự án đã chọn | vietnam-it-job-market-selected-architecture.png | Đã có sơ đồ |
+| 5.4-01 | 5.4 | 5-Workshop/5.4-Catalog-Athena/5.4.1-step1 | Trong phần kiểm tra kết quả của 5.4.1 | Ảnh Glue Table details: database, bảng itviec_current_jobs, columns/types và S3 location. | setup-5-4-01.png | Chưa có |
+| 5.5-01 | 5.5 | 5-Workshop/5.5-DynamoDB-Moderation/5.5.1-step1 | Trong phần kiểm tra kết quả của 5.5.1 | Ảnh DynamoDB Console: hai bảng moderation/audit và cấu hình trạng thái, bảo vệ dữ liệu. | setup-5-5-01.png | Chưa có |
+| 5.5-02 | 5.5 | 5-Workshop/5.5-DynamoDB-Moderation/5.5.3-step3 | Trong phần kiểm tra kết quả của 5.5.3 | Ảnh Athena: SQL, kết quả tổng số/thống kê và leaked_deleted_jobs, kèm Query ID/thời điểm. | setup-5-5-02.png | Chưa có |
+| 5.6-01 | 5.6 | 5-Workshop/5.6-EC2-Deployment/5.6.1-step1 | Trong phần kiểm tra kết quả của 5.6.1 | Ảnh AWS Console: Region Singapore, EC2 của dự án và IAM Role gắn với instance. | setup-5-6-01.png | Đã có ảnh thực tế |
+| 5.6-02 | 5.6 | 5-Workshop/5.6-EC2-Deployment/5.6.3-step3 | Trong phần kiểm tra kết quả của 5.6.3 | Ảnh terminal SSM: kết quả Python version, pip check và trạng thái vnjob-dashboard. | setup-5-6-02.png | Đã có ảnh thực tế |
+| 5.6-03 | 5.6 | 5-Workshop/5.6-EC2-Deployment/5.6.3-step3 | Trong phần kiểm tra kết quả của 5.6.3 | Ảnh EC2/IAM Role/Security Group và kết quả ARN runtime trong SSM; che định danh không cần thiết. | setup-5-6-03.png | Chưa có |
+| 5.7-01 | 5.7 | 5-Workshop/5.7-ITviec-Collection/5.7.1-step1 | Trong phần kiểm tra kết quả của 5.7.1 | Ảnh file discovery JSON: thời điểm quét, tổng URL, coverage_checked, failed_pages và một phần job_urls. | setup-5-7-01.png | Đã có ảnh thực tế |
+| 5.7-02 | 5.7 | 5-Workshop/5.7-ITviec-Collection/5.7.2-step2 | Trong phần kiểm tra kết quả của 5.7.2 | Ảnh kết quả batch và metadata JSON: số batch, discovery_file, số thành công/thất bại và cờ hoàn tất. | setup-5-7-02.png | Đã có ảnh thực tế |
+| 5.8-01 | 5.8 | 5-Workshop/5.8-Data-Processing/5.8.1-step1 | Trong phần kiểm tra kết quả của 5.8.1 | Ảnh current/history của cùng job_id và summary; thể hiện first_seen, last_seen hoặc reason hết hạn nếu có. | setup-5-8-01.png | Chưa có |
+| 5.8-02 | 5.8 | 5-Workshop/5.8-Data-Processing/5.8.2-step2 | Trong phần kiểm tra kết quả của 5.8.2 | Ảnh kết quả clean và kiểm Parquet trên bản sao: schema, số dòng và thông báo đối chiếu thành công. | setup-5-8-02.png | Chưa có |
+| 5.8-03 | 5.8 | 5-Workshop/5.8-Data-Processing/5.8.3-step3 | Trong phần kiểm tra kết quả của 5.8.3 | Ảnh S3: canonical Parquet và Properties/Metadata hiển thị run-id, sha256, Last modified. | setup-5-8-03.png | Chưa có |
+| 5.9-01 | 5.9 | 5-Workshop/5.9-Streamlit-Dashboard/5.9.2-step2 | Trong phần kiểm tra kết quả của 5.9.2 | Ảnh dashboard hiển thị đủ 8 KPI, khoảng ngày so sánh tuần và thời điểm dữ liệu. | setup-5-9-01.png | Chưa có |
+| 5.9-02 | 5.9 | 5-Workshop/5.9-Streamlit-Dashboard/5.9.2-step2 | Trong phần kiểm tra kết quả của 5.9.2 | Ảnh các biểu đồ Plotly với nhãn/tooltip rõ; chia hai ảnh nếu cần để đọc được nội dung. | setup-5-9-02.png | Chưa có |
+| 5.9-03 | 5.9 | 5-Workshop/5.9-Streamlit-Dashboard/5.9.3-step3 | Trong phần kiểm tra kết quả của 5.9.3 | Ảnh bộ lọc và bảng kết quả, tiếp theo là chi tiết cùng tin đã chọn với URL ITviec. | setup-5-9-03.png | Chưa có |
+| 5.10-01 | 5.10 | 5-Workshop/5.10-Users-Administration/5.10.2-step2 | Trong phần kiểm tra kết quả của 5.10.2 | Ảnh form đăng ký/đăng nhập và menu USER; để trống hoặc che mật khẩu và email thử. | setup-5-10-01.png | Chưa có |
+| 5.10-02 | 5.10 | 5-Workshop/5.10-Users-Administration/5.10.2-step2 | Trong phần kiểm tra kết quả của 5.10.2 | Ảnh Việc làm đã lưu và Lịch sử ứng tuyển của tài khoản thử, thể hiện tin và trạng thái đã cập nhật. | setup-5-10-02.png | Chưa có |
+| 5.10-03 | 5.10 | 5-Workshop/5.10-Users-Administration/5.10.3-step3 | Trong phần kiểm tra kết quả của 5.10.3 | Ảnh Hồ sơ cá nhân và phần Đổi mật khẩu ở trạng thái trống/đã che, kèm thông báo đăng nhập lại nếu có. | setup-5-10-03.png | Chưa có |
+| 5.10-04 | 5.10 | 5-Workshop/5.10-Users-Administration/5.10.3-step3 | Trong phần kiểm tra kết quả của 5.10.3 | Ảnh menu ADMIN và Quản lý người dùng, thể hiện khóa/mở hoặc thu hồi phiên của USER thử. | setup-5-10-04.png | Chưa có |
+| 5.10-05 | 5.10 | 5-Workshop/5.10-Users-Administration/5.10.4-step4 | Trong phần kiểm tra kết quả của 5.10.4 | Ảnh cùng job_id khi Delete/Restore, audit tương ứng và log/snapshot revision sau Projection Worker đồng bộ. | setup-5-10-05.png | Chưa có |
+| 5.11-01 | 5.11 | 5-Workshop/5.11-Nginx-HTTPS/5.11.2-step2 | Trong phần kiểm tra kết quả của 5.11.2 | Ảnh nginx -t, service dashboard và chứng chỉ SAN IP/hạn dùng, kèm timer hoặc log HTTPS reconcile. | setup-5-11-01.png | Chưa có |
+| 5.11-02 | 5.11 | 5-Workshop/5.11-Nginx-HTTPS/5.11.3-step3 | Trong phần kiểm tra kết quả của 5.11.3 | Ảnh HTTP redirect, HTTPS health và Network WebSocket của dashboard trên IP hiện tại, có ngày kiểm tra. | setup-5-11-02.png | Chưa có |
+| 5.12-01 | 5.12 | 5-Workshop/5.12-Pipeline-Automation/5.12.1-step1 | Trong phần kiểm tra kết quả của 5.12.1 | Thư mục runtime thuộc vnjob, projection timer và pipeline đang thu thập tại thời điểm chụp. | setup-5-12-01.png | Đã có ảnh thực tế |
+| 5.12-02 | 5.12 | 5-Workshop/5.12-Pipeline-Automation/5.12.1-step1 | Trong phần kiểm tra kết quả của 5.12.1 | Ảnh unit/timer hiển thị OnCalendar, Persistent, enabled và next/last trigger; chú thích giờ Việt Nam. | setup-5-12-02.png | Chưa có |
+| 5.12-03 | 5.12 | 5-Workshop/5.12-Pipeline-Automation/5.12.2-step2 | Trong phần kiểm tra kết quả của 5.12.2 | Ảnh Operations Worker timer/log và request/result của ADMIN thử, đối chiếu với trạng thái service/run thực tế. | setup-5-12-03.png | Chưa có |
+| 5.12-04 | 5.12 | 5-Workshop/5.12-Pipeline-Automation/5.12.3-step3 | Trong phần kiểm tra kết quả của 5.12.3 | Ảnh journal và status cùng run_id, có thời điểm bắt đầu/kết thúc, trạng thái cuối và published; chỉ ghi là chạy bù khi có log thể hiện trigger và trạng thái cuối tương ứng. | setup-5-12-04.png | Chưa có |
+| 5.13-01 | 5.13 | 5-Workshop/5.13-Monitoring/5.13.2-step2 | Trong phần kiểm tra kết quả của 5.13.2 | Ảnh CloudWatch log stream có timestamp/run_id và alarm details: metric, threshold, trạng thái và actions. | setup-5-13-01.png | Chưa có |
+| 5.13-02 | 5.13 | 5-Workshop/5.13-Monitoring/5.13.3-step3 | Trong phần kiểm tra kết quả của 5.13.3 | Ảnh các trang System Status, Crawl Status và Data Quality: run_id, thời điểm, bộ đếm và nhóm kiểm thực tế. | setup-5-13-02.png | Chưa có |
+| 5.14-01 | 5.14 | 5-Workshop/5.14-Testing-Results/5.14.1-step1 | Trong phần kiểm tra kết quả của 5.14.1 | Ảnh log kiểm thử có ngày/source version và kết quả từng bộ; kèm bảng nghiệm thu dữ liệu, giao diện và vận hành. | setup-5-14-01.png | Chưa có |
+| 5.2-01 | 5.2 | 5-Workshop/5.2-Prerequisites/5.2.1-step1 | Sau bước thiết lập 5.2.1 | Kết quả danh tính AWS và dependency của máy quản trị; không chụp credential/token. | setup-5-2-01.png | Đã có ảnh thực tế |
+| 5.3-01 | 5.3 | 5-Workshop/5.3-S3-Storage/5.3.1-step1 | Sau bước thiết lập 5.3.1 | S3 bucket Region, Block Public Access và Default encryption cùng cấu trúc prefix. | setup-5-3-01.png | Chưa có |
+| 5.3-02 | 5.3 | 5-Workshop/5.3-S3-Storage/5.3.2-step2 | Sau bước thiết lập 5.3.2 | Seed current và checksum/key S3 dùng cho máy mới; không chụp dữ liệu cá nhân. | setup-5-3-02.png | Chưa có |
+| 5.5-03 | 5.5 | 5-Workshop/5.5-DynamoDB-Moderation/5.5.2-step2 | Sau bước thiết lập 5.5.2 | Ảnh metadata control DynamoDB và các table/view moderation v3 trong Athena/Glue đang sử dụng. | setup-5-5-03.png | Chưa có |
+| 5.6-04 | 5.6 | 5-Workshop/5.6-EC2-Deployment/5.6.1-step1 | Sau bước thiết lập 5.6.1 | Ảnh CloudFormation stack/Outputs và checksum release hiện có; không tạo lại EC2. | setup-5-6-04.png | Chưa có |
+| 5.6-05 | 5.6 | 5-Workshop/5.6-EC2-Deployment/5.6.2-step2 | Sau bước thiết lập 5.6.2 | Log bootstrap/install runtime và cấu hình backend/env đã che nội dung nhạy cảm. | setup-5-6-05.png | Chưa có |
+| 5.10-06 | 5.10 | 5-Workshop/5.10-Users-Administration/5.10.1-step1 | Sau bước thiết lập 5.10.1 | Kết quả tạo ADMIN ban đầu hoặc tài khoản ADMIN hiện hữu đăng nhập đúng vai trò; che thông tin riêng tư. | setup-5-10-06.png | Chưa có |
+| 5.13-03 | 5.13 | 5-Workshop/5.13-Monitoring/5.13.1-step1 | Sau bước thiết lập 5.13.1 | Ảnh log group, retention, metric filter và alarm CloudWatch đã cấu hình. | setup-5-13-03.png | Chưa có |
+| 5.15-01 | 5.15 | 5-Workshop/5.15-Backup-Recovery/5.15.1-step1 | Sau bước thiết lập 5.15.1 | Log backup và verify-restore cùng archive, số file/checksum và destination mới. | setup-5-15-01.png | Chưa có |
+| 5.2-CONSOLE | 5.2 | 5-Workshop/5.2-Prerequisites/5.2.1-step1 | Sau thao tác đăng nhập và chọn Singapore | AWS Console đã đăng nhập tài khoản dự án, Region Asia Pacific (Singapore). | setup-5-2-console.png | Đã có ảnh thực tế |
+| 5.2-02 | 5.2 | 5-Workshop/5.2-Prerequisites/5.2.2-step2 | Sau phần phân quyền runtime | IAM Role của EC2 và danh sách ba policy thực tế trên tab Permissions. | setup-5-2-02.png | Đã có ảnh thực tế |

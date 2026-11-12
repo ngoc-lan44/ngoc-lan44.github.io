@@ -1,0 +1,23 @@
+{
+  "hugo": "0.145.0",
+  "hugoBuild": "PASS",
+  "chapters": 16,
+  "standalonePracticalPages": 40,
+  "workshopPagesPerLanguage": 57,
+  "markdownFiles": 114,
+  "internalLinksChecked": 329,
+  "actualImageLinksChecked": 6,
+  "pendingImages": 32,
+  "existingDiagrams": 1,
+  "providedScreenshots": 5,
+  "uniqueImageCodes": 32,
+  "oldURLRedirects": 199,
+  "sourceFilesReferenced": 72,
+  "unchangedApplicationFiles": 118,
+  "approvedOutsideNumberingAndHomeNavigation": [],
+  "vietnameseApproxWords": 13854,
+  "awsMutationsExecuted": false,
+  "crawlerExecuted": false,
+  "applicationTestsExecuted": false,
+  "errors": []
+}
