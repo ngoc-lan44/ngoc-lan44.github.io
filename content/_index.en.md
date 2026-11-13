@@ -25,7 +25,7 @@ chapter: false
 
 **Internship period:** From 8 August 2026 to 31 October 2026.
 
-<p style="text-align:center"><img src="images/avatar.jpg.jpg" alt="Nguyễn Ngọc Lan" width="220" style="display:block;width:220px;max-width:100%;height:auto;margin:1.5rem auto" /></p>
+<p style="text-align:center"><img src="/images/avatar.jpg.jpg" alt="Nguyễn Ngọc Lan" width="220" style="display:block;width:220px;max-width:100%;height:auto;margin:1.5rem auto" /></p>
 
 ## Report contents
 
