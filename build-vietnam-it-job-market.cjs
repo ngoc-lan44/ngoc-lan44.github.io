@@ -1,25 +1,36 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 const root = __dirname;
-const content = path.join(root, 'content');
+const content = path.join(root, "content");
 // The original content/config/layouts are preserved in template-original-20261107.zip.
-if (!fs.existsSync(path.join(root, 'template-original-20261107.zip'))) throw Error('Missing original backup');
-if (path.dirname(content) !== root || path.basename(content) !== 'content') throw Error('Invalid content target');
+if (!fs.existsSync(path.join(root, "template-original-20261107.zip")))
+  throw Error("Missing original backup");
+if (path.dirname(content) !== root || path.basename(content) !== "content")
+  throw Error("Invalid content target");
 fs.rmSync(content, { recursive: true, force: true });
 const pages = [];
-function page(slug, title, weight, body, enBody, enTitle=title, pre='') {
-  const dir = path.join(content, slug); fs.mkdirSync(dir, {recursive:true});
-  const fm = t => `---\ntitle: ${JSON.stringify(t)}\ndate: 2026-11-07\nweight: ${weight}\nchapter: false\n${pre ? `pre: " <b> ${pre} </b> "\n` : ''}---\n\n`;
-  fs.writeFileSync(path.join(dir,'_index.vi.md'), fm(title)+body.trim()+'\n');
-  fs.writeFileSync(path.join(dir,'_index.md'), fm(enTitle)+(enBody||body).trim()+'\n');
-  pages.push({slug,title});
+function page(slug, title, weight, body, enBody, enTitle = title, pre = "") {
+  const dir = path.join(content, slug);
+  fs.mkdirSync(dir, { recursive: true });
+  const fm = (t) =>
+    `---\ntitle: ${JSON.stringify(t)}\ndate: 2026-11-07\nweight: ${weight}\nchapter: false\n${pre ? `pre: " <b> ${pre} </b> "\n` : ""}---\n\n`;
+  fs.writeFileSync(
+    path.join(dir, "_index.vi.md"),
+    fm(title) + body.trim() + "\n",
+  );
+  fs.writeFileSync(
+    path.join(dir, "_index.md"),
+    fm(enTitle) + (enBody || body).trim() + "\n",
+  );
+  pages.push({ slug, title });
 }
-const scope = '> **Phạm vi báo cáo:** Nhật ký cá nhân của Trần Hải Lương về quá trình tìm hiểu các dịch vụ AWS và vận dụng vào CloudDocs. Nội dung kỹ thuật được đối chiếu với đề cương và mã nguồn hiện có ngày 07/11/2026. Lịch phân bổ từng ngày là bản tái dựng để rà soát, chưa phải bằng chứng xác nhận công việc đã hoàn thành đúng ngày.\n';
+const scope =
+  "> **Phạm vi báo cáo:** Nhật ký cá nhân của Trần Hải Lương về quá trình tìm hiểu các dịch vụ AWS và vận dụng vào CloudDocs. Nội dung kỹ thuật được đối chiếu với đề cương và mã nguồn hiện có ngày 07/11/2026. Lịch phân bổ từng ngày là bản tái dựng để rà soát, chưa phải bằng chứng xác nhận công việc đã hoàn thành đúng ngày.\n";
 const sources = `## Tài liệu tham khảo
 
 - Đề cương thực tập chuyên ngành nhóm 32 (bản ngày 02/11/2026).
 - Kế hoạch cá nhân đã cung cấp: tham khảo phạm vi học AWS, lưu trữ, hạ tầng, xác thực và kiểm thử. Kế hoạch sáu tuần được dùng để tham khảo nội dung học tập.
-- Worklog học AWS 12 tuần của Tòng Văn Tâm: tham khảo bố cục và lịch 10/08–30/10/2026; không sử dụng kết quả học tập của bạn làm thành tích của nhóm.
+- Worklog học AWS 12 tuần của Nguyễn Ngọc Lan : tham khảo bố cục và lịch 10/08–30/10/2026; không sử dụng kết quả học tập của bạn làm thành tích của nhóm.
 - Mã nguồn CloudDocs hiện có: README, Back_end/README, AUTH_COGNITO, STORAGE_QUOTAS, WORK_TASKS và cấu hình S3.
 - [AWS S3 presigned URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html).
 - [S3 CORS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html).
@@ -43,7 +54,11 @@ const state = `| Thành phần | Hiện trạng được đối chiếu | Phạm
 | Amazon EC2 / VPC / IAM | Có trong đề cương và hướng dẫn triển khai nhóm | Chưa có endpoint hoặc ảnh Console để xác nhận bản chạy EC2 hiện tại |
 | CloudWatch / Budgets / HTTPS / sao lưu | Nội dung hướng dẫn vận hành và đề xuất áp dụng | Không ghi là đã cấu hình khi chưa có minh chứng |
 | Lambda / API Gateway / DynamoDB / SQS / EventBridge / CloudFront / WAF | Không phải kiến trúc hiện hành được xác nhận | Không đưa vào danh sách đã triển khai |`;
-page('', 'Báo cáo thực tập CloudDocs',1,`
+page(
+  "",
+  "Báo cáo thực tập CloudDocs",
+  1,
+  `
 # Hệ thống quản lý tài liệu doanh nghiệp trên nền tảng đám mây AWS
 
 **CloudDocs — Trần Hải Lương · Học viện Nông nghiệp Việt Nam · Khoa Công nghệ thông tin**
@@ -79,7 +94,8 @@ ${team}
 ${state}
 
 Các chức năng được đối chiếu hiện tại gồm quản lý tài liệu, tìm kiếm/lọc, chia sẻ quyền, yêu thích, thùng rác, thao tác nhiều tài liệu, audit log, hồ sơ, quản trị tài khoản, thông báo, hạn mức dung lượng và giao việc–nộp báo cáo–duyệt/yêu cầu sửa. Các cập nhật đầu tháng 11 được ghi ở phần bổ sung của worklog, không lùi ngày về tháng 10.
-`, `# CloudDocs internship report
+`,
+  `# CloudDocs internship report
 
 Personal AWS learning report for CloudDocs, Vietnam National University of Agriculture. Prepared by Trần Hải Lương (687703), supervised by Nguyễn Thị Lan.
 
@@ -96,54 +112,188 @@ The daily schedule is reconstructed for review, not a verified historical record
 5. [Workshop](5-Workshop/)
 6. [Self-evaluation](6-Self-evaluation/)
 7. [Feedback](7-Feedback/)
-`, 'CloudDocs internship report');
+`,
+  "CloudDocs internship report",
+);
 
 const weeks = [
- ['Làm quen AWS và khảo sát đề tài',
- ['Tiếp nhận yêu cầu thực tập; xác định phạm vi quản lý tài liệu doanh nghiệp và cách lập worklog.','Tìm hiểu AWS Console, Region, mô hình trách nhiệm chung và quản lý tài khoản.','Nghiên cứu Billing/Budgets; lập danh sách tài nguyên dự kiến cho môi trường học tập.','Khảo sát luồng lưu trữ, tìm kiếm, chia sẻ tài liệu; thống nhất vai trò ADMIN và USER.','Tìm hiểu tổng thể CloudDocs, cấu trúc repository và vai trò các dịch vụ AWS trong kiến trúc ứng dụng.'],
- '', 'Bản phạm vi đề tài, danh sách nội dung học tập và sơ đồ dịch vụ sơ bộ.', 'Phân biệt dữ liệu tệp trên S3 với metadata trong MySQL; không coi AWS là lớp phân quyền nghiệp vụ.'],
-['IAM và thiết kế quyền truy cập',
- ['Tìm hiểu IAM User, Group, Role và Policy; phân biệt IAM với người dùng ứng dụng.','Xây dựng ma trận ADMIN/USER và quyền OWNER, VIEW, DOWNLOAD, EDIT.','Thiết kế nguyên tắc bucket private, hạn chế quyền trên prefix documents/*.','Nghiên cứu IAM Role cho EC2; chỉ áp dụng AssumeRole chéo tài khoản nếu môi trường cần.','Thống nhất quản lý bí mật, biến môi trường và quy tắc Git; rà soát quyền tối thiểu.'],
- '', 'Ma trận quyền, danh mục biến môi trường và bản nháp policy S3.', 'Backend quyết định quyền tài liệu; IAM giới hạn tài nguyên AWS mà backend được phép dùng.'],
-['VPC, mô hình dữ liệu và khởi tạo ứng dụng',
- ['Tìm hiểu VPC, subnet, route table, Internet Gateway và Security Group.','Thiết kế kết nối EC2–RDS: nguồn vào MySQL là Security Group của backend.','Chuẩn bị Java 21, Maven, MySQL; thống nhất Spring Boot và cấu trúc REST API.','Thiết kế users, documents, departments, document_permissions và audit_logs.','Xây dựng khung giao diện và bộ test case đầu tiên; tìm hiểu quy trình Git.'],
- '', 'Sơ đồ mạng dự kiến, ERD và bộ khung frontend/backend.', 'Cấu trúc CSDL phải đối chiếu schema hiện có; repository hiện chỉ có migration tăng dần.'],
-['EC2 và hoàn thiện bộ khung CloudDocs',
- ['Tìm hiểu EC2, AMI, EBS, instance profile và truy cập quản trị.','Rà soát schema MySQL, kiểu dữ liệu metadata và quan hệ chủ sở hữu bằng owner_id.','Tiếp tục đọc tài liệu và ghi chú cá nhân trong kỳ nghỉ lễ; học theo lịch cá nhân thực tế.','Tiếp tục tự học theo điều kiện thực tế; rà soát yêu cầu API và danh sách lỗi cần xử lý.','Ghép layout Dashboard/danh sách tài liệu với API; thống nhất phản hồi lỗi.'],
- '', 'Khung môi trường chạy thử, API metadata và giao diện danh sách.', 'Tuần này chứa ngày 01/09; 02–03/09 là lịch tự học dự kiến, cần khớp lịch nghỉ thực tế.'],
-['Amazon S3 và luồng tải tệp',
- ['Nghiên cứu bucket/object, Block Public Access, mã hóa và chi phí lưu trữ.','Xây dựng luồng cấp presigned PUT URL từ backend sau khi kiểm tra người dùng và quota.','Ghép frontend truyền File trực tiếp tới S3 bằng PUT; giữ đúng Content-Type đã ký.','Thiết kế upload-complete dùng HeadObject để xác nhận tồn tại và kích thước.','Kiểm tra file rỗng, file trùng tên, upload lỗi; dùng UUID làm object key.'],
- '', 'Đặc tả metadata → signed PUT → S3 → upload-complete và các trường hợp lỗi.', 'Không mở public bucket để sửa lỗi truy cập; metadata chờ upload vẫn cần quản lý dung lượng.'],
-['RDS MySQL, migration và tính nhất quán',
- ['Nghiên cứu RDS MySQL, endpoint, Security Group và cấu hình kết nối ứng dụng.','Chuẩn bị bản sao schema thật; phân biệt import schema gốc và migration bổ sung.','Rà soát migration ownership, chia sẻ và yêu thích; kiểm tra trước khi chạy ALTER/CREATE.','Đối soát metadata MySQL với S3; thiết kế cách xử lý object thiếu hoặc upload chưa hoàn tất.','Thiết kế kiểm thử API danh sách, tìm kiếm/lọc và giao diện metadata.'],
- '', 'Hướng dẫn DB/migration, bảng đối soát trạng thái và test case.', 'ddl-auto=validate không tự tạo hoặc cập nhật schema; không chạy lại migration đã áp dụng.'],
-['Xem trước, tải xuống và CORS',
- ['Cấu hình CORS S3 theo origin frontend và phương thức GET/HEAD/PUT.','Hoàn thiện cấp signed GET URL cho preview/download sau kiểm tra quyền.','Kiểm tra VIEW chỉ xem trước, DOWNLOAD được tải, EDIT được sửa theo ma trận quyền.','Xử lý phản hồi hết hạn URL, object không tồn tại và lỗi 403; ghi chú thời hạn URL.','Tổng hợp kết quả tích hợp frontend–backend–S3 và các trường hợp cần kiểm tra thực tế.'],
- '', 'Kịch bản xem trước/tải xuống, cấu hình CORS và danh sách lỗi tích hợp.', 'Thu hồi quyền chặn URL mới; signed URL đã cấp có thể còn dùng được đến hết hạn.'],
-['Chia sẻ, nhật ký hoạt động và quản trị tài khoản',
- ['Rà soát chia sẻ tài liệu cho tài khoản nội bộ và kiểm tra quyền ở backend.','Thiết kế thu hồi quyền; kiểm tra người ngoài danh sách không truy cập được.','Hoàn thiện ghi nhật ký các thao tác nghiệp vụ và phạm vi xem audit của ADMIN/USER.','Đối chiếu quản trị tài khoản, trạng thái ACTIVE và khóa truy cập của tài khoản bị vô hiệu.','Kiểm thử hồi quy và chuẩn bị danh sách chỉnh sửa tính nhất quán dữ liệu.'],
- '', 'Ma trận quyền chi tiết, test case chia sẻ/thu hồi và thiết kế audit log.', 'Tuần này chứa ngày 29/09; audit nghiệp vụ trong MySQL khác CloudTrail của tài khoản AWS.'],
-['Cognito, danh tính và tích hợp bảo mật',
- ['Tìm hiểu User Pool, public app client và Authorization Code + PKCE.','Đặc tả callback/logout và đồng bộ cấu hình frontend với backend.','Thiết kế xác thực access token: chữ ký, issuer, hết hạn, token_use và client_id.','Thiết kế ánh xạ issuer/sub với users; không dùng email làm khóa định danh.','Chuẩn bị test token sai, token hết hạn, tài khoản bị khóa và phân quyền API.'],
- '', 'Thiết kế luồng Cognito và bộ kịch bản kiểm thử xác thực.', 'Đề cương gốc xếp tích hợp Cognito ở tuần 13–14; tuần này là nghiên cứu/chuẩn bị, không tự xác nhận đã triển khai sớm.'],
-['Chuẩn bị triển khai EC2 và vận hành',
- ['Rà soát kiến trúc frontend tĩnh + backend Spring Boot trên EC2 và CSDL RDS.','Chuẩn bị cấu hình Nginx phục vụ frontend, proxy /api/ và không công khai cổng backend.','Thiết kế biến môi trường, IAM instance role và kết nối RDS bằng TLS.','Nghiên cứu CloudWatch, retention log, cảnh báo và phân biệt giám sát hạ tầng với audit nghiệp vụ.','Chuẩn bị checklist triển khai, rollback bản build và ghi nhận minh chứng.'],
- '', 'Tài liệu triển khai EC2/RDS/Nginx và checklist môi trường.', 'Không coi hướng dẫn triển khai là bằng chứng đã chạy trên EC2; cần endpoint và kết quả kiểm tra. Hoạt động cuối tuần 10: thứ Bảy 17/10/2026 tham dự Mini Meetup – First Cloud AI Journey tại AWS Office, Grand Terra Tower, 36 Cát Linh, Hà Nội.'],
-['Tích hợp hạ tầng, quota và sự kiện cộng đồng',
- ['Đối chiếu cấu hình EC2/RDS/S3 theo kế hoạch; ghi rõ tài nguyên nào đã có và tài nguyên còn chuẩn bị.','Rà soát hạn mức theo tài khoản, tối đa 100 MiB/file và cách tính file pending/thùng rác.','Chuẩn bị kiểm thử nhiều tài khoản, tránh vượt quota và rò rỉ tài liệu.','Tổng hợp ghi chú cá nhân sau meetup ngày 17/10; liên hệ định hướng học cloud/backend.','Cập nhật danh sách việc tuần cuối giai đoạn và các minh chứng còn thiếu.'],
- '', 'Checklist tích hợp và danh mục minh chứng; tổng hợp meetup đã diễn ra cuối tuần 10.', 'Meetup diễn ra ngày 17/10/2026, trước tuần 11 (19–23/10). Không tự bổ sung agenda hay nội dung diễn giả khi chưa có ghi chú.'],
-['Kiểm thử tổng hợp và xây dựng workshop',
- ['Đối chiếu luồng tài liệu và quyền giữa frontend, backend, MySQL và S3.','Rà soát danh sách lỗi, điều kiện nghiệm thu và cách lưu kết quả test.','Soạn workshop theo trình tự IAM/VPC → S3 → RDS → Cognito → EC2 → kiểm thử.','Hoàn thiện bản đề xuất theo 8 mục của mẫu; tổng hợp kiến thức dịch vụ AWS và ngân sách theo giả định.','Chốt bản worklog 12 tuần để rà soát; tách các công việc sau 30/10 thành giai đoạn tiếp theo.'],
- '', 'Bản thảo worklog, proposal, workshop và checklist nghiệm thu.', 'Tuần này bắt đầu 26/10; tích hợp Cognito và cập nhật tháng 11 được đối chiếu ở phần bổ sung, không ghi hoàn thành toàn bộ ngày 30/10.']
+  [
+    "Làm quen AWS và khảo sát đề tài",
+    [
+      "Tiếp nhận yêu cầu thực tập; xác định phạm vi quản lý tài liệu doanh nghiệp và cách lập worklog.",
+      "Tìm hiểu AWS Console, Region, mô hình trách nhiệm chung và quản lý tài khoản.",
+      "Nghiên cứu Billing/Budgets; lập danh sách tài nguyên dự kiến cho môi trường học tập.",
+      "Khảo sát luồng lưu trữ, tìm kiếm, chia sẻ tài liệu; thống nhất vai trò ADMIN và USER.",
+      "Tìm hiểu tổng thể CloudDocs, cấu trúc repository và vai trò các dịch vụ AWS trong kiến trúc ứng dụng.",
+    ],
+    "",
+    "Bản phạm vi đề tài, danh sách nội dung học tập và sơ đồ dịch vụ sơ bộ.",
+    "Phân biệt dữ liệu tệp trên S3 với metadata trong MySQL; không coi AWS là lớp phân quyền nghiệp vụ.",
+  ],
+  [
+    "IAM và thiết kế quyền truy cập",
+    [
+      "Tìm hiểu IAM User, Group, Role và Policy; phân biệt IAM với người dùng ứng dụng.",
+      "Xây dựng ma trận ADMIN/USER và quyền OWNER, VIEW, DOWNLOAD, EDIT.",
+      "Thiết kế nguyên tắc bucket private, hạn chế quyền trên prefix documents/*.",
+      "Nghiên cứu IAM Role cho EC2; chỉ áp dụng AssumeRole chéo tài khoản nếu môi trường cần.",
+      "Thống nhất quản lý bí mật, biến môi trường và quy tắc Git; rà soát quyền tối thiểu.",
+    ],
+    "",
+    "Ma trận quyền, danh mục biến môi trường và bản nháp policy S3.",
+    "Backend quyết định quyền tài liệu; IAM giới hạn tài nguyên AWS mà backend được phép dùng.",
+  ],
+  [
+    "VPC, mô hình dữ liệu và khởi tạo ứng dụng",
+    [
+      "Tìm hiểu VPC, subnet, route table, Internet Gateway và Security Group.",
+      "Thiết kế kết nối EC2–RDS: nguồn vào MySQL là Security Group của backend.",
+      "Chuẩn bị Java 21, Maven, MySQL; thống nhất Spring Boot và cấu trúc REST API.",
+      "Thiết kế users, documents, departments, document_permissions và audit_logs.",
+      "Xây dựng khung giao diện và bộ test case đầu tiên; tìm hiểu quy trình Git.",
+    ],
+    "",
+    "Sơ đồ mạng dự kiến, ERD và bộ khung frontend/backend.",
+    "Cấu trúc CSDL phải đối chiếu schema hiện có; repository hiện chỉ có migration tăng dần.",
+  ],
+  [
+    "EC2 và hoàn thiện bộ khung CloudDocs",
+    [
+      "Tìm hiểu EC2, AMI, EBS, instance profile và truy cập quản trị.",
+      "Rà soát schema MySQL, kiểu dữ liệu metadata và quan hệ chủ sở hữu bằng owner_id.",
+      "Tiếp tục đọc tài liệu và ghi chú cá nhân trong kỳ nghỉ lễ; học theo lịch cá nhân thực tế.",
+      "Tiếp tục tự học theo điều kiện thực tế; rà soát yêu cầu API và danh sách lỗi cần xử lý.",
+      "Ghép layout Dashboard/danh sách tài liệu với API; thống nhất phản hồi lỗi.",
+    ],
+    "",
+    "Khung môi trường chạy thử, API metadata và giao diện danh sách.",
+    "Tuần này chứa ngày 01/09; 02–03/09 là lịch tự học dự kiến, cần khớp lịch nghỉ thực tế.",
+  ],
+  [
+    "Amazon S3 và luồng tải tệp",
+    [
+      "Nghiên cứu bucket/object, Block Public Access, mã hóa và chi phí lưu trữ.",
+      "Xây dựng luồng cấp presigned PUT URL từ backend sau khi kiểm tra người dùng và quota.",
+      "Ghép frontend truyền File trực tiếp tới S3 bằng PUT; giữ đúng Content-Type đã ký.",
+      "Thiết kế upload-complete dùng HeadObject để xác nhận tồn tại và kích thước.",
+      "Kiểm tra file rỗng, file trùng tên, upload lỗi; dùng UUID làm object key.",
+    ],
+    "",
+    "Đặc tả metadata → signed PUT → S3 → upload-complete và các trường hợp lỗi.",
+    "Không mở public bucket để sửa lỗi truy cập; metadata chờ upload vẫn cần quản lý dung lượng.",
+  ],
+  [
+    "RDS MySQL, migration và tính nhất quán",
+    [
+      "Nghiên cứu RDS MySQL, endpoint, Security Group và cấu hình kết nối ứng dụng.",
+      "Chuẩn bị bản sao schema thật; phân biệt import schema gốc và migration bổ sung.",
+      "Rà soát migration ownership, chia sẻ và yêu thích; kiểm tra trước khi chạy ALTER/CREATE.",
+      "Đối soát metadata MySQL với S3; thiết kế cách xử lý object thiếu hoặc upload chưa hoàn tất.",
+      "Thiết kế kiểm thử API danh sách, tìm kiếm/lọc và giao diện metadata.",
+    ],
+    "",
+    "Hướng dẫn DB/migration, bảng đối soát trạng thái và test case.",
+    "ddl-auto=validate không tự tạo hoặc cập nhật schema; không chạy lại migration đã áp dụng.",
+  ],
+  [
+    "Xem trước, tải xuống và CORS",
+    [
+      "Cấu hình CORS S3 theo origin frontend và phương thức GET/HEAD/PUT.",
+      "Hoàn thiện cấp signed GET URL cho preview/download sau kiểm tra quyền.",
+      "Kiểm tra VIEW chỉ xem trước, DOWNLOAD được tải, EDIT được sửa theo ma trận quyền.",
+      "Xử lý phản hồi hết hạn URL, object không tồn tại và lỗi 403; ghi chú thời hạn URL.",
+      "Tổng hợp kết quả tích hợp frontend–backend–S3 và các trường hợp cần kiểm tra thực tế.",
+    ],
+    "",
+    "Kịch bản xem trước/tải xuống, cấu hình CORS và danh sách lỗi tích hợp.",
+    "Thu hồi quyền chặn URL mới; signed URL đã cấp có thể còn dùng được đến hết hạn.",
+  ],
+  [
+    "Chia sẻ, nhật ký hoạt động và quản trị tài khoản",
+    [
+      "Rà soát chia sẻ tài liệu cho tài khoản nội bộ và kiểm tra quyền ở backend.",
+      "Thiết kế thu hồi quyền; kiểm tra người ngoài danh sách không truy cập được.",
+      "Hoàn thiện ghi nhật ký các thao tác nghiệp vụ và phạm vi xem audit của ADMIN/USER.",
+      "Đối chiếu quản trị tài khoản, trạng thái ACTIVE và khóa truy cập của tài khoản bị vô hiệu.",
+      "Kiểm thử hồi quy và chuẩn bị danh sách chỉnh sửa tính nhất quán dữ liệu.",
+    ],
+    "",
+    "Ma trận quyền chi tiết, test case chia sẻ/thu hồi và thiết kế audit log.",
+    "Tuần này chứa ngày 29/09; audit nghiệp vụ trong MySQL khác CloudTrail của tài khoản AWS.",
+  ],
+  [
+    "Cognito, danh tính và tích hợp bảo mật",
+    [
+      "Tìm hiểu User Pool, public app client và Authorization Code + PKCE.",
+      "Đặc tả callback/logout và đồng bộ cấu hình frontend với backend.",
+      "Thiết kế xác thực access token: chữ ký, issuer, hết hạn, token_use và client_id.",
+      "Thiết kế ánh xạ issuer/sub với users; không dùng email làm khóa định danh.",
+      "Chuẩn bị test token sai, token hết hạn, tài khoản bị khóa và phân quyền API.",
+    ],
+    "",
+    "Thiết kế luồng Cognito và bộ kịch bản kiểm thử xác thực.",
+    "Đề cương gốc xếp tích hợp Cognito ở tuần 13–14; tuần này là nghiên cứu/chuẩn bị, không tự xác nhận đã triển khai sớm.",
+  ],
+  [
+    "Chuẩn bị triển khai EC2 và vận hành",
+    [
+      "Rà soát kiến trúc frontend tĩnh + backend Spring Boot trên EC2 và CSDL RDS.",
+      "Chuẩn bị cấu hình Nginx phục vụ frontend, proxy /api/ và không công khai cổng backend.",
+      "Thiết kế biến môi trường, IAM instance role và kết nối RDS bằng TLS.",
+      "Nghiên cứu CloudWatch, retention log, cảnh báo và phân biệt giám sát hạ tầng với audit nghiệp vụ.",
+      "Chuẩn bị checklist triển khai, rollback bản build và ghi nhận minh chứng.",
+    ],
+    "",
+    "Tài liệu triển khai EC2/RDS/Nginx và checklist môi trường.",
+    "Không coi hướng dẫn triển khai là bằng chứng đã chạy trên EC2; cần endpoint và kết quả kiểm tra. Hoạt động cuối tuần 10: thứ Bảy 17/10/2026 tham dự Mini Meetup – First Cloud AI Journey tại AWS Office, Grand Terra Tower, 36 Cát Linh, Hà Nội.",
+  ],
+  [
+    "Tích hợp hạ tầng, quota và sự kiện cộng đồng",
+    [
+      "Đối chiếu cấu hình EC2/RDS/S3 theo kế hoạch; ghi rõ tài nguyên nào đã có và tài nguyên còn chuẩn bị.",
+      "Rà soát hạn mức theo tài khoản, tối đa 100 MiB/file và cách tính file pending/thùng rác.",
+      "Chuẩn bị kiểm thử nhiều tài khoản, tránh vượt quota và rò rỉ tài liệu.",
+      "Tổng hợp ghi chú cá nhân sau meetup ngày 17/10; liên hệ định hướng học cloud/backend.",
+      "Cập nhật danh sách việc tuần cuối giai đoạn và các minh chứng còn thiếu.",
+    ],
+    "",
+    "Checklist tích hợp và danh mục minh chứng; tổng hợp meetup đã diễn ra cuối tuần 10.",
+    "Meetup diễn ra ngày 17/10/2026, trước tuần 11 (19–23/10). Không tự bổ sung agenda hay nội dung diễn giả khi chưa có ghi chú.",
+  ],
+  [
+    "Kiểm thử tổng hợp và xây dựng workshop",
+    [
+      "Đối chiếu luồng tài liệu và quyền giữa frontend, backend, MySQL và S3.",
+      "Rà soát danh sách lỗi, điều kiện nghiệm thu và cách lưu kết quả test.",
+      "Soạn workshop theo trình tự IAM/VPC → S3 → RDS → Cognito → EC2 → kiểm thử.",
+      "Hoàn thiện bản đề xuất theo 8 mục của mẫu; tổng hợp kiến thức dịch vụ AWS và ngân sách theo giả định.",
+      "Chốt bản worklog 12 tuần để rà soát; tách các công việc sau 30/10 thành giai đoạn tiếp theo.",
+    ],
+    "",
+    "Bản thảo worklog, proposal, workshop và checklist nghiệm thu.",
+    "Tuần này bắt đầu 26/10; tích hợp Cognito và cập nhật tháng 11 được đối chiếu ở phần bổ sung, không ghi hoàn thành toàn bộ ngày 30/10.",
+  ],
 ];
-const fmt=d=>`${String(d.getUTCDate()).padStart(2,'0')}/${String(d.getUTCMonth()+1).padStart(2,'0')}/${d.getUTCFullYear()}`;
-const dateFor=(w,d)=>new Date(Date.UTC(2026,7,10+7*w+d));
-let weekLinks='| Tuần | Thời gian | Chủ đề |\n| --- | --- | --- |\n';
-weeks.forEach((w,i)=>{
- const start=fmt(dateFor(i,0)),end=fmt(dateFor(i,4)),slug=`1-Worklog/1.${i+1}-Week${i+1}`;
- weekLinks+=`| ${i+1} | ${start}–${end} | [${w[0]}](1.${i+1}-Week${i+1}/) |\n`;
- const tasks=w[1].map((t,j)=>`| ${j+2} | ${t} | ${fmt(dateFor(i,j))} | ${fmt(dateFor(i,j))} |`).join('\n');
- page(slug,`Worklog Tuần ${i+1}: ${w[0]}`,i+1,`
+const fmt = (d) =>
+  `${String(d.getUTCDate()).padStart(2, "0")}/${String(d.getUTCMonth() + 1).padStart(2, "0")}/${d.getUTCFullYear()}`;
+const dateFor = (w, d) => new Date(Date.UTC(2026, 7, 10 + 7 * w + d));
+let weekLinks = "| Tuần | Thời gian | Chủ đề |\n| --- | --- | --- |\n";
+weeks.forEach((w, i) => {
+  const start = fmt(dateFor(i, 0)),
+    end = fmt(dateFor(i, 4)),
+    slug = `1-Worklog/1.${i + 1}-Week${i + 1}`;
+  weekLinks += `| ${i + 1} | ${start}–${end} | [${w[0]}](1.${i + 1}-Week${i + 1}/) |\n`;
+  const tasks = w[1]
+    .map(
+      (t, j) =>
+        `| ${j + 2} | ${t} | ${fmt(dateFor(i, j))} | ${fmt(dateFor(i, j))} |`,
+    )
+    .join("\n");
+  page(
+    slug,
+    `Worklog Tuần ${i + 1}: ${w[0]}`,
+    i + 1,
+    `
 ## Mục tiêu
 
 - ${w[0]} trong phạm vi đồ án CloudDocs.
@@ -166,7 +316,8 @@ ${w[3]}
 ${w[4]}
 
 **Minh chứng cần bổ sung:** ghi chú học tập cá nhân, ảnh cấu hình đã che thông tin nhạy cảm, kết quả thử nghiệm hoặc commit tương ứng. Tham khảo [hiện trạng tổng hợp](../) để phân biệt kết quả hiện có với lịch tái dựng.
-`, `## Week ${i+1}: ${w[0]}
+`,
+    `## Week ${i + 1}: ${w[0]}
 
 **Period:** ${start}–${end}. **Author:** Trần Hải Lương.
 
@@ -179,9 +330,16 @@ ${tasks}
 **Deliverables to verify:** ${w[3]}
 
 **Implementation note:** ${w[4]}
-`, `Week ${i+1}`,`1.${i+1}.`);
+`,
+    `Week ${i + 1}`,
+    `1.${i + 1}.`,
+  );
 });
-page('1-Worklog','Nhật ký công việc 12 tuần',1,`
+page(
+  "1-Worklog",
+  "Nhật ký công việc 12 tuần",
+  1,
+  `
 # Worklog cá nhân: tìm hiểu AWS và ứng dụng vào CloudDocs
 
 ${scope}
@@ -214,7 +372,8 @@ Các thay đổi sau không được ghi thành kết quả hoàn tất trước
 Đây là chức năng hiện có trong bản mã nguồn đối chiếu, không phải kết quả kiểm tra trực tiếp AWS. Cần chạy migration còn thiếu và kiểm thử trên môi trường thật trước nghiệm thu.
 
 ${sources}
-`, `# Twelve-week personal worklog
+`,
+  `# Twelve-week personal worklog
 
 Orientation: **7 August 2026**. Twelve Monday–Friday weeks: **10 August–30 October 2026**. The full internship outline ends on **28 November**.
 
@@ -225,9 +384,16 @@ ${weekLinks}
 ## Later updates: 31 October–7 November
 
 Current source includes Cognito, trash/restore/permanent deletion, bulk document actions, quotas, work assignments, report submission and review, late submission labels and task deletion. These are recorded separately from the twelve-week timeline. AWS deployment was not live-tested during report preparation.
-`, 'Twelve-week worklog','1.');
+`,
+  "Twelve-week worklog",
+  "1.",
+);
 
-page('2-Proposal','Bản đề xuất',2,`
+page(
+  "2-Proposal",
+  "Bản đề xuất",
+  2,
+  `
 Tại phần này, em trình bày đề xuất **CloudDocs — Hệ thống quản lý tài liệu doanh nghiệp trên nền tảng đám mây AWS**. Bố cục giữ tám mục của bản mẫu và điều chỉnh theo đề cương đồ án.
 
 # CloudDocs — Quản lý tài liệu doanh nghiệp trên AWS
@@ -366,7 +532,8 @@ Giữ bản build trước, bản sao DB và cấu hình môi trường có ki�
 Rèn kỹ năng backend, xác thực, phân quyền, dữ liệu quan hệ, lưu trữ đối tượng và tự tìm hiểu kiến trúc ứng dụng. Hướng mở rộng gồm tự động hóa triển khai, tăng khả năng phục hồi, quét tệp, theo dõi phiên bản báo cáo và giám sát; chỉ đưa vào kết quả đã làm khi có triển khai thực tế.
 
 ${sources}
-`, `# CloudDocs proposal
+`,
+  `# CloudDocs proposal
 
 ## 1. Executive summary
 CloudDocs is an enterprise document management application using Java 21/Spring Boot, vanilla HTML/CSS/JavaScript, MySQL, private S3 and Cognito. EC2/Nginx with RDS is the target hosting architecture; a running EC2 endpoint was not verified.
@@ -392,9 +559,16 @@ Review IAM/CORS, JWT settings, DB schema, migration ordering, object/metadata co
 
 ## 8. Expected outcomes
 Demonstrate authentication, private file access, sharing/revocation and audit, plus trash, quotas and assignment/report approval in the later release. Record real evidence and environment; do not claim live AWS validation from mocked tests.
-`, 'Proposal','2.');
+`,
+  "Proposal",
+  "2.",
+);
 
-page('3-BlogsPosted','Các bài viết kỹ thuật',3,`
+page(
+  "3-BlogsPosted",
+  "Các bài viết kỹ thuật",
+  3,
+  `
 # Các bài viết kỹ thuật
 
 Chưa có đường dẫn bài blog đã đăng được cung cấp cho CloudDocs. Danh sách bài xuất bản sẽ được bổ sung theo sản phẩm thực tế của nhóm.
@@ -406,8 +580,16 @@ Chưa có đường dẫn bài blog đã đăng được cung cấp cho CloudDoc
 | Nhất quán MySQL–S3 và audit | Upload lỗi, thùng rác, xóa vĩnh viễn, quyền đã thu hồi |
 
 Các chủ đề trên là gợi ý biên soạn, chưa được ghi nhận là bài đã xuất bản. Khi có bài thật, bổ sung tiêu đề, tác giả, ngày đăng và URL.
-`, '# Technical articles\n\nNo published CloudDocs blog URL was provided. Suggested subjects are private S3 uploads, Cognito PKCE with Spring Security, and MySQL–S3 consistency. These are proposed articles, not publication claims.', 'Technical articles','3.');
-page('4-EventParticipated','Các sự kiện đã tham gia',4,`
+`,
+  "# Technical articles\n\nNo published CloudDocs blog URL was provided. Suggested subjects are private S3 uploads, Cognito PKCE with Spring Security, and MySQL–S3 consistency. These are proposed articles, not publication claims.",
+  "Technical articles",
+  "3.",
+);
+page(
+  "4-EventParticipated",
+  "Các sự kiện đã tham gia",
+  4,
+  `
 # CÁC EVENTS ĐÃ THAM GIA
 
 Trong quá trình thực tập, em đã tham gia các sự kiện với mỗi sự kiện là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là những khoảnh khắc rất tuyệt vời.
@@ -417,8 +599,16 @@ Trong quá trình thực tập, em đã tham gia các sự kiện với mỗi s�
 | [Mini Meetup – First Cloud AI Journey](4.1-Event1/) | 17/10/2026 | Người tham dự |
 
 Danh sách hiện ghi một sự kiện theo thông tin được cung cấp; không giữ các sự kiện của người viết bản mẫu.
-`, '# Participated events\n\n[Mini Meetup – First Cloud AI Journey](4.1-Event1/), 17 October 2026. Role: attendee. Only the event supplied by the user is recorded.', 'Participated events','4.');
-page('4-EventParticipated/4.1-Event1','Mini Meetup – First Cloud AI Journey',1,`
+`,
+  "# Participated events\n\n[Mini Meetup – First Cloud AI Journey](4.1-Event1/), 17 October 2026. Role: attendee. Only the event supplied by the user is recorded.",
+  "Participated events",
+  "4.",
+);
+page(
+  "4-EventParticipated/4.1-Event1",
+  "Mini Meetup – First Cloud AI Journey",
+  1,
+  `
 # Event 1
 
 | Thông tin | Nội dung |
@@ -434,11 +624,29 @@ page('4-EventParticipated/4.1-Event1','Mini Meetup – First Cloud AI Journey',1
 Sự kiện là hoạt động cộng đồng trong giai đoạn thực tập CloudDocs, bổ sung trải nghiệm bên cạnh việc tự học và phát triển dự án. Nội dung liên hệ trong báo cáo tập trung vào tinh thần học hỏi, trao đổi và chủ động tìm hiểu công nghệ đám mây.
 
 Chưa có agenda, ghi chú diễn giả hoặc ảnh tham dự được cung cấp nên không ghi thêm chủ đề bài nói, chứng nhận, hoạt động trình bày hay kết quả cụ thể. Có thể bổ sung ảnh thực tế và cảm nhận cá nhân sau khi đối chiếu.
-`, '# Event 1\n\n**Mini Meetup – First Cloud AI Journey**\n\n- Date: 17 October 2026.\n- Location: AWS Office – Grand Terra Tower, 36 Cát Linh, Hà Nội.\n- Organizer: First Cloud AI Journey community (FCAJ).\n- Role: attendee.\n\nNo agenda, speaker notes, attendance photo or certificate was supplied; no additional participation claims are made.', 'Mini Meetup – First Cloud AI Journey','4.1.');
+`,
+  "# Event 1\n\n**Mini Meetup – First Cloud AI Journey**\n\n- Date: 17 October 2026.\n- Location: AWS Office – Grand Terra Tower, 36 Cát Linh, Hà Nội.\n- Organizer: First Cloud AI Journey community (FCAJ).\n- Role: attendee.\n\nNo agenda, speaker notes, attendance photo or certificate was supplied; no additional participation claims are made.",
+  "Mini Meetup – First Cloud AI Journey",
+  "4.1.",
+);
 
 const workshop = [];
-function lab(slug,title,body,en){ workshop.push({slug,title}); page(`5-Workshop/${slug}`,title,Number(slug.split('-')[0].split('.')[1]),body,en,title,slug.split('-')[0]+'.'); }
-lab('5.1-Workshop-overview','Tổng quan workshop',`
+function lab(slug, title, body, en) {
+  workshop.push({ slug, title });
+  page(
+    `5-Workshop/${slug}`,
+    title,
+    Number(slug.split("-")[0].split(".")[1]),
+    body,
+    en,
+    title,
+    slug.split("-")[0] + ".",
+  );
+}
+lab(
+  "5.1-Workshop-overview",
+  "Tổng quan workshop",
+  `
 # Triển khai CloudDocs trên AWS
 
 ## Mục tiêu
@@ -461,8 +669,13 @@ Triển khai một ứng dụng quản lý tài liệu sử dụng EC2, RDS MySQ
 Có tài liệu, chia sẻ, yêu thích, thông báo, tài khoản, dung lượng; bản cập nhật đầu tháng 11 có thùng rác, thao tác hàng loạt và công việc/báo cáo. Thông báo hiện lưu trong CSDL, không mặc định có SNS, SQS, SES hoặc WebSocket. Chưa có nhắc hạn tự động hay lịch sử phiên bản báo cáo riêng.
 
 **Kiểm chứng hoàn tất:** có URL chạy thật, kết quả health/API, ảnh đăng nhập, upload S3 và kiểm thử hai tài khoản; che password, token và signed URL trong minh chứng.
-`, '# Workshop overview\n\nTarget: EC2/Nginx + Spring Boot + RDS MySQL + private S3 + Cognito. Authenticate with PKCE, authorize in the backend, allocate metadata, upload directly with signed PUT, confirm with HEAD and use signed GET for access. Notifications are database-backed, not an assumed SNS/SQS pipeline. This is a deployment guide, not a completed live deployment certificate.');
-lab('5.2-Prerequisites','Chuẩn bị môi trường',`
+`,
+  "# Workshop overview\n\nTarget: EC2/Nginx + Spring Boot + RDS MySQL + private S3 + Cognito. Authenticate with PKCE, authorize in the backend, allocate metadata, upload directly with signed PUT, confirm with HEAD and use signed GET for access. Notifications are database-backed, not an assumed SNS/SQS pipeline. This is a deployment guide, not a completed live deployment certificate.",
+);
+lab(
+  "5.2-Prerequisites",
+  "Chuẩn bị môi trường",
+  `
 ## Điều kiện trước khi bắt đầu
 
 | Thành phần | Cần chuẩn bị |
@@ -499,8 +712,13 @@ Các lệnh build/test không chứng minh đã kết nối AWS thật. Lưu k�
 5. Kiểm tra /api/health và đăng nhập. Local vẫn dùng Cognito, không có cơ chế đăng nhập mật khẩu local thay thế.
 
 **Đầu ra:** môi trường, commit, schema và cấu hình công khai đã được đối chiếu; không lưu secret vào báo cáo.
-`, '# Prerequisites\n\nPrepare the actual CloudDocs repository, Java 21, Maven, Node.js, MySQL client, an authorized schema export and an AWS demo account. Record S3/RDS/EC2 region separately from Cognito issuer region. Build with `mvn -f Back_end/pom.xml package` and run `node --test FrontEnd/tests/*.test.cjs`. Import the existing schema before starting; local authentication also uses Cognito. Read the Vietnamese steps for exact configuration and startup script limitations.');
-lab('5.3-IAM-VPC','IAM, VPC và kết nối an toàn',`
+`,
+  "# Prerequisites\n\nPrepare the actual CloudDocs repository, Java 21, Maven, Node.js, MySQL client, an authorized schema export and an AWS demo account. Record S3/RDS/EC2 region separately from Cognito issuer region. Build with `mvn -f Back_end/pom.xml package` and run `node --test FrontEnd/tests/*.test.cjs`. Import the existing schema before starting; local authentication also uses Cognito. Read the Vietnamese steps for exact configuration and startup script limitations.",
+);
+lab(
+  "5.3-IAM-VPC",
+  "IAM, VPC và kết nối an toàn",
+  `
 ## 1. Chọn tài khoản và mạng
 
 Xác định account/Region, gắn tag Project=CloudDocs và Environment=demo cho tài nguyên hỗ trợ. Dùng VPC hiện có hợp lệ hoặc tạo VPC lab: EC2 ở subnet có đường ra phù hợp, RDS ở DB subnet group gồm subnet thuộc ít nhất hai Availability Zone. RDS Single-AZ vẫn cần subnet group hợp lệ.
@@ -536,8 +754,13 @@ Gắn role qua instance profile, backend dùng default credential provider chain
 Chỉ cấu hình theo tài khoản triển khai thật. Nếu ứng dụng dùng AssumeRole cần trust policy, quyền sts:AssumeRole và credential flow tương ứng; không chỉ thêm policy một phía. Với resource policy trực tiếp cần kiểm tra cả policy của role và bucket. Nội dung này là nhánh triển khai tùy môi trường, không mặc định đã được dùng.
 
 **Kiểm tra:** EC2 kết nối RDS qua SG đúng; backend có Get/Put/Delete trên prefix dự án; origin công khai không truy cập cổng DB/backend.
-`, '# IAM and networking\n\nUse scoped EC2 instance-role permissions for S3 documents/*. Keep the DB private and allow MySQL from the application security group. Serve HTTPS through Nginx without exposing port 8080. A DB subnet group must span at least two Availability Zones. Cross-account access is conditional and must match the actual credential/resource-policy design; it is not implied by attaching one policy.');
-lab('5.4-S3','Tạo S3 private và cấu hình CORS',`
+`,
+  "# IAM and networking\n\nUse scoped EC2 instance-role permissions for S3 documents/*. Keep the DB private and allow MySQL from the application security group. Serve HTTPS through Nginx without exposing port 8080. A DB subnet group must span at least two Availability Zones. Cross-account access is conditional and must match the actual credential/resource-policy design; it is not implied by attaching one policy.",
+);
+lab(
+  "5.4-S3",
+  "Tạo S3 private và cấu hình CORS",
+  `
 ## 1. Tạo hoặc đối chiếu bucket
 
 Trong S3 Console, chọn bucket dự án ở Region đã thống nhất, giữ **Block Public Access**, Object Ownership **Bucket owner enforced** và mã hóa mặc định. Nếu bucket đang dùng có dữ liệu, đối chiếu trước khi chỉnh sửa. Không bật public website cho bucket tài liệu.
@@ -585,8 +808,13 @@ Trong Console nhập **mảng rule** như trên. File JSON dùng với AWS CLI c
 403: kiểm tra principal ký, policy, prefix, Region, header và URL hết hạn. CORS: so origin đầy đủ scheme/host/port; test từ browser. Metadata đã tạo nhưng file thiếu: không coi upload hoàn tất; xử lý allocation chờ theo luồng ứng dụng.
 
 Tham khảo [CORS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html) và [presigned URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html).
-`, '# Private S3 and CORS\n\nKeep Block Public Access enabled, ACLs disabled and encryption configured. Grant the instance role only required object operations. S3 Console CORS expects an array; AWS CLI input wraps rules in CORSRules. Allow the actual frontend origin and GET/HEAD/PUT. Configure AWS_REGION, S3_BUCKET and S3_PRESIGN_EXPIRY. Test metadata allocation → signed PUT → direct transfer → upload-complete/HEAD → authorized signed GET. Existing signed URLs may remain valid until expiry.');
-lab('5.5-RDS','RDS MySQL, schema và migration',`
+`,
+  "# Private S3 and CORS\n\nKeep Block Public Access enabled, ACLs disabled and encryption configured. Grant the instance role only required object operations. S3 Console CORS expects an array; AWS CLI input wraps rules in CORSRules. Allow the actual frontend origin and GET/HEAD/PUT. Configure AWS_REGION, S3_BUCKET and S3_PRESIGN_EXPIRY. Test metadata allocation → signed PUT → direct transfer → upload-complete/HEAD → authorized signed GET. Existing signed URLs may remain valid until expiry.",
+);
+lab(
+  "5.5-RDS",
+  "RDS MySQL, schema và migration",
+  `
 ## 1. Chuẩn bị RDS
 
 Trong RDS Console tạo/đối chiếu MySQL phù hợp với bản ứng dụng. Chọn VPC/subnet group và DB SG đã chuẩn bị; cấu hình storage, backup retention và quản lý mật khẩu theo môi trường. Đối với lab một DB Single-AZ, không ghi là Multi-AZ nếu chưa cấu hình. Ghi lại endpoint, port và schema name ở nơi quản lý cấu hình.
@@ -618,8 +846,13 @@ Chỉ áp dụng bước còn thiếu sau khi sao lưu và preflight đúng data
 ## 5. Kiểm tra
 
 Khởi động backend bằng schema đã kiểm tra; xác nhận ddl-auto=validate không báo thiếu bảng/cột. Chạy đọc/ghi dữ liệu thử được phép, kiểm tra metadata/audit và chụp kết quả đã che thông tin nhạy cảm. Thử phục hồi backup trên DB riêng trước khi ghi là đã kiểm chứng khôi phục.
-`, '# RDS and schema\n\nPrepare a private MySQL instance and import the authorized existing base schema. The repository provides incremental migrations, not an empty-database installer. Preflight, back up and apply only missing changes; do not run migration 04 and its alternative identity script together. Migration 06 belongs to the November work-task release. Override the local JDBC URL using TLS identity verification and the correct RDS CA/JVM trust configuration. Schema validation does not perform migrations.');
-lab('5.6-Cognito','Cognito và xác thực người dùng',`
+`,
+  "# RDS and schema\n\nPrepare a private MySQL instance and import the authorized existing base schema. The repository provides incremental migrations, not an empty-database installer. Preflight, back up and apply only missing changes; do not run migration 04 and its alternative identity script together. Migration 06 belongs to the November work-task release. Override the local JDBC URL using TLS identity verification and the correct RDS CA/JVM trust configuration. Schema validation does not perform migrations.",
+);
+lab(
+  "5.6-Cognito",
+  "Cognito và xác thực người dùng",
+  `
 ## 1. User Pool và public app client
 
 Tạo/đối chiếu User Pool, domain và app client cho web frontend. Sử dụng **public client không có client secret**, Authorization Code grant và PKCE. Callback/logout phải khớp URL thực tế; dùng HTTPS khi triển khai. Chọn scope phù hợp luồng UserInfo, thường gồm openid, profile, email theo cấu hình ứng dụng. Không bật thêm grant ngoài nhu cầu.
@@ -647,8 +880,13 @@ Tài khoản mới là USER; bootstrap ADMIN đầu tiên theo template Back_end
 Đăng nhập, callback, GET /api/auth/me, đăng xuất. Kiểm tra token thiếu/sai/hết hạn bị từ chối; USER không gọi được API quản trị; tài khoản khóa/DELETED không còn truy cập nghiệp vụ. Logout không làm mọi bản sao access token mất hiệu lực ngay; không mô tả khác khả năng hiện tại.
 
 Tham khảo [Cognito PKCE](https://docs.aws.amazon.com/cognito/latest/developerguide/using-pkce-in-authorization-code.html).
-`, '# Cognito authentication\n\nConfigure a public client without a secret, Authorization Code + PKCE and exact callback/logout URLs. Match frontend configuration with COGNITO_ISSUER_URI, COGNITO_CLIENT_ID, COGNITO_USER_INFO_URI and backend CORS. Validate access JWTs and map issuer/sub to MySQL identities; email is not the identity key. New users are USER. Review the admin bootstrap template. Test missing/expired/invalid tokens and blocked accounts. Logout is not instant invalidation of every access-token copy.');
-lab('5.7-EC2-Operations','EC2, Nginx và vận hành',`
+`,
+  "# Cognito authentication\n\nConfigure a public client without a secret, Authorization Code + PKCE and exact callback/logout URLs. Match frontend configuration with COGNITO_ISSUER_URI, COGNITO_CLIENT_ID, COGNITO_USER_INFO_URI and backend CORS. Validate access JWTs and map issuer/sub to MySQL identities; email is not the identity key. New users are USER. Review the admin bootstrap template. Test missing/expired/invalid tokens and blocked accounts. Logout is not instant invalidation of every access-token copy.",
+);
+lab(
+  "5.7-EC2-Operations",
+  "EC2, Nginx và vận hành",
+  `
 ## 1. Chuẩn bị máy chủ
 
 Khởi tạo/đối chiếu EC2 Linux phù hợp, instance profile truy cập S3 và SG của phần mạng. Cài Java 21 và Nginx bằng package phù hợp OS. Build JAR trên môi trường đã kiểm tra, chuyển JAR và thư mục FrontEnd tới máy chủ; frontend hiện không cần npm install hay npm build. Không phục vụ cả repository bằng web server.
@@ -720,8 +958,13 @@ CloudWatch/Budgets ở đây là hướng dẫn áp dụng, chưa được xác 
 ## 5. Minh chứng triển khai
 
 Ghi EC2 instance, commit/JAR, thời gian deploy, URL HTTPS, /api/health, kết nối RDS, upload S3 và đăng nhập Cognito. Dùng endpoint, hostname và ảnh của chính môi trường CloudDocs được kiểm tra.
-`, '# EC2, Nginx and operations\n\nInstall Java 21 and Nginx, attach the S3 instance role, deploy the tested JAR and only the FrontEnd contents. Configure a non-root systemd service and an external restricted environment file. Set the AWS profile, TLS JDBC URL, Cognito values and actual frontend origin. Nginx serves HTTPS and proxies /api/ to localhost:8080. Preserve any callback path prefix. Validate Nginx configuration before reload. CloudWatch needs an agent/configuration for memory and application logs; monitoring, backups and budgets remain deployment steps until evidenced.');
-lab('5.8-Smoke-Test','Kiểm thử nghiệp vụ và tích hợp',`
+`,
+  "# EC2, Nginx and operations\n\nInstall Java 21 and Nginx, attach the S3 instance role, deploy the tested JAR and only the FrontEnd contents. Configure a non-root systemd service and an external restricted environment file. Set the AWS profile, TLS JDBC URL, Cognito values and actual frontend origin. Nginx serves HTTPS and proxies /api/ to localhost:8080. Preserve any callback path prefix. Validate Nginx configuration before reload. CloudWatch needs an agent/configuration for memory and application logs; monitoring, backups and budgets remain deployment steps until evidenced.",
+);
+lab(
+  "5.8-Smoke-Test",
+  "Kiểm thử nghiệp vụ và tích hợp",
+  `
 ## Điều kiện kiểm thử
 
 Ít nhất một ADMIN, hai USER đang hoạt động đã liên kết Cognito; tệp nhỏ được phép dùng, một file rỗng và một file quá giới hạn để thử từ chối. Dùng dữ liệu thử, ghi commit, môi trường, người chạy và thời điểm. Bảng sau là **kịch bản/kết quả mong đợi**, không phải bảng PASS sẵn.
@@ -764,8 +1007,13 @@ TRASH/BULK/TASK và các sửa đổi tháng 11 kiểm tra trên bản hiện t�
 ## Kiểm thử tự động và giới hạn
 
 Trong repository CloudDocs: mvn -f Back_end/pom.xml test; node --test FrontEnd/tests/*.test.cjs. Kiểm thử dùng mock repository/AWS client không xác nhận migration RDS, khóa dòng, redirect Cognito, CORS S3 hay PDF trong trình duyệt. Không tự ghi tỷ lệ PASS hoặc SLA khi chưa có lần chạy đo được.
-`, '# Integration and business tests\n\nUse an ADMIN and two USER identities with authorized test files. Check authentication failure, role boundaries, metadata/PUT/HEAD, empty and oversized files, sharing/revocation, trash/restore/purge, partial bulk failure, quota and audit scope. For the November release also test report submission/review, late submissions, stale versions (409), report-file guards and authorized task deletion. Record actual results, commit and evidence. Mock tests do not prove live migrations, Cognito redirects, S3 CORS or browser rendering.');
-lab('5.9-Teardown','Dọn dẹp và bàn giao',`
+`,
+  "# Integration and business tests\n\nUse an ADMIN and two USER identities with authorized test files. Check authentication failure, role boundaries, metadata/PUT/HEAD, empty and oversized files, sharing/revocation, trash/restore/purge, partial bulk failure, quota and audit scope. For the November release also test report submission/review, late submissions, stale versions (409), report-file guards and authorized task deletion. Record actual results, commit and evidence. Mock tests do not prove live migrations, Cognito redirects, S3 CORS or browser rendering.",
+);
+lab(
+  "5.9-Teardown",
+  "Dọn dẹp và bàn giao",
+  `
 ## Trước khi dọn dẹp
 
 Chỉ dọn tài nguyên demo thuộc phạm vi được phép. Kiểm tra tài nguyên còn phục vụ đồ án đến 28/11 hay không; không xóa hạ tầng dùng chung khi kết thúc một buổi workshop. Lập danh mục resource ID, Region/account, chủ sở hữu và dữ liệu cần giữ. Hướng dẫn này không thực hiện xóa tài nguyên AWS.
@@ -785,8 +1033,14 @@ Lưu commit/JAR và hướng dẫn khởi động, danh mục cấu hình không
 7. Kiểm tra Billing các Region sau thời gian cập nhật; dừng EC2 không tự ngừng chi phí EBS, snapshot hoặc IP còn cấp phát.
 
 **Kết quả mong đợi:** có biên bản bàn giao và danh sách tài nguyên giữ/xóa; không ghi “chi phí bằng 0” khi chưa đối soát hóa đơn.
-`, '# Cleanup and handover\n\nInventory authorized demo resources and preserve required evidence/backups before cleanup. Do not remove shared project infrastructure. When approved by its owner, clean up only the designated RDS, S3 objects/versions, EC2/EBS/IPs, Cognito and any monitoring/network resources actually created. Retained storage and backups may still incur charges. This guide does not execute AWS deletions or claim a zero bill.');
-page('5-Workshop','Workshop CloudDocs trên AWS',5,`
+`,
+  "# Cleanup and handover\n\nInventory authorized demo resources and preserve required evidence/backups before cleanup. Do not remove shared project infrastructure. When approved by its owner, clean up only the designated RDS, S3 objects/versions, EC2/EBS/IPs, Cognito and any monitoring/network resources actually created. Retained storage and backups may still incur charges. This guide does not execute AWS deletions or claim a zero bill.",
+);
+page(
+  "5-Workshop",
+  "Workshop CloudDocs trên AWS",
+  5,
+  `
 # Triển khai CloudDocs trên AWS
 
 Workshop hướng dẫn tự tìm hiểu và thực hành từ chuẩn bị đến kiểm thử, bàn giao theo kiến trúc của đồ án: **EC2/Nginx + Spring Boot + RDS MySQL + S3 private + Cognito**.
@@ -795,22 +1049,30 @@ Workshop hướng dẫn tự tìm hiểu và thực hành từ chuẩn bị đ�
 
 | Mục | Nội dung |
 | --- | --- |
-${workshop.map(w=>`| ${w.slug.split('-')[0]} | [${w.title}](${w.slug}/) |`).join('\n')}
+${workshop.map((w) => `| ${w.slug.split("-")[0]} | [${w.title}](${w.slug}/) |`).join("\n")}
 
 ## Tiêu chí hoàn thành
 
 Ứng dụng chạy ở môi trường được ghi nhận; đăng nhập đúng; upload/preview/download và chia sẻ bị kiểm soát theo quyền; MySQL/S3 nhất quán trong các ca đã thử; có log và kết quả kiểm thử thực tế. Chỉ ghi dịch vụ đã dùng khi có cấu hình và minh chứng tương ứng.
 
 ${sources}
-`, `# Deploy CloudDocs on AWS
+`,
+  `# Deploy CloudDocs on AWS
 
 This guide covers EC2/Nginx, Spring Boot, RDS MySQL, private S3 and Cognito. It is a reproducible deployment and review guide; it is not evidence that all AWS steps have been completed. No live EC2 demo URL was supplied.
 
-${workshop.map(w=>`- [${w.title}](${w.slug}/)`).join('\n')}
+${workshop.map((w) => `- [${w.title}](${w.slug}/)`).join("\n")}
 
 Record actual environment, build, test results and evidence before marking the workshop complete.
-`, 'CloudDocs AWS workshop','5.');
-page('6-Self-evaluation','Tự đánh giá',6,`
+`,
+  "CloudDocs AWS workshop",
+  "5.",
+);
+page(
+  "6-Self-evaluation",
+  "Tự đánh giá",
+  6,
+  `
 # Tự đánh giá quá trình thực tập
 
 Em là **Trần Hải Lương**, lớp **K68CNTTA**, mã sinh viên **687703**, thực tập tại **Amazon Web Services**. Trong quá trình thực tập, em tìm hiểu các dịch vụ AWS, kiến trúc ứng dụng và cách vận dụng vào CloudDocs. Mục này là bản tự đánh giá cá nhân cần em rà soát.
@@ -827,8 +1089,16 @@ Em là **Trần Hải Lương**, lớp **K68CNTTA**, mã sinh viên **687703**, 
 ## Điểm cần tiếp tục cải thiện
 
 Tăng minh chứng triển khai thực tế; kiểm thử đủ luồng mạng/xác thực/lưu trữ thay vì chỉ dựa vào mock; cập nhật nhật ký đúng thời điểm và nâng chất lượng tài liệu cấu hình, migration, sao lưu. Tiếp tục học giám sát, tối ưu chi phí và tự động hóa triển khai khi phù hợp phạm vi đề tài.
-`, '# Self-evaluation\n\nTrần Hải Lương, 687703, an intern at Amazon Web Services studying AWS services and their application to CloudDocs. This section is a personal draft for review. Assess technical skills, learning, responsibility, problem solving, knowledge presentation and documentation using actual evidence. No grades have been preselected. Improve live integration evidence, timely logs, migration documentation, monitoring and cost management.', 'Self-evaluation','6.');
-page('7-Feedback','Chia sẻ và đóng góp ý kiến',7,`
+`,
+  "# Self-evaluation\n\nTrần Hải Lương, 687703, an intern at Amazon Web Services studying AWS services and their application to CloudDocs. This section is a personal draft for review. Assess technical skills, learning, responsibility, problem solving, knowledge presentation and documentation using actual evidence. No grades have been preselected. Improve live integration evidence, timely logs, migration documentation, monitoring and cost management.",
+  "Self-evaluation",
+  "6.",
+);
+page(
+  "7-Feedback",
+  "Chia sẻ và đóng góp ý kiến",
+  7,
+  `
 # Chia sẻ và đóng góp ý kiến
 
 Quá trình tìm hiểu CloudDocs giúp em liên hệ kiến thức lập trình web, cơ sở dữ liệu, xác thực và dịch vụ đám mây trong một bài toán quản lý tài liệu. Một chức năng chỉ hoàn chỉnh khi frontend, backend, quyền truy cập, dữ liệu và môi trường triển khai khớp nhau.
@@ -845,17 +1115,32 @@ Quá trình tìm hiểu CloudDocs giúp em liên hệ kiến thức lập trình
 Hoàn thiện kiểm thử trên môi trường triển khai thật, đối soát sao lưu/phục hồi và đo chi phí. Các hướng như CI/CD, quét tệp hoặc phiên bản báo cáo chỉ đưa vào giai đoạn mở rộng khi có thời gian và bằng chứng triển khai.
 
 Đây là dự thảo ý kiến gắn với đồ án; không kế thừa nhận xét về mentor, chứng nhận hoặc chương trình của người viết bản mẫu.
-`, '# Feedback\n\nCloudDocs connects web development, relational data, identity and cloud storage. Suggested improvements are personal learning checkpoints, consistent schema/environment versions, focused IAM/CORS/Cognito/RDS debugging, early cost planning and daily worklogs. Next steps are live deployment tests, backup restoration and measured costs. This draft does not inherit the template author’s mentor or program experiences.', 'Feedback','7.');
+`,
+  "# Feedback\n\nCloudDocs connects web development, relational data, identity and cloud storage. Suggested improvements are personal learning checkpoints, consistent schema/environment versions, focused IAM/CORS/Cognito/RDS debugging, early cost planning and daily worklogs. Next steps are live deployment tests, backup restoration and measured costs. This draft does not inherit the template author’s mentor or program experiences.",
+  "Feedback",
+  "7.",
+);
 
 // Replace template-specific identity and publication target; keep the original theme.
-let config=fs.readFileSync(path.join(root,'config.toml'),'utf8');
-config=config.replace(/^baseURL\s*=.*$/m,'baseURL = "http://localhost:1313/"').replace('defaultContentLanguage = "en"','defaultContentLanguage = "vi"').replace(/description = .*\n/,'description = "CloudDocs — Báo cáo thực tập Trần Hải Lương"\n').replace(/author = .*\n/,'author = "Trần Hải Lương"\n');
-fs.writeFileSync(path.join(root,'config.toml'),config);
+let config = fs.readFileSync(path.join(root, "config.toml"), "utf8");
+config = config
+  .replace(/^baseURL\s*=.*$/m, 'baseURL = "http://localhost:1313/"')
+  .replace('defaultContentLanguage = "en"', 'defaultContentLanguage = "vi"')
+  .replace(
+    /description = .*\n/,
+    'description = "CloudDocs — Báo cáo thực tập Trần Hải Lương"\n',
+  )
+  .replace(/author = .*\n/, 'author = "Trần Hải Lương"\n');
+fs.writeFileSync(path.join(root, "config.toml"), config);
 // The original layout, AWS logo and theme assets are kept unchanged.
 // Exact architecture supplied as a local vector artifact, rather than a generated illustration.
-const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#546a86" stroke-width="1.5"/></marker><style>text{font-family:Arial,sans-serif;fill:#16334f}.title{font-size:28px;font-weight:bold}.h{font-size:20px;font-weight:bold}.b{font-size:16px}.small{font-size:14px}.card{fill:white;stroke:#bdd0e5;stroke-width:2}.line{fill:none;stroke:#546a86;stroke-width:2;marker-end:url(#arrow)}</style></defs><rect width="1100" height="680" fill="#f3f7fc"/><text x="45" y="50" class="title">CloudDocs · Kiến trúc triển khai mục tiêu</text><text x="45" y="82" class="b">EC2/RDS: đối chiếu môi trường · S3/Cognito: đã có mã tích hợp</text><rect x="360" y="235" width="690" height="315" rx="20" fill="#e8eff9" stroke="#9fb7d3" stroke-dasharray="8 6"/><text x="385" y="265" class="small">VPC · RDS chỉ nhận kết nối được cho phép</text><rect class="card" x="50" y="305" width="245" height="125" rx="14"/><text x="75" y="341" class="h">Trình duyệt</text><text x="75" y="373" class="b">Frontend HTML/CSS/JS</text><text x="75" y="401" class="small">Access token + PKCE</text><rect class="card" x="400" y="300" width="285" height="145" rx="14"/><text x="425" y="337" class="h">EC2 · Nginx</text><text x="425" y="370" class="b">Spring Boot REST API</text><text x="425" y="400" class="small">JWT · quyền · quota · audit</text><text x="425" y="425" class="small">IAM instance role cho S3</text><rect class="card" x="780" y="310" width="230" height="125" rx="14"/><text x="805" y="347" class="h">RDS MySQL</text><text x="805" y="380" class="b">Metadata + quyền</text><text x="805" y="410" class="small">Users · audit · công việc</text><rect class="card" x="80" y="125" width="295" height="100" rx="14"/><text x="105" y="163" class="h">Amazon Cognito</text><text x="105" y="198" class="b">User Pool · xác thực</text><rect class="card" x="705" y="125" width="305" height="100" rx="14"/><text x="730" y="163" class="h">Amazon S3 private</text><text x="730" y="198" class="b">Tệp · signed PUT / GET</text><path class="line" d="M170 303 L170 227"/><path class="line" d="M296 368 L397 368"/><text x="310" y="348" class="small">HTTPS</text><path class="line" d="M687 368 L776 368"/><text x="700" y="348" class="small">TLS</text><path class="line" d="M580 300 L580 175 L703 175"/><text x="591" y="278" class="small">Ký URL / HEAD</text><path class="line" d="M285 305 L420 245 L706 215"/><text x="430" y="216" class="small">Truyền tệp trực tiếp</text><text x="48" y="600" class="b">Backend kiểm tra quyền trước khi cấp URL; MySQL không lưu nội dung tệp.</text><text x="48" y="630" class="b">Sơ đồ mô tả thiết kế; không xác nhận endpoint EC2 hoặc tài nguyên đã triển khai.</text></svg>`;
-fs.mkdirSync(path.join(root,'static/images'),{recursive:true});fs.writeFileSync(path.join(root,'static/images/vietnam-it-job-market-architecture.svg'),svg);
-const readme=`# CloudDocs — báo cáo thực tập cá nhân Trần Hải Lương
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680"><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#546a86" stroke-width="1.5"/></marker><style>text{font-family:Arial,sans-serif;fill:#16334f}.title{font-size:28px;font-weight:bold}.h{font-size:20px;font-weight:bold}.b{font-size:16px}.small{font-size:14px}.card{fill:white;stroke:#bdd0e5;stroke-width:2}.line{fill:none;stroke:#546a86;stroke-width:2;marker-end:url(#arrow)}</style></defs><rect width="1100" height="680" fill="#f3f7fc"/><text x="45" y="50" class="title">CloudDocs · Kiến trúc triển khai mục tiêu</text><text x="45" y="82" class="b">EC2/RDS: đối chiếu môi trường · S3/Cognito: đã có mã tích hợp</text><rect x="360" y="235" width="690" height="315" rx="20" fill="#e8eff9" stroke="#9fb7d3" stroke-dasharray="8 6"/><text x="385" y="265" class="small">VPC · RDS chỉ nhận kết nối được cho phép</text><rect class="card" x="50" y="305" width="245" height="125" rx="14"/><text x="75" y="341" class="h">Trình duyệt</text><text x="75" y="373" class="b">Frontend HTML/CSS/JS</text><text x="75" y="401" class="small">Access token + PKCE</text><rect class="card" x="400" y="300" width="285" height="145" rx="14"/><text x="425" y="337" class="h">EC2 · Nginx</text><text x="425" y="370" class="b">Spring Boot REST API</text><text x="425" y="400" class="small">JWT · quyền · quota · audit</text><text x="425" y="425" class="small">IAM instance role cho S3</text><rect class="card" x="780" y="310" width="230" height="125" rx="14"/><text x="805" y="347" class="h">RDS MySQL</text><text x="805" y="380" class="b">Metadata + quyền</text><text x="805" y="410" class="small">Users · audit · công việc</text><rect class="card" x="80" y="125" width="295" height="100" rx="14"/><text x="105" y="163" class="h">Amazon Cognito</text><text x="105" y="198" class="b">User Pool · xác thực</text><rect class="card" x="705" y="125" width="305" height="100" rx="14"/><text x="730" y="163" class="h">Amazon S3 private</text><text x="730" y="198" class="b">Tệp · signed PUT / GET</text><path class="line" d="M170 303 L170 227"/><path class="line" d="M296 368 L397 368"/><text x="310" y="348" class="small">HTTPS</text><path class="line" d="M687 368 L776 368"/><text x="700" y="348" class="small">TLS</text><path class="line" d="M580 300 L580 175 L703 175"/><text x="591" y="278" class="small">Ký URL / HEAD</text><path class="line" d="M285 305 L420 245 L706 215"/><text x="430" y="216" class="small">Truyền tệp trực tiếp</text><text x="48" y="600" class="b">Backend kiểm tra quyền trước khi cấp URL; MySQL không lưu nội dung tệp.</text><text x="48" y="630" class="b">Sơ đồ mô tả thiết kế; không xác nhận endpoint EC2 hoặc tài nguyên đã triển khai.</text></svg>`;
+fs.mkdirSync(path.join(root, "static/images"), { recursive: true });
+fs.writeFileSync(
+  path.join(root, "static/images/vietnam-it-job-market-architecture.svg"),
+  svg,
+);
+const readme = `# CloudDocs — báo cáo thực tập cá nhân Trần Hải Lương
 
 Nội dung đã được thay từ mẫu Nguyễn Nhật Minh/WebFood sang CloudDocs. Bản mẫu gốc được giữ trong template-original-20261107.zip. Không sửa repository ứng dụng CloudDocs ở thư mục bên cạnh.
 
@@ -874,7 +1159,7 @@ Trước khi xuất bản, đổi baseURL sang URL repository/site thật. Khôn
 ## Những điểm cần rà lại trước nộp
 
 - 07/08 là khởi động; 12 tuần thứ Hai–thứ Sáu từ 10/08 đến 30/10. Đề cương kéo dài tới 28/11.
-- Lịch từng ngày là tái dựng theo đề cương và bản Word của Tòng Văn Tâm; chưa phải xác nhận lịch sử hoàn thành.
+- Lịch từng ngày là tái dựng theo đề cương và bản Word của Nguyễn Ngọc Lan ; chưa phải xác nhận lịch sử hoàn thành.
 - Tính năng đầu tháng 11 được ghi riêng ở cuối Worklog.
 - S3/Cognito có trong mã nguồn; RDS theo xác nhận người dùng. EC2/CloudWatch/Budgets cần minh chứng môi trường thực tế.
 - Cần endpoint demo, ảnh Console đã che secret, schema export được phép dùng, kết quả test và số liệu chi phí trước nghiệm thu.
@@ -884,9 +1169,14 @@ Trước khi xuất bản, đổi baseURL sang URL repository/site thật. Khôn
 
 ## Nguồn đã đối chiếu
 
-Đề cương nhóm 32 ngày 02/11/2026; các kế hoạch thực tập đã cung cấp; Worklog_12_tuan_CHI_HOC_AWS_CloudJourney (1).docx của Tòng Văn Tâm; README và mã cấu hình/API của CloudDocs-CloudDocs_newupdate; tài liệu AWS chính thức có liên kết trong nội dung.
+Đề cương nhóm 32 ngày 02/11/2026; các kế hoạch thực tập đã cung cấp; Worklog_12_tuan_CHI_HOC_AWS_CloudJourney (1).docx của Nguyễn Ngọc Lan ; README và mã cấu hình/API của CloudDocs-CloudDocs_newupdate; tài liệu AWS chính thức có liên kết trong nội dung.
 `;
-fs.writeFileSync(path.join(root,'README-Vietnam-IT-Job-Market.md'),readme);
-fs.writeFileSync(path.join(root,'content-manifest.json'),JSON.stringify(pages,null,2));
-console.log(`Wrote ${pages.length} bilingual pages (${pages.length*2} Markdown files), architecture SVG, config and review README.`);
-require('./finalize-report.cjs');
+fs.writeFileSync(path.join(root, "README-Vietnam-IT-Job-Market.md"), readme);
+fs.writeFileSync(
+  path.join(root, "content-manifest.json"),
+  JSON.stringify(pages, null, 2),
+);
+console.log(
+  `Wrote ${pages.length} bilingual pages (${pages.length * 2} Markdown files), architecture SVG, config and review README.`,
+);
+require("./finalize-report.cjs");

@@ -1,6 +1,6 @@
 # Báo cáo thực tập Vietnam IT Job Market
 
-Báo cáo cá nhân Tòng Văn Tâm tại Amazon Web Services.
+Báo cáo cá nhân Nguyễn Ngọc Lan tại Amazon Web Services.
 
 Giao diện sử dụng nguyên bản mẫu Hugo, logo AWS và màu theme workshop.
 
