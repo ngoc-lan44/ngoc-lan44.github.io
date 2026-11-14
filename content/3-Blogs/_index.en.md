@@ -6,4 +6,4 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-Post titles, content and published links will be added here.
+I haven't published any blog posts during my internship.
