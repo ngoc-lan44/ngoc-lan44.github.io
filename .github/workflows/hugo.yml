@@ -1,0 +1,45 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.134.3"
+          extended: true
+
+      - name: Build website
+        env:
+          PAGES_OWNER: ${{ github.repository_owner }}
+          PAGES_REPOSITORY: ${{ github.event.repository.name }}
+        run: |
+          site_url="https://${PAGES_OWNER}.github.io/"
+          if [ "${PAGES_REPOSITORY,,}" != "${PAGES_OWNER,,}.github.io" ]; then
+            site_url="${site_url}${PAGES_REPOSITORY}/"
+          fi
+          hugo --minify --baseURL "$site_url"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages # <- đảm bảo đúng tên nhánh bạn dùng để deploy
+          force_orphan: true # <- đảm bảo xóa lịch sử cũ ở nhánh gh-pages (giảm lỗi)
