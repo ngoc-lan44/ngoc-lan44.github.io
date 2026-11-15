@@ -6,17 +6,17 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Below is my detailed worklog covering 12 weeks in the First Cloud AI Journey internship program:
+The following worklog describes my 12 weeks in the First Cloud AI Journey internship program:
 
-**Week 1:** [AWS accounts, Budgets and Support](1.1-Week1/)
+**Week 1:** [AWS account, Budgets and Support](1.1-Week1/)
 
-**Week 2:** [AWS IAM and permission design](1.2-Week2/)
+**Week 2:** [AWS IAM and permission principles](1.2-Week2/)
 
 **Week 3:** [Amazon VPC, subnets and network security](1.3-Week3/)
 
-**Week 4:** [Amazon EC2, EBS and instance management](1.4-Week4/)
+**Week 4:** [Amazon EC2, EBS and server management](1.4-Week4/)
 
-**Week 5:** [EC2 IAM roles and Session Manager](1.5-Week5/)
+**Week 5:** [IAM Roles for EC2 and Session Manager](1.5-Week5/)
 
 **Week 6:** [Amazon S3 and AWS CLI operations](1.6-Week6/)
 
@@ -26,7 +26,7 @@ Below is my detailed worklog covering 12 weeks in the First Cloud AI Journey int
 
 **Week 9:** [Python SDK and DynamoDB transactions](1.9-Week9/)
 
-**Week 10:** [S3 data and AWS Glue Data Catalog](1.10-Week10/)
+**Week 10:** [Data on S3 and AWS Glue Data Catalog](1.10-Week10/)
 
 **Week 11:** [Amazon Athena and SQL analysis](1.11-Week11/)
 

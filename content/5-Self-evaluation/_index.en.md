@@ -6,42 +6,42 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-My name is **Tòng Văn Tâm**, a **K68CNTTA** Information Technology student at **Vietnam National University of Agriculture**, participating in the **First Cloud AI Journey** internship programme at AWS Vietnam.
+I am **Tòng Văn Tâm**, an Information Technology student in class **K68CNTTA** at **Vietnam National University of Agriculture**, participating in the **First Cloud AI Journey** internship at AWS Vietnam.
 
-My goal is to **build a sound AWS foundation and develop practical working habits**, applying what I learn to **Vietnam IT Job Market**. Across twelve weeks, I studied Cloud Journey materials, maintained a worklog and connected the lessons with the collection, processing, storage, querying and visualisation of ITviec recruitment data.
+My internship goal was to **build a solid foundation and develop practical AWS working skills**, applying them to **Vietnam IT Job Market**. During 12 weeks of learning, I studied Cloud Journey topics, organized my knowledge through worklogs, and connected it to collecting, processing, storing, querying and displaying ITviec recruitment data.
 
-The following ratings are my personal reflection, rather than a substitute for a supervisor's assessment.
+Through learning and developing the project, I practiced reading documentation, checking configurations, investigating errors and presenting evidence-based results. The following ratings are my personal assessment and do not replace my mentor's evaluation.
 
-| No. | Criterion | Description | Good | Fairly good | Average |
+| No. | Criterion | Description | Good | Fair | Average |
 | --- | --- | --- | :---: | :---: | :---: |
-| 1 | **Technical knowledge and skills** | Apply Python, EC2, S3, Glue Data Catalog, Athena, DynamoDB and CloudWatch knowledge to the project | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
-| 2 | **Learning ability** | Learn new concepts, read documentation and practise progressively | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
-| 3 | **Initiative** | Investigate project components, inspect source and explore causes of problems | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
-| 4 | **Responsibility** | Follow work through, verify results and prioritise accurate reporting | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
-| 5 | **Discipline** | Follow study plans, practical procedures and configuration-protection practices | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
-| 6 | **Willingness to improve** | Accept feedback, fill knowledge gaps and revise incomplete work | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
-| 7 | **Communication** | Explain ideas, describe problems and report results clearly | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
-| 8 | **Teamwork** | Be willing to exchange ideas, listen and cooperate when support is needed | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
-| 9 | **Professional conduct** | Respect mentors, fellow learners and working principles | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
-| 10 | **Problem-solving** | Investigate permissions, data, queries and services using logs and evidence | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
-| 11 | **Project/organisation contribution** | Develop the project and prepare documentation and practical handover guidance | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
-| 12 | **Overall** | Reflect on learning, project work and report preparation | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
+| 1 | **Professional knowledge and skills** | Understand AWS fundamentals and apply Python, EC2, S3, Glue Data Catalog, Athena, DynamoDB and CloudWatch to the project | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
+| 2 | **Ability to learn** | Acquire new knowledge, read documentation and practice each topic | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
+| 3 | **Initiative** | Independently explore project components, inspect source code and investigate problems | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
+| 4 | **Responsibility** | Track work, check results and maintain report accuracy | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
+| 5 | **Discipline** | Follow the learning plan and practical procedures and protect configuration information | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
+| 6 | **Willingness to improve** | Accept feedback, expand knowledge and address missing content | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
+| 7 | **Communication** | Present ideas, describe problems and report results clearly | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
+| 8 | **Teamwork** | Exchange ideas, listen and cooperate when support is needed in learning or work | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
+| 9 | **Professional conduct** | Respect mentors, fellow students and working principles | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
+| 10 | **Problem-solving** | Analyze access, data, query and service errors and review logs before drawing conclusions | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
+| 11 | **Contribution to the project/organization** | Develop the project, compile documentation and complete practical handover instructions | <span class="self-rating" aria-label="Selected">☑</span> | □ | □ |
+| 12 | **Overall** | Assess learning, project development and report completion | □ | <span class="self-rating" aria-label="Selected">☑</span> | □ |
 
-### Strengths in my learning journey
+### Strengths developed during learning
 
-- **Connecting concepts with implementation:** understand Python processing on EC2, Parquet on S3, Glue metadata and Athena queries in the project data flow.
-- **Understanding component responsibilities:** distinguish S3 accounts/personal activity from DynamoDB moderation/audit, including the Projection Worker's role.
-- **Checking documentation against source:** examine configuration, commands and dated test records without equating source availability with confirmed AWS operation.
-- **Writing structured reports:** organise the worklog, proposal and workshop so that readers can follow procedures and verify results.
+- **Connecting knowledge to a real system:** understand Python on EC2, Parquet on S3, Glue metadata and Athena queries in the Vietnam IT Job Market data flow.
+- **Understanding component responsibilities:** accounts and personal activity are stored on S3, while moderation and audit are stored in DynamoDB; understand the Projection Worker's synchronization role.
+- **Checking documentation against source code:** review configurations, commands and dated test results, distinguishing implemented code from evidence of AWS operation.
+- **Report writing:** organize worklogs, the proposal and workshop sequentially so readers can follow procedures and check results.
 
-### Areas to improve for future projects
+### Areas for improvement before future projects
 
-- **Technical depth:** practise Athena query optimisation, IAM permissions and cost analysis based on actual measurements.
-- **Operations and recovery:** develop log analysis, pipeline troubleshooting and backup/restore skills; do not treat untested reboot scenarios as mastered.
-- **Technical presentation:** explain more concisely and use real diagrams, screenshots and dated run/query evidence.
-- **Testing:** improve integration scenarios and performance measurement, distinguishing offline tests from live AWS acceptance.
-- **Planning:** update notes regularly and divide work into smaller tasks to identify difficulties earlier.
+- **Technical depth:** practice optimizing Athena queries, IAM permissions and operating costs using actual measurements.
+- **Operations and recovery:** continue practicing log analysis, pipeline troubleshooting, backup/restore verification and EC2 restart scenarios; unpracticed scenarios are not considered mastered.
+- **Technical presentation:** write more concisely and use diagrams, actual screenshots and results with dates or run/query IDs.
+- **Testing:** improve integration scenario design and performance measurement, distinguishing offline tests from live AWS acceptance checks.
+- **Progress management:** update notes consistently and divide work into smaller tasks to identify obstacles earlier.
 
 ### Direction after the internship
 
-I plan to develop my **Python / Data Engineering / Cloud** skills, strengthening data processing, query design, security and AWS operations. Further Vietnam IT Job Market improvements will be supported by testing and practical evidence, alongside clearer documentation for future projects.
+I plan to continue in **Python / Data Engineering / Cloud**, strengthening data processing, query design, security and AWS operations. I will improve Vietnam IT Job Market through tested changes supported by actual evidence and refine my documentation skills for future projects.

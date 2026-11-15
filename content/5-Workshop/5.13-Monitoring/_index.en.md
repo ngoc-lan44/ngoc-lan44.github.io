@@ -1,13 +1,19 @@
 ---
-title: "CloudWatch monitoring"
+title: "CloudWatch and monitoring"
 date: 2026-11-11T00:00:00+07:00
 weight: 13
 chapter: false
 pre: " <b> 4.13. </b> "
 ---
 
-This chapter covers **CloudWatch monitoring** for the implemented Vietnam IT Job Market project. The complete setup procedure, commands and dated evidence are maintained in the Vietnamese companion.
+Configure project permissions, the log group, metric/alarm, agent, and exporter.
 
-- [4.13.1. Tạo cấu hình CloudWatch và cấp quyền ghi log](5.13.1-step1/)
-- [4.13.2. Cài CloudWatch Agent và bộ xuất log](5.13.2-step2/)
-- [4.13.3. Theo dõi ứng dụng và xử lý sự cố](5.13.3-step3/)
+### Setup steps
+
+- [4.13.1. CloudWatch log group, metric, and alarm](5.13.1-step1/)
+- [4.13.2. Install CloudWatch Agent and the log exporter](5.13.2-step2/)
+- [4.13.3. Monitor the application and troubleshoot issues](5.13.3-step3/)
+
+---
+
+[← 4.12](../5.12-Pipeline-Automation/) · [Contents](../) · [4.14 →](../5.14-Testing-Results/)

@@ -8,14 +8,14 @@ pre: " <b> 4.1. </b> "
 
 # Event 1
 
-| Field | Details |
+| Information | Details |
 | --- | --- |
-| Event name | Mini Meetup – First Cloud AI Journey |
+| Event | Mini Meetup – First Cloud AI Journey |
 | Date | 17/10/2026 |
-| Location | AWS Office – Grand Terra Tower, 36 Cát Linh, Hanoi |
-| Organizer | First Cloud AI Journey community (FCAJ) |
+| Venue | AWS Office – Grand Terra Tower, 36 Cát Linh, Hanoi |
+| Organizer | First Cloud AI Journey (FCAJ) community |
 | Role | Attendee |
 
 ## Connection to the internship
 
-The event was a community activity during the internship, complementing independent learning and project development. Its connection to this report centers on learning, exchanging ideas and proactively exploring cloud technologies.
+The event provided community experience alongside independent learning and project development during the internship. This report focuses on learning, exchanging ideas and proactively exploring cloud technology.

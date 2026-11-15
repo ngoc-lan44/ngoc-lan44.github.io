@@ -1,13 +1,19 @@
 ---
-title: "ETL and publication"
+title: "Set Up ETL and Publish Parquet"
 date: 2026-11-11T00:00:00+07:00
 weight: 8
 chapter: false
 pre: " <b> 4.8. </b> "
 ---
 
-This chapter covers **ETL and publication** for the implemented Vietnam IT Job Market project. The complete setup procedure, commands and dated evidence are maintained in the Vietnamese companion.
+Use the runner to synchronize, clean, export and commit data, then enable publication to the canonical location after validation.
 
-- [4.8.1. Đồng bộ current và history bằng runner](5.8.1-step1/)
-- [4.8.2. Làm sạch, cấu hình data root và xuất Parquet](5.8.2-step2/)
-- [4.8.3. Công bố dữ liệu Parquet lên S3](5.8.3-step3/)
+### Setup steps
+
+- [4.8.1. Synchronize Current and History Data with the Runner](5.8.1-step1/)
+- [4.8.2. Clean Data and Export Parquet](5.8.2-step2/)
+- [4.8.3. Publish Parquet Data to S3](5.8.3-step3/)
+
+---
+
+[← 4.7](../5.7-ITviec-Collection/) · [Contents](../) · [4.9 →](../5.9-Streamlit-Dashboard/)

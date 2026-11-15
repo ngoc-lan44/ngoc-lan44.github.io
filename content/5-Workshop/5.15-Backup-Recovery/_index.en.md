@@ -1,11 +1,17 @@
 ---
-title: "Backup and recovery"
+title: "Data Backup and Recovery Verification"
 date: 2026-11-11T00:00:00+07:00
 weight: 15
 chapter: false
 pre: " <b> 4.15. </b> "
 ---
 
-This chapter covers **Backup and recovery** for the implemented Vietnam IT Job Market project. The complete setup procedure, commands and dated evidence are maintained in the Vietnamese companion.
+Prepare a private backup and rehearse recovery into a new location before production use.
 
-- [4.15.1. Sao lưu dữ liệu và kiểm tra khả năng phục hồi](5.15.1-step1/)
+### Setup steps
+
+- [4.15.1. Data backup and recovery verification](5.15.1-step1/)
+
+---
+
+[← 5.14](../5.14-Testing-Results/) · [Contents](../) · [4.16 →](../5.16-Cleanup-Conclusion/)

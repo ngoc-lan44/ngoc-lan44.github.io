@@ -1,12 +1,18 @@
 ---
-title: "Cleanup and conclusion"
+title: "Resource Cleanup and Conclusion"
 date: 2026-11-11T00:00:00+07:00
 weight: 16
 chapter: false
 pre: " <b> 4.16. </b> "
 ---
 
-This chapter covers **Cleanup and conclusion** for the implemented Vietnam IT Job Market project. The complete setup procedure, commands and dated evidence are maintained in the Vietnamese companion.
+Guidance for ending use and summarizing the system; this chapter does not execute resource deletion.
 
-- [4.16.1. Lập kế hoạch dọn tài nguyên an toàn](5.16.1-step1/)
-- [4.16.2. Tổng kết và bàn giao](5.16.2-step2/)
+### Setup steps
+
+- [4.16.1. Planning safe resource cleanup](5.16.1-step1/)
+- [4.16.2. Conclusion and handover](5.16.2-step2/)
+
+---
+
+[← 5.15](../5.15-Backup-Recovery/) · [Contents](../)

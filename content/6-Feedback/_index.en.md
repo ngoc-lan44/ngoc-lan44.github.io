@@ -1,71 +1,71 @@
 ---
-title: "Feedback and suggestions"
+title: "Reflections and feedback"
 date: 2026-11-08
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-These are my reflections and suggestions as **Tòng Văn Tâm**, a **K68CNTTA** student at **Vietnam National University of Agriculture**, following my learning in **First Cloud AI Journey** and work on **Vietnam IT Job Market**. My perspective is that of a student building foundations and preparing for future work in data and cloud computing.
+This section records my reflections and suggestions as **Tòng Văn Tâm**, a **K68CNTTA** student at **Vietnam National University of Agriculture**, after studying in **First Cloud AI Journey** and developing **Vietnam IT Job Market**. My perspective is that of a student building foundational knowledge, developing practical skills and preparing for future work in data and cloud computing.
 
-### Evaluation by aspect
+### Reflections by topic
 
 **1. Learning environment**
 
-Cloud Journey documentation and practical exercises suit my learning needs. Studying individual services and connecting them to the project helps me understand their purpose rather than memorise names. I have also learned to check lab prerequisites and configuration before acting.
+The documentation and practical labs on Cloud Journey suited my learning approach. Studying each service and relating it to the project helped me understand why it is used. I also learned to read lab prerequisites carefully and check configurations before taking action.
 
-**2. Documentation and support**
+**2. Learning materials and support**
 
-Structured materials help me divide topics into manageable tasks and revisit them when necessary. To seek effective support, I need to explain my goal, completed steps, error messages and expected outcome while hiding sensitive information. I intend to continue improving this technical communication habit.
+The structured materials helped me divide my studies into manageable topics and revisit them when needed. When seeking support, I need to explain the objective, steps taken, error messages and expected result while concealing sensitive information. I want to continue developing this habit to communicate technical issues more effectively.
 
 **3. Relevance to Information Technology**
 
-The learning connects with programming, networking, storage and databases. Vietnam IT Job Market lets me follow Python collection from ITviec on EC2, JSON processing, Parquet publication to S3, Glue metadata, Athena queries and Streamlit presentation. This makes the interaction between data-system components clearer.
+The learning topics connect with programming, networking, storage and databases. In Vietnam IT Job Market, I can trace the workflow from Python collecting ITviec data on EC2, through JSON processing, Parquet publication to S3, Glue metadata and Athena queries, to the Streamlit interface. This helped me understand how the components of a data system work together.
 
-**4. Skills with the clearest progress**
+**4. Skills with the most progress**
 
-- Read documentation and identify each service's responsibility.
-- Inspect IAM permissions, data paths, service configuration and logs when investigating problems.
-- Distinguish S3 accounts/personal activity from DynamoDB moderation/audit.
-- Record commands, dated results and verification limitations.
-- Organise worklogs, proposals and practical workshop guidance for review.
+- Reading documentation and identifying each service's role before using it.
+- Checking IAM permissions, data paths, service configuration and logs when investigating errors.
+- Distinguishing account and personal activity data on S3 from moderation and audit data in DynamoDB.
+- Recording commands, timestamped results and the scope of each check.
+- Organizing the worklog, proposal and workshop for easier review and reference.
 
 **5. Community culture**
 
-I value the knowledge-sharing spirit of AWS Study Group. For a beginner, asking specific questions, listening and checking information against documentation are essential. I hope to keep exchanging learning experiences and contribute verified practical notes within my abilities.
+I value the knowledge sharing and learning within the AWS Study Group community. For beginners, asking specific questions, listening and checking information against documentation are essential. I hope to continue sharing learning experiences and contributing verified practical notes within my capabilities.
 
-**6. Practical learning conditions**
+**6. Practical work**
 
-AWS practice demonstrates that configuration changes can affect access, data or costs. Each exercise should therefore identify its objective, resource scope, verification and cleanup procedure. With a running system, read-only inspection must be distinguished from data writes, deployment and service restarts.
+Working with AWS taught me that configuration changes can affect access, data and cost. Each lab therefore needs a clear objective, resource scope, result checks and cleanup instructions. For a running system, read-only checks must be distinguished from data writes, deployments and service restarts.
 
 ### Feedback questions
 
 **What was most satisfying?**
 
-Connecting lessons into a concrete Vietnam IT Job Market data flow was the most satisfying part. Understanding why Parquet belongs on S3, Glue supplies metadata, Athena queries data and Streamlit presents it gives each component a clear purpose. I also learned to distinguish source-code availability from verified deployment results.
+I was most satisfied when I could connect what I had learned into a concrete data workflow in Vietnam IT Job Market. Understanding why Parquet is stored on S3, Glue provides metadata, Athena runs queries and Streamlit displays results clarified each component's purpose. I also learned to distinguish implemented source code from behavior verified in the deployed environment.
 
-**What could the programme improve?**
+**What could the program improve?**
 
-- Provide a checklist of prerequisites, permissions, resources and expected results for each group of exercises.
-- Summarise common IAM, Security Group, Region and S3 path problems, including how to investigate logs.
-- Offer short self-assessment checkpoints between service groups.
-- Encourage daily worklog updates supported by practical evidence rather than end-of-internship reconstruction.
+- Provide a checklist at the start of each group of labs covering prerequisites, access permissions, resources and expected results.
+- Summarize common IAM, Security Group, Region and S3 path errors, including how to investigate them through logs.
+- Add short self-assessment checkpoints after each group of services so learners can identify gaps before moving on.
+- Encourage daily worklog updates supported by practical evidence rather than compiling everything at the end.
 
-**Would I recommend it to friends?**
+**Would you recommend the program to friends?**
 
-Yes, to friends who want practical AWS learning and are willing to read independently and perform exercises themselves. I would also emphasise time for verification, resource management and regular notes.
+Yes. I would recommend it to those who want to learn AWS through practice and are willing to read documentation and complete labs independently. I would also emphasize checking results, managing resources and keeping regular notes.
 
-### Additional suggestions
+### Further suggestions
 
-- **Cost and safe-practice discussions:** identify potentially billable resources, review usage and inventory resources after exercises.
-- **Small-group sharing:** explain a project flow such as collection → processing → querying → dashboard to practise architecture communication and receive feedback.
-- **Operations and recovery exercises:** practise log analysis, pipeline troubleshooting and backup/restore verification in a test environment with clear prerequisites.
-- **Consistent evidence templates:** include dates, source versions or run/query IDs where relevant, separating expected results from verified outcomes.
+- **Cost and safe practice discussions:** explain how to identify chargeable resources, review usage and inventory resources after a lab.
+- **Small-group sharing:** have each participant explain a project workflow, such as collection → processing → queries → dashboard, to develop architecture communication skills and receive feedback.
+- **Operations and recovery practice:** include log analysis, pipeline troubleshooting and backup/restore verification in a test environment, with clear conditions for safe execution.
+- **Consistent evidence format:** record timestamps, source versions or run/query IDs where applicable, and distinguish expected outcomes from verified results.
 
-**Would I like to stay involved?**
+**Would you like to remain involved in the program?**
 
-Yes. I want to continue learning AWS, join suitable knowledge-sharing activities and develop my **Python, Data Engineering and Cloud** skills. Vietnam IT Job Market will remain a practical context for improving testing, query optimisation and evidence-based operations.
+Yes. I want to continue studying AWS, join relevant knowledge-sharing activities and develop my **Python, Data Engineering and Cloud** skills. Through Vietnam IT Job Market, I want to improve testing, query optimization and operations based on measured results.
 
-**Acknowledgements**
+**Acknowledgments**
 
-Thank you to First Cloud AI Journey, the mentors and AWS Study Group for the learning materials and space for sharing knowledge. This learning journey has clarified my direction, highlighted areas for improvement and strengthened my foundation for further development in Information Technology.
+I thank First Cloud AI Journey, the mentors and the AWS Study Group community for providing the learning environment, documentation and opportunities to share knowledge. The experience gave me clearer direction, helped me identify areas for improvement and strengthened my foundation for further development in Information Technology.

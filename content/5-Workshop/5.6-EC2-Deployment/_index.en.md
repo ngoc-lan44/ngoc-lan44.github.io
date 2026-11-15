@@ -1,13 +1,19 @@
 ---
-title: "EC2 deployment"
+title: "Deploying source code and the runtime on EC2"
 date: 2026-11-11T00:00:00+07:00
 weight: 6
 chapter: false
 pre: " <b> 4.6. </b> "
 ---
 
-This chapter covers **EC2 deployment** for the implemented Vietnam IT Job Market project. The complete setup procedure, commands and dated evidence are maintained in the Vietnamese companion.
+Package the source, provision EC2 and its role using the project scripts, and install the Linux runtime. The new stack reuses the prepared data resources.
 
-- [4.6.1. Đóng gói source và tạo stack EC2](5.6.1-step1/)
-- [4.6.2. Cài runtime và cấu hình ứng dụng trên EC2](5.6.2-step2/)
-- [4.6.3. Dữ liệu hiện tại và dịch vụ dashboard trên EC2](5.6.3-step3/)
+### Setup steps
+
+- [4.6.1. Source releases and EC2 infrastructure](5.6.1-step1/)
+- [4.6.2. Installing the runtime and configuring the application on EC2](5.6.2-step2/)
+- [4.6.3. Current data and the dashboard service on EC2](5.6.3-step3/)
+
+---
+
+[← 4.5](../5.5-DynamoDB-Moderation/) · [Contents](../) · [4.7 →](../5.7-ITviec-Collection/)

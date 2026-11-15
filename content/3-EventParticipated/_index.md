@@ -6,9 +6,9 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-# Meetup events attended
+# EVENTS ATTENDED
 
-During my internship, I attended community events that offered memorable experiences, useful new knowledge and valuable moments.
+During my internship, I attended events that provided new knowledge, useful experiences and memorable opportunities to meet the community.
 
 | Event | Date | Role |
 | --- | --- | --- |

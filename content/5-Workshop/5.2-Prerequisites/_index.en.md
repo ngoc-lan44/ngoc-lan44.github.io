@@ -1,12 +1,18 @@
 ---
-title: "Prerequisites"
+title: "Preparation"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-This chapter covers **Prerequisites** for the implemented Vietnam IT Job Market project. The complete setup procedure, commands and dated evidence are maintained in the Vietnamese companion.
+Prepare the account, source code, administration environment, and input data before creating or updating resources.
 
-- [4.2.1. Chuẩn bị tài khoản AWS, Region và công cụ](5.2.1-step1/)
-- [4.2.2. Dữ liệu sử dụng và IAM Role cho EC2](5.2.2-step2/)
+### Setup steps
+
+- [4.2.1. Preparing the AWS account, Region, and tools](5.2.1-step1/)
+- [4.2.2. Project data and the EC2 IAM role](5.2.2-step2/)
+
+---
+
+[← 5.1](../5.1-Introduction/) · [Contents](../) · [4.3 →](../5.3-S3-Storage/)
