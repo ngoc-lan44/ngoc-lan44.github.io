@@ -1,6 +1,6 @@
-baseURL = "/"
-relativeURLs = true
-canonifyURLs = false
+baseURL = "https://tongtam2005.github.io/Workshop/"
+relativeURLs = false
+canonifyURLs = true
 defaultContentLanguage = "vi"
 
 theme = "hugo-theme-learn"
