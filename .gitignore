@@ -1,4 +1,4 @@
-﻿public/
+public/
 public/*
 resources/
 .hugo_build.lock
@@ -7,3 +7,5 @@ scripts/
 *.log
 
 vietnam-it-job-market-review.html
+
+.local-tools/

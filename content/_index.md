@@ -30,10 +30,10 @@ chapter: false
 ## Report contents
 
 <ol class="report-contents">
-<li value="1"><a href="1-Worklog/">Worklog</a></li>
-<li value="2"><a href="2-Proposal/">Project proposal</a></li>
-<li value="3"><a href="3-EventParticipated/">Meetup events attended</a></li>
-<li value="4"><a href="5-Workshop/">Workshop</a></li>
-<li value="5"><a href="5-Self-evaluation/">Self-assessment</a></li>
-<li value="6"><a href="6-Feedback/">Reflections and feedback</a></li>
+<li value="1"><a href="1-worklog/">Worklog</a></li>
+<li value="2"><a href="2-proposal/">Project proposal</a></li>
+<li value="3"><a href="3-eventparticipated/">Meetup events attended</a></li>
+<li value="4"><a href="5-workshop/">Workshop</a></li>
+<li value="5"><a href="5-self-evaluation/">Self-assessment</a></li>
+<li value="6"><a href="6-feedback/">Reflections and feedback</a></li>
 </ol>
