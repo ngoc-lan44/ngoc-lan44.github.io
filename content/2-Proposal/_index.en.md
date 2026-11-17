@@ -100,7 +100,7 @@ Users can combine keywords with location, level, experience, company and salary 
 
 The website supports email registration and login with USER/ADMIN authorization. Accounts and personal activity are stored on S3. Users can save or unsave jobs, update application status, edit their display name and introduction, and change their password.
 
-ADMIN pages cover user management, job management, deleted jobs, data quality, system status and collection status. Soft deletion changes visibility while retaining source data for restoration. DynamoDB stores moderation state and audit records; the Projection Worker synchronizes a snapshot to S3 for Athena filtering.
+ADMIN pages cover System status, User management, Job management and Data quality. Soft deletion changes visibility while retaining source data for restoration. DynamoDB stores moderation state and audit records; the Projection Worker synchronizes a snapshot to S3 for Athena filtering.
 
 #### 5.5. Deployment and operations
 
@@ -154,7 +154,7 @@ Source data may omit salaries or levels, and page structures may change. Data qu
 
 #### 9.1. Source code tests
 
-On **11 November 2026**, the development machine completed **140 unit tests** with **OK**. Registration, moderation and Vietnamese UI smoke tests also reported success.
+On **16 November 2026**, **144 unit tests**, **six offline UI test suites** and the Vietnam-time clock test passed on the development machine.
 
 #### 9.2. Deployed AWS system checks
 

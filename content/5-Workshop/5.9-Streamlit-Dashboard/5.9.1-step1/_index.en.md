@@ -31,7 +31,7 @@ Parquet, public views, secrets and IAM permissions are ready.
 
 dashboard/job_data.py configures Region ap-southeast-1, database vn_it_job_market and query result location control/athena-results/. With the DynamoDB backend, the application reads the itviec_active_jobs and itviec_active_job_skills aliases and checks moderation state directly.
 
-1. Check the [auth]/[moderation] sections in secrets against 4.5 and the account setup in 4.10.
+1. Check the [auth]/[moderation] sections in secrets against 4.5.
 2. Check that the dashboard unit uses the Linux .venv and dashboard/app.py entry point.
 3. After saving the configuration, restart the application:
 

@@ -3,7 +3,7 @@ title: "Log group, metric và alarm CloudWatch"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.13.1. </b> "
+pre: " <b> 4.12.1. </b> "
 aliases:
   - "/5-workshop/5.14-monitoring/"
 ---
@@ -67,4 +67,4 @@ Alarm cộng giá trị **PipelineFailure** bằng thống kê **Sum** trong m�
 
 ---
 
-[← 4.13. Thiết lập CloudWatch và giám sát](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.13.2-step2/)
+[← 4.12. Thiết lập CloudWatch và giám sát](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.13.2-step2/)

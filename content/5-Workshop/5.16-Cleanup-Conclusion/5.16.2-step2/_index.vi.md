@@ -3,7 +3,7 @@ title: "Tổng kết và bàn giao"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.16.2. </b> "
+pre: " <b> 4.14.2. </b> "
 aliases:
   - "/5-workshop/5.16-cleanup-conclusion/5.16.3-step3/"
   - "/5-workshop/5.10-monitoring-results/5.10.7-step7/"
@@ -31,4 +31,4 @@ Các kết quả đã ghi nhận gồm pipeline hoàn thành, dữ liệu Parque
 
 ---
 
-[← 4.16. Dọn dẹp tài nguyên và kết luận](../) · [Mục lục Workshop](../../) · [Bước trước](../5.16.1-step1/)
+[← 4.14. Dọn dẹp tài nguyên và kết luận](../) · [Mục lục Workshop](../../) · [Bước trước](../5.16.1-step1/)

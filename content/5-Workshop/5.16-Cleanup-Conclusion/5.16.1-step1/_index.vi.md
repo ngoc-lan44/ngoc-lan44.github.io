@@ -3,7 +3,7 @@ title: "Lập kế hoạch dọn tài nguyên an toàn"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.16.1. </b> "
+pre: " <b> 4.14.1. </b> "
 aliases:
   - "/5-workshop/5.10-monitoring-results/5.10.6-step6/"
 ---
@@ -34,4 +34,4 @@ Danh sách tài nguyên, dependency và dữ liệu cần giữ được xác đ
 
 ---
 
-[← 4.16. Dọn dẹp tài nguyên và kết luận](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.16.2-step2/)
+[← 4.14. Dọn dẹp tài nguyên và kết luận](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.16.2-step2/)

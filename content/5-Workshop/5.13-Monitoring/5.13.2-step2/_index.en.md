@@ -3,7 +3,7 @@ title: "Install CloudWatch Agent and the log exporter"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.13.2. </b> "
+pre: " <b> 4.12.2. </b> "
 aliases:
   - "/en/5-workshop/5.14-monitoring/5.14.1-step1/"
   - "/en/5-workshop/5.10-monitoring-results/5.10.1-step1/"
@@ -55,4 +55,4 @@ sudo systemctl status vnjob-log-export --no-pager -n 0
 
 ---
 
-[← 4.13. CloudWatch and monitoring](../) · [Workshop contents](../../) · [Previous step](../5.13.1-step1/) · [Next step →](../5.13.3-step3/)
+[← 4.12. CloudWatch and monitoring](../) · [Workshop contents](../../) · [Previous step](../5.13.1-step1/)

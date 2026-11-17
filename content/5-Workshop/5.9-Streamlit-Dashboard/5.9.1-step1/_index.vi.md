@@ -31,7 +31,7 @@ Parquet/public views, secrets và IAM đã sẵn sàng.
 
 dashboard/job_data.py cấu hình Region ap-southeast-1, database vn_it_job_market và result location control/athena-results/. Với backend DynamoDB, ứng dụng đọc alias itviec_active_jobs và itviec_active_job_skills, đồng thời kiểm moderation trực tiếp.
 
-1. Đối chiếu [auth]/[moderation] trong secrets theo 4.5 và bước tài khoản 4.10.
+1. Đối chiếu [auth]/[moderation] trong secrets theo 4.5.
 2. Kiểm unit dashboard dùng .venv Linux và entrypoint dashboard/app.py.
 3. Sau khi lưu cấu hình, khởi động lại ứng dụng:
 
@@ -42,7 +42,7 @@ curl --fail http://127.0.0.1:8501/_stcore/health
 sudo journalctl -u vnjob-dashboard.service -n 80 --no-pager
 ~~~
 
-Trước HTTPS, dùng SSM tunnel theo deploy/ec2/open_private.ps1 nếu công cụ Session Manager plugin đã được chuẩn bị; sau 4.11 dùng URL HTTPS hiện tại. Không mở public 8501 để bỏ qua reverse proxy. Reader có timeout 90 giây, phân trang và chuyển kiểu; cache jobs/skills 300 giây.
+Trước HTTPS, dùng SSM tunnel theo deploy/ec2/open_private.ps1 nếu công cụ Session Manager plugin đã được chuẩn bị; sau 4.10 dùng URL HTTPS hiện tại. Không mở public 8501 để bỏ qua reverse proxy. Reader có timeout 90 giây, phân trang và chuyển kiểu; cache jobs/skills 300 giây.
 
 ### Kiểm tra kết quả
 

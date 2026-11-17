@@ -3,7 +3,7 @@ title: "Conclusion and Handover"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.16.2. </b> "
+pre: " <b> 4.14.2. </b> "
 aliases:
   - "/en/5-workshop/5.16-cleanup-conclusion/5.16.3-step3/"
   - "/en/5-workshop/5.10-monitoring-results/5.10.7-step7/"
@@ -31,4 +31,4 @@ Recorded results include a completed pipeline, Parquet data on S3, an HTTPS dash
 
 ---
 
-[← 4.16. Resource Cleanup and Conclusion](../) · [Workshop contents](../../) · [Previous step](../5.16.1-step1/)
+[← 4.14. Resource Cleanup and Conclusion](../) · [Workshop contents](../../) · [Previous step](../5.16.1-step1/)

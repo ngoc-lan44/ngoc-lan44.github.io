@@ -3,7 +3,7 @@ title: "Cài Certbot và cấu hình HTTPS tự động"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.11.2. </b> "
+pre: " <b> 4.10.2. </b> "
 aliases:
   - "/5-workshop/5.12-nginx-https/5.12.1-step1/"
   - "/5-workshop/5.12-nginx-https/5.12.3-step3/"
@@ -38,7 +38,7 @@ cd /opt/vn-it-job-market
 sudo bash deploy/ec2/configure_public_https.sh
 sudo nginx -t
 sudo /opt/vnjob-certbot/bin/certbot certificates
-sudo systemctl list-timers vnjob-certbot.timer --no-pager
+sudo systemctl status vnjob-certbot.timer --no-pager -n 0
 ~~~
 
 Script cần Certbot executable, site vnjob và proxy include sẵn có; backup cấu hình, cài /usr/local/sbin/vnjob-auto-https.py và units, chạy reconcile rồi bật timer. Helper đọc IMDSv2, cấu hình ACME HTTP, cấp chứng chỉ khi IP thay đổi hoặc còn dưới hai ngày, kiểm Nginx rồi reload/rollback khi lỗi. Timer boot 30 giây, sau mỗi lượt hoàn tất 30 phút.
@@ -47,28 +47,18 @@ Khi IP công khai thay đổi, dịch vụ kiểm tra địa chỉ mới và c�
 
 ### Kiểm tra kết quả
 
-Kiểm tra chứng chỉ cấp cho IP hiện tại và trạng thái timer tự động quản lý HTTPS.
+Chứng chỉ **vnjob-ip** được cấp cho IP **47.128.13.35** và còn hiệu lực tại thời điểm kiểm tra ngày **16/11/2026**. Timer **vnjob-certbot** đã bật và đang chờ lịch chạy để tự động quản lý chứng chỉ HTTPS.
+
+![Chứng chỉ HTTPS cho IP 47.128.13.35 và trạng thái timer vnjob-certbot ngày 16/11/2026](/images/workshop/setup-https-certificate-timer-2026-11-16.png)
 
 ### Truy cập website qua HTTPS
 
-HTTPS mã hóa dữ liệu trao đổi giữa trình duyệt và website, bảo vệ thông tin đăng nhập và hoạt động của người dùng khi truyền qua mạng. Dashboard được truy cập qua địa chỉ **https://18.143.183.231** như hình dưới.
+HTTPS mã hóa thông tin đăng nhập và hoạt động của người dùng khi truyền qua mạng. Địa chỉ được xác minh ngày **16/11/2026** là **https://47.128.13.35**. Timer **vnjob-certbot** duy trì chứng chỉ cho IP và cập nhật cấu hình khi địa chỉ thay đổi.
 
-![Dashboard Vietnam IT Job Market hiển thị qua địa chỉ HTTPS của dự án](/images/workshop/setup-5-11-browser-https.png)
+![Dashboard truy cập qua HTTPS tại địa chỉ 47.128.13.35 ngày 16/11/2026](/images/workshop/setup-https-dashboard-2026-11-16.png)
 
-### Chứng chỉ HTTPS đã cài
-
-Certbot quản lý chứng chỉ **vnjob-ip** cho địa chỉ IP của máy chủ. Kết quả kiểm tra cho thấy chứng chỉ dùng khóa **ECDSA**, còn hiệu lực tại thời điểm chụp và hết hạn lúc **23:21:51 ngày 17/11/2026 (UTC)**.
-
-```bash
-sudo /opt/vnjob-certbot/bin/certbot certificates
-sudo systemctl status vnjob-certbot.timer --no-pager -n 0
-```
-
-Timer **vnjob-certbot** tự động kích hoạt dịch vụ quản lý HTTPS. Kết quả hiển thị timer đã **enabled**, đang **active (waiting)** và có lịch chạy tiếp theo.
-
-![Chứng chỉ HTTPS còn hiệu lực và timer vnjob-certbot đang chờ lịch chạy tiếp theo](/images/workshop/setup-5-11-certificates.png)
 
 
 ---
 
-[← 4.11. Thiết lập Nginx và HTTPS theo IP](../) · [Mục lục Workshop](../../) · [Bước trước](../5.11.1-step1/) · [Bước tiếp →](../5.11.3-step3/)
+[← 4.10. Thiết lập Nginx và HTTPS theo IP](../) · [Mục lục Workshop](../../) · [Bước trước](../5.11.1-step1/) · [Bước tiếp →](../5.11.3-step3/)

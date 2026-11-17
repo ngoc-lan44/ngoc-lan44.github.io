@@ -16,4 +16,4 @@ Cấu hình nguồn Athena và khởi chạy dashboard từ source trên EC2, sa
 
 ---
 
-[← 5.8](../5.8-Data-Processing/) · [Mục lục](../) · [4.10 →](../5.10-Users-Administration/)
+[← 5.8](../5.8-Data-Processing/) · [Mục lục](../) · [4.10 →](../5.11-Nginx-HTTPS/)

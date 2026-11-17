@@ -3,7 +3,7 @@ title: "Planning Safe Resource Cleanup"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.16.1. </b> "
+pre: " <b> 4.14.1. </b> "
 aliases:
   - "/en/5-workshop/5.10-monitoring-results/5.10.6-step6/"
 ---
@@ -34,4 +34,4 @@ The resource inventory, dependencies, and retained data are identified before cl
 
 ---
 
-[← 4.16. Resource Cleanup and Conclusion](../) · [Workshop contents](../../) · [Next step →](../5.16.2-step2/)
+[← 4.14. Resource Cleanup and Conclusion](../) · [Workshop contents](../../) · [Next step →](../5.16.2-step2/)

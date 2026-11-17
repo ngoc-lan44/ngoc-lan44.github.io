@@ -3,7 +3,7 @@ title: "Check pipeline execution results"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.12.3. </b> "
+pre: " <b> 4.11.3. </b> "
 aliases:
   - "/en/5-workshop/5.13-pipeline-automation/5.13.2-step2/"
   - "/en/5-workshop/5.13-pipeline-automation/5.13.4-step4/"
@@ -52,4 +52,4 @@ sudo journalctl -u vnjob-pipeline.service -n 40 --no-pager -o cat
 
 ---
 
-[← 4.12. Schedule the pipeline and Operations Worker](../) · [Workshop contents](../../) · [Previous step](../5.12.2-step2/)
+[← 4.11. Schedule the pipeline and Operations Worker](../) · [Workshop contents](../../) · [Previous step](../5.12.2-step2/)

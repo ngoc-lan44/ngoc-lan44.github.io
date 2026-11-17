@@ -32,7 +32,7 @@ Nội dung học có liên hệ với kiến thức lập trình, mạng máy t�
 
 **5. Văn hóa cộng đồng**
 
-Tôi đánh giá cao tinh thần chia sẻ kiến thức và học hỏi qua cộng đồng AWS Study Group. Với người mới, việc biết đặt câu hỏi cụ thể, lắng nghe và đối chiếu thông tin với tài liệu là rất cần thiết. Tôi mong muốn tiếp tục trao đổi kinh nghiệm học tập và đóng góp những ghi chú thực hành đã được kiểm tra, phù hợp với khả năng của mình.
+Tôi đánh giá cao tinh thần chia sẻ kiến thức và học hỏi qua First Cloud AI Journey và cộng đồng AWS Study Group. Với người mới, việc biết đặt câu hỏi cụ thể, lắng nghe và đối chiếu thông tin với tài liệu là rất cần thiết. Tôi mong muốn tiếp tục trao đổi kinh nghiệm học tập và đóng góp những ghi chú thực hành đã được kiểm tra, phù hợp với khả năng của mình.
 
 **6. Điều kiện thực hành**
 

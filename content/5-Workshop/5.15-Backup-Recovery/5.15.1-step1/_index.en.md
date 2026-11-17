@@ -3,7 +3,7 @@ title: "Data Backup and Recovery Verification"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.15.1. </b> "
+pre: " <b> 4.13.1. </b> "
 ---
 
 **Where:** AWS Console and the SSM terminal on EC2
@@ -50,4 +50,4 @@ The backup passes integrity checks and is extracted into a separate directory, p
 
 ---
 
-[← 4.15. Data Backup and Recovery Verification](../) · [Workshop contents](../../)
+[← 4.13. Data Backup and Recovery Verification](../) · [Workshop contents](../../)

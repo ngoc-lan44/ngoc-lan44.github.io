@@ -100,7 +100,7 @@ Người dùng có thể nhập từ khóa, kết hợp bộ lọc địa điể
 
 Website hỗ trợ đăng ký, đăng nhập bằng email và phân quyền USER/ADMIN. Tài khoản và hoạt động cá nhân được lưu trên S3. Người dùng có thể lưu hoặc bỏ lưu việc làm, cập nhật trạng thái ứng tuyển, chỉnh sửa tên hiển thị, giới thiệu và đổi mật khẩu.
 
-ADMIN có các trang quản lý người dùng, quản lý việc làm, việc làm đã xóa, chất lượng dữ liệu, trạng thái hệ thống và trạng thái thu thập. Xóa mềm chỉ thay đổi quyền hiển thị của tin, giữ dữ liệu nguồn để có thể khôi phục. Trạng thái kiểm duyệt và nhật ký thao tác được lưu trong DynamoDB; Projection Worker đồng bộ snapshot sang S3 để Athena áp dụng bộ lọc kiểm duyệt.
+ADMIN có các trang Trạng thái hệ thống, Quản lý người dùng, Quản lý việc làm và Chất lượng dữ liệu. Xóa mềm chỉ thay đổi quyền hiển thị của tin, giữ dữ liệu nguồn để có thể khôi phục. Trạng thái kiểm duyệt và nhật ký thao tác được lưu trong DynamoDB; Projection Worker đồng bộ snapshot sang S3 để Athena áp dụng bộ lọc kiểm duyệt.
 
 #### 5.5. Triển khai và vận hành
 
@@ -154,7 +154,7 @@ Dữ liệu nguồn có thể thiếu lương, cấp bậc hoặc thay đổi c�
 
 #### 9.1. Kiểm thử mã nguồn
 
-Ngày **11/11/2026**, bộ kiểm thử trên máy phát triển hoàn thành **140 unit test** với kết quả **OK**. Các bài kiểm thử giao diện đăng ký, kiểm duyệt và tiếng Việt đều ghi nhận thông báo kiểm tra thành công.
+Ngày **16/11/2026**, máy phát triển hoàn thành **144 unit test**, **6 bộ kiểm thử giao diện offline** và kiểm thử đồng hồ theo giờ Việt Nam với kết quả **PASS**.
 
 #### 9.2. Kiểm tra hệ thống triển khai trên AWS
 

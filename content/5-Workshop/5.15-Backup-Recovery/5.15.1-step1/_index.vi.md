@@ -3,7 +3,7 @@ title: "Sao lưu dữ liệu và kiểm tra khả năng phục hồi"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.15.1. </b> "
+pre: " <b> 4.13.1. </b> "
 ---
 
 **Thực hiện tại:** AWS Console và Terminal SSM trên EC2
@@ -50,4 +50,4 @@ Tệp sao lưu vượt qua kiểm tra tính toàn vẹn và được giải nén
 
 ---
 
-[← 4.15. Sao lưu và kiểm tra phục hồi dữ liệu](../) · [Mục lục Workshop](../../)
+[← 4.13. Sao lưu và kiểm tra phục hồi dữ liệu](../) · [Mục lục Workshop](../../)

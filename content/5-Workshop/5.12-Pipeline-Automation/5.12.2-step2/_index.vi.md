@@ -3,7 +3,7 @@ title: "Cài Operations Worker và bật chức năng vận hành"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.12.2. </b> "
+pre: " <b> 4.11.2. </b> "
 aliases:
   - "/5-workshop/5.13-pipeline-automation/5.13.3-step3/"
   - "/5-workshop/5.13-pipeline-automation/5.13.5-step5/"
@@ -63,4 +63,4 @@ sudo journalctl -u vnjob-operations.service -n 30 --no-pager -o cat
 
 ---
 
-[← 4.12. Thiết lập lịch pipeline và Operations Worker](../) · [Mục lục Workshop](../../) · [Bước trước](../5.12.1-step1/) · [Bước tiếp →](../5.12.3-step3/)
+[← 4.11. Thiết lập lịch pipeline và Operations Worker](../) · [Mục lục Workshop](../../) · [Bước trước](../5.12.1-step1/) · [Bước tiếp →](../5.12.3-step3/)
