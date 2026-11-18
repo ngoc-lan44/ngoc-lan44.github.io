@@ -3,7 +3,7 @@ title: "Search, filter and view job details"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.9.3. </b> "
+pre: " <b> 5.9.3. </b> "
 aliases:
   - "/en/5-workshop/5.8-streamlit-dashboard/5.8.3-step3/"
   - "/en/5-workshop/5.8-streamlit-dashboard/5.8.5-step5/"
@@ -60,7 +60,6 @@ The location filter limits the dataset to the selected area. Selecting **Hà N�
 The details section helps users assess an opportunity through its company, location, salary, experience, seniority and employment type. The ITviec link opens the original posting. Save job and Apply connect to personal account features when the user is signed in.
 
 ![Details of SureFlow's IT Project Manager posting selected from the Hà Nội results, including its ITviec link](/images/workshop/setup-5-9-03.png)
-
 
 ---
 

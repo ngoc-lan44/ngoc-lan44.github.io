@@ -3,7 +3,7 @@ title: "Dọn dẹp tài nguyên và kết luận"
 date: 2026-11-11T00:00:00+07:00
 weight: 16
 chapter: false
-pre: " <b> 4.14. </b> "
+pre: " <b> 5.14. </b> "
 ---
 
 Hướng dẫn kết thúc sử dụng và tổng kết hệ thống; chương này không thực thi xóa tài nguyên.

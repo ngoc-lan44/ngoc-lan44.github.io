@@ -3,7 +3,7 @@ title: "Thiết lập lịch pipeline và Operations Worker"
 date: 2026-11-11T00:00:00+07:00
 weight: 12
 chapter: false
-pre: " <b> 4.11. </b> "
+pre: " <b> 5.11. </b> "
 ---
 
 Bật lịch hằng ngày sau nghiệm thu publication, cài worker phục hồi có giới hạn.

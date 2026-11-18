@@ -3,7 +3,7 @@ title: "Thu thập từng batch và kiểm liên kết discovery"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.7.2. </b> "
+pre: " <b> 5.7.2. </b> "
 aliases:
   - "/5-workshop/5.3-itviec-collection/5.3.2-step2/"
   - "/5-workshop/5.2-itviec-collection/5.2.2-step2/"

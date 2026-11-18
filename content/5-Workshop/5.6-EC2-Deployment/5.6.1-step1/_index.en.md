@@ -3,7 +3,7 @@ title: "Source releases and EC2 infrastructure"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.6.1. </b> "
+pre: " <b> 5.6.1. </b> "
 aliases:
   - "/en/5-workshop/5.11-ec2-deployment/"
   - "/en/5-workshop/5.11-ec2-deployment/5.11.1-step1/"

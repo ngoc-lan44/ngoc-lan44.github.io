@@ -3,7 +3,7 @@ title: "Setting up DynamoDB and moderation data"
 date: 2026-11-11T00:00:00+07:00
 weight: 5
 chapter: false
-pre: " <b> 4.5. </b> "
+pre: " <b> 5.5. </b> "
 ---
 
 Configure the moderation source and the public views used by the dashboard.

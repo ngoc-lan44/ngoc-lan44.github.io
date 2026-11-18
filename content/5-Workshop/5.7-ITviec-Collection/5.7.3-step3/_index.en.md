@@ -3,7 +3,7 @@ title: "Validate the Entire Collection Run Before ETL"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.7.3. </b> "
+pre: " <b> 5.7.3. </b> "
 aliases:
   - "/en/5-workshop/5.3-itviec-collection/5.3.3-step3/"
   - "/en/5-workshop/5.3-itviec-collection/5.3.4-step4/"

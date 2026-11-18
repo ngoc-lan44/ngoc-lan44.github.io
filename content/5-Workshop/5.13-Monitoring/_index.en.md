@@ -3,7 +3,7 @@ title: "CloudWatch and monitoring"
 date: 2026-11-11T00:00:00+07:00
 weight: 13
 chapter: false
-pre: " <b> 4.12. </b> "
+pre: " <b> 5.12. </b> "
 ---
 
 Configure project permissions, the log group, metric/alarm, agent, and exporter.

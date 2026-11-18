@@ -3,7 +3,7 @@ title: "Kết nối backend kiểm duyệt và kiểm tra dữ liệu hiển th�
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.5.3. </b> "
+pre: " <b> 5.5.3. </b> "
 aliases:
   - "/5-workshop/5.7-athena/5.7.2-step2/"
   - "/5-workshop/5.7-athena/5.7.3-step3/"

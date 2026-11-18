@@ -3,7 +3,7 @@ title: "Deploying source code and the runtime on EC2"
 date: 2026-11-11T00:00:00+07:00
 weight: 6
 chapter: false
-pre: " <b> 4.6. </b> "
+pre: " <b> 5.6. </b> "
 ---
 
 Package the source, provision EC2 and its role using the project scripts, and install the Linux runtime. The new stack reuses the prepared data resources.

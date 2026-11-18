@@ -3,7 +3,7 @@ title: "Thiết lập CloudWatch và giám sát"
 date: 2026-11-11T00:00:00+07:00
 weight: 13
 chapter: false
-pre: " <b> 4.12. </b> "
+pre: " <b> 5.12. </b> "
 ---
 
 Cấu hình quyền, log group, metric/alarm, agent và exporter của dự án.

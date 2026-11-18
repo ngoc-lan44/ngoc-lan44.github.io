@@ -3,7 +3,7 @@ title: "Kiểm tra HTTP, HTTPS và WebSocket"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.10.3. </b> "
+pre: " <b> 5.10.3. </b> "
 aliases:
   - "/5-workshop/5.12-nginx-https/5.12.2-step2/"
   - "/5-workshop/5.8-ec2-https/5.8.4-step4/"

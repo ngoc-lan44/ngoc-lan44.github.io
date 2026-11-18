@@ -3,7 +3,7 @@ title: "Dữ liệu Parquet và dữ liệu nền triển khai EC2"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.3.2. </b> "
+pre: " <b> 5.3.2. </b> "
 ---
 
 ### Dữ liệu phân tích trên S3

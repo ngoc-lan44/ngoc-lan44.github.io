@@ -3,7 +3,7 @@ title: "Lập kế hoạch dọn tài nguyên an toàn"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.14.1. </b> "
+pre: " <b> 5.14.1. </b> "
 aliases:
   - "/5-workshop/5.10-monitoring-results/5.10.6-step6/"
 ---

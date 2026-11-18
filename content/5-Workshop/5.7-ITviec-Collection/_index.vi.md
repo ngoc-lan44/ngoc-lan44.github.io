@@ -3,7 +3,7 @@ title: "Thiết lập và chạy thu thập ITviec"
 date: 2026-11-11T00:00:00+07:00
 weight: 7
 chapter: false
-pre: " <b> 4.7. </b> "
+pre: " <b> 5.7. </b> "
 ---
 
 Pipeline khám phá URL tuyển dụng trên ITviec, thu thập chi tiết theo từng đợt và kiểm tra dữ liệu trước khi chuyển sang bước xử lý.

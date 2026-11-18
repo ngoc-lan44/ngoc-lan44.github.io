@@ -3,7 +3,7 @@ title: "Install CloudWatch Agent and the log exporter"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.12.2. </b> "
+pre: " <b> 5.12.2. </b> "
 aliases:
   - "/en/5-workshop/5.14-monitoring/5.14.1-step1/"
   - "/en/5-workshop/5.10-monitoring-results/5.10.1-step1/"
@@ -21,12 +21,12 @@ Log permissions and the log group from the previous step are available.
 
 ### Procedure
 
-~~~bash
+```bash
 cd /opt/vn-it-job-market
 sudo bash deploy/ec2/install_monitoring.sh
 systemctl status amazon-cloudwatch-agent vnjob-log-export --no-pager
 systemctl cat vnjob-log-export.service
-~~~
+```
 
 The installer prepares CloudWatch Agent, the journal export service, and log-file rotation. Logs are sent to the instance stream in **/vn-it-job-market/ec2**.
 
@@ -41,7 +41,6 @@ sudo systemctl status amazon-cloudwatch-agent --no-pager -n 0
 ```
 
 ![Amazon CloudWatch Agent running and enabled on EC2](/images/workshop/setup-5-13-agent-status.png)
-
 
 ### Log exporter status
 

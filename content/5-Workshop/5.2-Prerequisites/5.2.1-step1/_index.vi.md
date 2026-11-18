@@ -3,7 +3,7 @@ title: "Chuẩn bị tài khoản AWS, Region và công cụ"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.2.1. </b> "
+pre: " <b> 5.2.1. </b> "
 aliases:
   - "/5-workshop/5.2-prerequisites/5.2.4-step4/"
   - "/5-workshop/5.1-overview/5.1.2-step2/"

@@ -3,7 +3,7 @@ title: "Làm sạch dữ liệu và xuất Parquet"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.8.2. </b> "
+pre: " <b> 5.8.2. </b> "
 aliases:
   - "/5-workshop/5.4-data-processing/5.4.2-step2/"
   - "/5-workshop/5.4-data-processing/5.4.3-step3/"
@@ -42,7 +42,6 @@ Clean JSON và Parquet cùng số dòng; schema tương thích Catalog. Current 
 So sánh số dòng giữa JSON sạch và Parquet giúp kiểm tra bước xuất không làm thay đổi số lượng bản ghi. Kiểm tra schema giúp xác định các trường số, ngày, thời gian và danh sách kỹ năng được lưu theo kiểu phù hợp để Athena truy vấn.
 
 ![Đối chiếu số dòng JSON sạch và Parquet cùng schema của lượt pipeline: MATCH True](/images/workshop/setup-5-8-02.png)
-
 
 ---
 

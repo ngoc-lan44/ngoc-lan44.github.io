@@ -3,7 +3,7 @@ title: "Set Up and Run ITviec Collection"
 date: 2026-11-11T00:00:00+07:00
 weight: 7
 chapter: false
-pre: " <b> 4.7. </b> "
+pre: " <b> 5.7. </b> "
 ---
 
 The pipeline discovers ITviec job URLs, collects job details in batches and validates the collected data before processing.

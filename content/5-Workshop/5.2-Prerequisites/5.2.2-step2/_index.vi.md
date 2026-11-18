@@ -3,7 +3,7 @@ title: "Dữ liệu sử dụng và IAM Role cho EC2"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.2.2. </b> "
+pre: " <b> 5.2.2. </b> "
 aliases:
   - "/5-workshop/5.2-prerequisites/5.2.3-step3/"
   - "/5-workshop/5.1-overview/5.1.3-step3/"

@@ -3,7 +3,7 @@ title: "Chạy pipeline và khám phá URL"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.7.1. </b> "
+pre: " <b> 5.7.1. </b> "
 aliases:
   - "/5-workshop/5.3-itviec-collection/"
   - "/5-workshop/5.3-itviec-collection/5.3.1-step1/"

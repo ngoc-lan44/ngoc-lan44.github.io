@@ -3,7 +3,7 @@ title: "Thiết lập ETL và công bố Parquet"
 date: 2026-11-11T00:00:00+07:00
 weight: 8
 chapter: false
-pre: " <b> 4.8. </b> "
+pre: " <b> 5.8. </b> "
 ---
 
 Sử dụng runner để sync, clean, export và commit dữ liệu; sau khi đạt mới bật publication canonical.

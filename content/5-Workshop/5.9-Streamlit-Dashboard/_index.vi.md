@@ -3,7 +3,7 @@ title: "Cấu hình và triển khai Streamlit Dashboard"
 date: 2026-11-11T00:00:00+07:00
 weight: 9
 chapter: false
-pre: " <b> 4.9. </b> "
+pre: " <b> 5.9. </b> "
 ---
 
 Cấu hình nguồn Athena và khởi chạy dashboard từ source trên EC2, sau đó nghiệm thu KPI và tra cứu.

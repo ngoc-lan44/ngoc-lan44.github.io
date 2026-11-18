@@ -3,7 +3,7 @@ title: "Thiết lập lưu trữ trên Amazon S3"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 5.3. </b> "
 aliases:
   - "/5-workshop/5.5-s3-storage/"
   - "/5-workshop/5.4-s3-glue-athena/"

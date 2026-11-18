@@ -3,7 +3,7 @@ title: "Kiểm tra kết quả vận hành pipeline"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.11.3. </b> "
+pre: " <b> 5.11.3. </b> "
 aliases:
   - "/5-workshop/5.13-pipeline-automation/5.13.2-step2/"
   - "/5-workshop/5.13-pipeline-automation/5.13.4-step4/"

@@ -3,7 +3,7 @@ title: "Cài Operations Worker và bật chức năng vận hành"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.11.2. </b> "
+pre: " <b> 5.11.2. </b> "
 aliases:
   - "/5-workshop/5.13-pipeline-automation/5.13.3-step3/"
   - "/5-workshop/5.13-pipeline-automation/5.13.5-step5/"

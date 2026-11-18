@@ -3,7 +3,7 @@ title: "Sao lưu dữ liệu và kiểm tra khả năng phục hồi"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.13.1. </b> "
+pre: " <b> 5.13.1. </b> "
 ---
 
 **Thực hiện tại:** AWS Console và Terminal SSM trên EC2

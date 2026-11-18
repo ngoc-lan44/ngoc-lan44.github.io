@@ -3,7 +3,7 @@ title: "Đồng bộ current và history bằng runner"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.8.1. </b> "
+pre: " <b> 5.8.1. </b> "
 aliases:
   - "/5-workshop/5.4-data-processing/"
   - "/5-workshop/5.4-data-processing/5.4.1-step1/"
@@ -30,16 +30,16 @@ Run đã vượt qua validation ở 4.7.
 
 Ở stage SYNC_CURRENT, runner chuẩn bị data/runs/<run_id>/staged/, seed current vào staging, trỏ module sync đến validated_snapshot.json và gọi sync.main(). Không gọi sync_itviec_current.py độc lập để đồng bộ toàn lượt vì entry point mặc định có thể chọn latest batch.
 
-| Thành phần | Xử lý |
-| --- | --- |
-| current | Upsert theo job_id, giữ first_seen, cập nhật last_seen |
-| history NEW/UPDATED | Lưu tin mới hoặc trường đã thay đổi |
-| UNCHANGED | Bộ đếm summary, không tạo event riêng |
-| EXPIRED | Deadline nguồn hợp lệ đã qua, reason EXPLICIT_SOURCE_DEADLINE |
+| Thành phần          | Xử lý                                                         |
+| ------------------- | ------------------------------------------------------------- |
+| current             | Upsert theo job_id, giữ first_seen, cập nhật last_seen        |
+| history NEW/UPDATED | Lưu tin mới hoặc trường đã thay đổi                           |
+| UNCHANGED           | Bộ đếm summary, không tạo event riêng                         |
+| EXPIRED             | Deadline nguồn hợp lệ đã qua, reason EXPLICIT_SOURCE_DEADLINE |
 
 Tin vắng discovery không tự hết hạn. ACTIVE/EXPIRED là trạng thái bản ghi; history là sự kiện nên không so số event bằng số tin.
 
-Mở staged/current/itviec/current_jobs.json và staged/history/itviec/events_*.json **trong cùng thư mục run** để theo dấu job_id và summary.
+Mở staged/current/itviec/current*jobs.json và staged/history/itviec/events*\*.json **trong cùng thư mục run** để theo dấu job_id và summary.
 
 ### Theo dõi việc làm qua các lượt đồng bộ
 
@@ -56,9 +56,6 @@ File history lưu các sự kiện việc làm mới, cập nhật hoặc hết 
 ### Kiểm tra kết quả
 
 Dữ liệu hiện tại lưu thông tin việc làm sau đồng bộ; dữ liệu lịch sử lưu các sự kiện phát sinh trong cùng lượt xử lý.
-
-
-
 
 ---
 

@@ -3,7 +3,7 @@ title: "Thiết lập DynamoDB và dữ liệu kiểm duyệt"
 date: 2026-11-11T00:00:00+07:00
 weight: 5
 chapter: false
-pre: " <b> 4.5. </b> "
+pre: " <b> 5.5. </b> "
 ---
 
 Cấu hình nguồn kiểm duyệt và các view công khai mà dashboard sử dụng.

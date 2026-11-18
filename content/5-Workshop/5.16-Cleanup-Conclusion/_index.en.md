@@ -3,7 +3,7 @@ title: "Resource Cleanup and Conclusion"
 date: 2026-11-11T00:00:00+07:00
 weight: 16
 chapter: false
-pre: " <b> 4.14. </b> "
+pre: " <b> 5.14. </b> "
 ---
 
 Guidance for ending use and summarizing the system; this chapter does not execute resource deletion.

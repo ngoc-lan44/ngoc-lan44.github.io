@@ -3,7 +3,7 @@ title: "Cài CloudWatch Agent và bộ xuất log"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.12.2. </b> "
+pre: " <b> 5.12.2. </b> "
 aliases:
   - "/5-workshop/5.14-monitoring/5.14.1-step1/"
   - "/5-workshop/5.10-monitoring-results/5.10.1-step1/"
@@ -21,16 +21,16 @@ Quyền log và log group ở bước trước đã có.
 
 ### Các bước thực hiện
 
-~~~bash
+```bash
 cd /opt/vn-it-job-market
 sudo bash deploy/ec2/install_monitoring.sh
 systemctl status amazon-cloudwatch-agent vnjob-log-export --no-pager
 systemctl cat vnjob-log-export.service
-~~~
+```
 
 Bộ cài chuẩn bị CloudWatch Agent, dịch vụ xuất nhật ký và cơ chế luân chuyển tệp log. Nhật ký được gửi đến log stream của instance trong nhóm **/vn-it-job-market/ec2**.
 
-Mở CloudWatch → Logs → /vn-it-job-market/ec2, chọn stream instance và cùng khoảng thời gian run. Mở alarm để kiểm metric, threshold, trạng thái và actions. 
+Mở CloudWatch → Logs → /vn-it-job-market/ec2, chọn stream instance và cùng khoảng thời gian run. Mở alarm để kiểm metric, threshold, trạng thái và actions.
 
 ### Trạng thái CloudWatch Agent
 
@@ -41,7 +41,6 @@ sudo systemctl status amazon-cloudwatch-agent --no-pager -n 0
 ```
 
 ![Amazon CloudWatch Agent đang chạy và được bật khởi động cùng hệ thống trên EC2](/images/workshop/setup-5-13-agent-status.png)
-
 
 ### Trạng thái bộ xuất nhật ký
 

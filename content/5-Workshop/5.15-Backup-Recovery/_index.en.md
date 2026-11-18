@@ -3,7 +3,7 @@ title: "Data Backup and Recovery Verification"
 date: 2026-11-11T00:00:00+07:00
 weight: 15
 chapter: false
-pre: " <b> 4.13. </b> "
+pre: " <b> 5.13. </b> "
 ---
 
 Prepare a private backup and rehearse recovery into a new location before production use.

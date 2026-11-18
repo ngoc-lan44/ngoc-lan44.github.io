@@ -3,7 +3,7 @@ title: "Database, bảng nguồn và cấu hình Athena"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.4.1. </b> "
+pre: " <b> 5.4.1. </b> "
 aliases:
   - "/5-workshop/5.6-glue-catalog/"
   - "/5-workshop/5.6-glue-catalog/5.6.1-step1/"

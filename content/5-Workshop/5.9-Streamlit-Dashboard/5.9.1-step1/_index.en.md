@@ -3,7 +3,7 @@ title: "Connect data sources and start the application"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.9.1. </b> "
+pre: " <b> 5.9.1. </b> "
 aliases:
   - "/en/5-workshop/5.8-streamlit-dashboard/"
   - "/en/5-workshop/5.8-streamlit-dashboard/5.8.1-step1/"
@@ -35,12 +35,12 @@ dashboard/job_data.py configures Region ap-southeast-1, database vn_it_job_marke
 2. Check that the dashboard unit uses the Linux .venv and dashboard/app.py entry point.
 3. After saving the configuration, restart the application:
 
-~~~bash
+```bash
 sudo systemctl restart vnjob-dashboard.service
 sudo systemctl status vnjob-dashboard.service --no-pager
 curl --fail http://127.0.0.1:8501/_stcore/health
 sudo journalctl -u vnjob-dashboard.service -n 80 --no-pager
-~~~
+```
 
 Before HTTPS is configured, use an SSM tunnel through deploy/ec2/open_private.ps1 with the Session Manager plugin installed; after 4.11, use the current HTTPS URL. Keep port 8501 private behind the reverse proxy. The reader uses a 90-second timeout, pagination and type conversion; jobs and skills are cached for 300 seconds.
 

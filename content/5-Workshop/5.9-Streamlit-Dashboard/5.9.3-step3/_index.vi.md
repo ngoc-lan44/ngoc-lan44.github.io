@@ -3,7 +3,7 @@ title: "Tìm kiếm, lọc và xem chi tiết việc làm"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.9.3. </b> "
+pre: " <b> 5.9.3. </b> "
 aliases:
   - "/5-workshop/5.8-streamlit-dashboard/5.8.3-step3/"
   - "/5-workshop/5.8-streamlit-dashboard/5.8.5-step5/"
@@ -60,7 +60,6 @@ Bộ lọc địa điểm giới hạn dữ liệu theo khu vực người dùng
 Phần chi tiết giúp người dùng đánh giá từng cơ hội qua thông tin công ty, địa điểm, lương, kinh nghiệm, cấp bậc và loại công việc. Liên kết ITviec cho phép mở tin tuyển dụng gốc. Các nút lưu việc làm và ứng tuyển kết nối với chức năng cá nhân khi người dùng đăng nhập.
 
 ![Chi tiết tin IT Project Manager của SureFlow được chọn từ danh sách lọc Hà Nội, kèm liên kết ITviec](/images/workshop/setup-5-9-03.png)
-
 
 ---
 

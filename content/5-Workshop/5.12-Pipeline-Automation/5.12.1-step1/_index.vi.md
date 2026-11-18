@@ -3,7 +3,7 @@ title: "Lập lịch pipeline lúc 02:00 giờ Việt Nam"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.11.1. </b> "
+pre: " <b> 5.11.1. </b> "
 aliases:
   - "/5-workshop/5.13-pipeline-automation/"
   - "/5-workshop/5.13-pipeline-automation/5.13.1-step1/"

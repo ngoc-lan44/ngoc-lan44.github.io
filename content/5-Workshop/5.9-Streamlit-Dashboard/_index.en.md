@@ -3,7 +3,7 @@ title: "Configure and deploy the Streamlit Dashboard"
 date: 2026-11-11T00:00:00+07:00
 weight: 9
 chapter: false
-pre: " <b> 4.9. </b> "
+pre: " <b> 5.9. </b> "
 ---
 
 Configure the Athena data source and start the dashboard from the source code on EC2, then verify KPIs and job search.

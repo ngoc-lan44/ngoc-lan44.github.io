@@ -3,7 +3,7 @@ title: "Các bước chuẩn bị"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 5.2. </b> "
 ---
 
 Chuẩn bị account, source, môi trường quản trị và các dữ liệu đầu vào trước khi tạo hoặc cập nhật tài nguyên.

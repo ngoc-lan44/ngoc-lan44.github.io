@@ -3,7 +3,7 @@ title: "Triển khai mã nguồn và môi trường chạy trên EC2"
 date: 2026-11-11T00:00:00+07:00
 weight: 6
 chapter: false
-pre: " <b> 4.6. </b> "
+pre: " <b> 5.6. </b> "
 ---
 
 Đóng gói, tạo EC2/role bằng source và cài runtime Linux. Stack mới tái dùng tài nguyên dữ liệu đã chuẩn bị.

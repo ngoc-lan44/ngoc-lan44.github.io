@@ -3,7 +3,7 @@ title: "Schedule the pipeline and Operations Worker"
 date: 2026-11-11T00:00:00+07:00
 weight: 12
 chapter: false
-pre: " <b> 4.11. </b> "
+pre: " <b> 5.11. </b> "
 ---
 
 Enable the daily schedule after publication acceptance and install the worker with limited recovery operations.

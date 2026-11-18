@@ -3,7 +3,7 @@ title: "Thiết lập Nginx và HTTPS theo IP"
 date: 2026-11-11T00:00:00+07:00
 weight: 11
 chapter: false
-pre: " <b> 4.10. </b> "
+pre: " <b> 5.10. </b> "
 ---
 
 Mở ingress web, chuẩn bị Certbot và cài helper reconcile IP đúng source.
