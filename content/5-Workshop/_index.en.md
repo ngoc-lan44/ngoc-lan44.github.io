@@ -18,20 +18,20 @@ This workshop describes the setup of Vietnam IT Job Market on AWS, from resource
 
 | Section | Setup topic                                                                         |
 | ------- | ----------------------------------------------------------------------------------- |
-| 4.1     | [Introduction](5.1-Introduction/)                                                   |
-| 4.2     | [Preparation](5.2-Prerequisites/)                                                   |
-| 4.3     | [Set up Amazon S3 storage](5.3-S3-Storage/)                                         |
-| 4.4     | [Set up Glue Data Catalog and Athena](5.4-Catalog-Athena/)                          |
-| 4.5     | [Set up DynamoDB and moderation data](5.5-DynamoDB-Moderation/)                     |
-| 4.6     | [Deploy source code and runtime on EC2](5.6-EC2-Deployment/)                        |
-| 4.7     | [Set up and run ITviec collection](5.7-ITviec-Collection/)                          |
-| 4.8     | [Set up ETL and publish Parquet](5.8-Data-Processing/)                              |
-| 4.9     | [Configure and deploy the Streamlit Dashboard](5.9-Streamlit-Dashboard/)            |
-| 4.10    | [Set up Nginx and IP-based HTTPS](5.11-Nginx-HTTPS/)                                |
-| 4.11    | [Schedule the pipeline and set up the Operations Worker](5.12-Pipeline-Automation/) |
-| 4.12    | [Set up CloudWatch and monitoring](5.13-Monitoring/)                                |
-| 4.13    | [Back up data and verify recovery](5.15-Backup-Recovery/)                           |
-| 4.14    | [Clean up resources and conclude](5.16-Cleanup-Conclusion/)                         |
+| 5.1     | [Introduction](5.1-Introduction/)                                                   |
+| 5.2     | [Preparation](5.2-Prerequisites/)                                                   |
+| 5.3     | [Set up Amazon S3 storage](5.3-S3-Storage/)                                         |
+| 5.4     | [Set up Glue Data Catalog and Athena](5.4-Catalog-Athena/)                          |
+| 5.5     | [Set up DynamoDB and moderation data](5.5-DynamoDB-Moderation/)                     |
+| 5.6     | [Deploy source code and runtime on EC2](5.6-EC2-Deployment/)                        |
+| 5.7     | [Set up and run ITviec collection](5.7-ITviec-Collection/)                          |
+| 5.8     | [Set up ETL and publish Parquet](5.8-Data-Processing/)                              |
+| 5.9     | [Configure and deploy the Streamlit Dashboard](5.9-Streamlit-Dashboard/)            |
+| 5.10    | [Set up Nginx and IP-based HTTPS](5.11-Nginx-HTTPS/)                                |
+| 5.11    | [Schedule the pipeline and set up the Operations Worker](5.12-Pipeline-Automation/) |
+| 5.12    | [Set up CloudWatch and monitoring](5.13-Monitoring/)                                |
+| 5.13    | [Back up data and verify recovery](5.15-Backup-Recovery/)                           |
+| 5.14    | [Clean up resources and conclude](5.16-Cleanup-Conclusion/)                         |
 
 ### Procedure
 

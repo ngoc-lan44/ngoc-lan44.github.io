@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-This section contains my personal takeaways and perspectives — **Nguyễn Ngọc Lan**, an Information Technology student in class **K68CNTTB** at **Vietnam National University of Agriculture** — after 12 weeks of participating in the **First Cloud AI Journey** program and the **Vietnam IT Job Market** project. The following assessments are written from the perspective of an IT student gradually turning theory into practical skills on the cloud computing platform.
+This section contains my personal takeaways and perspectives — **Nguyen Ngoc Lan**, an Information Technology student in class **K68CNTTB** at **Vietnam National University of Agriculture** — after 12 weeks of participating in the **First Cloud AI Journey** program and the **Vietnam IT Job Market** project. The following assessments are written from the perspective of an IT student gradually turning theory into practical skills on the cloud computing platform.
 
 ### Evaluation by aspect
 

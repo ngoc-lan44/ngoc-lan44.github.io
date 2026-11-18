@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-I am **Nguyễn Ngọc Lan**, an Information Technology student in class **K68CNTTB** at **Vietnam National University of Agriculture**, participating in the **First Cloud AI Journey** internship program at AWS Vietnam.
+I am **Nguyen Ngoc Lan**, an Information Technology student in class **K68CNTTB** at **Vietnam National University of Agriculture**, participating in the **First Cloud AI Journey** internship program at AWS Vietnam.
 
 My goal during this internship is to **build a solid foundation and practice working with AWS**, while applying it to the **Vietnam IT Job Market** project. During the 12 weeks of study, I explored the contents on Cloud Journey, systematized my knowledge through a worklog, and connected it to the process of collecting, processing, storing, querying, and visualizing recruitment data from ITviec.
 
