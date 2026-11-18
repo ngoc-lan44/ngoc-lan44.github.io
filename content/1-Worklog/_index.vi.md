@@ -30,4 +30,4 @@ Dưới đây là nhật ký công việc chi tiết của tôi qua 12 tuần th
 
 **Tuần 11:** [Amazon Athena và phân tích dữ liệu bằng SQL](1.11-week11/)
 
-**Tuần 12:** [Tên chủ đề tuần 12 của bạn](1.12-week12/)
+**Tuần 12:** [Hoàn thiện Triển khai, Giám sát và Đo lường Chất lượng Hệ thống](1.12-week12/)
