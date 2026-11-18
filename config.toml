@@ -1,4 +1,4 @@
-baseURL = "https://tongtam2005.github.io/Workshop/"
+baseURL = "https://ngoc-lan44.github.io/"
 relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "vi"
@@ -11,8 +11,8 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   themeVariant = "workshop"
   editURL = ""
-  description = "Vietnam IT Job Market — Báo cáo thực tập Tòng Văn Tâm"
-  author = "Tòng Văn Tâm"
+  description = "Vietnam IT Job Market — Báo cáo thực tập Nguyễn Ngọc Lan"
+  author = "Nguyễn Ngọc Lan"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false

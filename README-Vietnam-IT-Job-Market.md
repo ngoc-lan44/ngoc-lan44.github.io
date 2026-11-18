@@ -1,6 +1,6 @@
 # Báo cáo thực tập Vietnam IT Job Market
 
-Báo cáo của Tòng Văn Tâm gồm sáu mục: Nhật ký công việc; Bản đề xuất; Các sự kiện meetup đã tham gia; Workshop; Tự đánh giá; Chia sẻ, đóng góp ý kiến.
+Báo cáo của Nguyễn Ngọc Lan gồm sáu mục: Nhật ký công việc; Bản đề xuất; Các sự kiện meetup đã tham gia; Workshop; Tự đánh giá; Chia sẻ, đóng góp ý kiến.
 
 ## Xem trên localhost
 
@@ -19,4 +19,3 @@ Localhost đọc cùng nội dung, ảnh và giao diện Hugo dùng để xuất
 https://tongtam2005.github.io/Workshop/
 
 Nội dung nằm trong `content/`, ảnh và tài nguyên trong `static/`, giao diện tùy chỉnh trong `layouts/`.
-
