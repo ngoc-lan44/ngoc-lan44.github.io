@@ -1,0 +1,452 @@
+$ sudo journalctl -u vnjob-pipeline.service --since "2026-11-11 08:15:00 UTC" --until "2026-11-11 08:25:00 UTC" --no-pager -o cat
+Starting vnjob-pipeline.service - Vietnam IT Job Market daily pipeline...
+======================================================================
+DISCOVER ALL ITVIEC JOB URLS
+======================================================================
+Discovery time: 2026-11-11T15:19:55+07:00
+Max page: 500
+[1/500] Page 1
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 20
+[2/500] Page 2
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 40
+[3/500] Page 3
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 60
+[4/500] Page 4
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 80
+[5/500] Page 5
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 100
+[6/500] Page 6
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 120
+[7/500] Page 7
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 140
+[8/500] Page 8
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 160
+[9/500] Page 9
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 180
+[10/500] Page 10
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 200
+[11/500] Page 11
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 220
+[12/500] Page 12
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 240
+[13/500] Page 13
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 260
+[14/500] Page 14
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 280
+[15/500] Page 15
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 300
+[16/500] Page 16
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 320
+[17/500] Page 17
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 340
+[18/500] Page 18
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 360
+[19/500] Page 19
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 380
+[20/500] Page 20
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 400
+[21/500] Page 21
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 420
+[22/500] Page 22
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 440
+[23/500] Page 23
+Job tren page: 20
+Job moi unique: 19
+Tong unique hien tai: 459
+[24/500] Page 24
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 479
+[25/500] Page 25
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 499
+[26/500] Page 26
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 519
+[27/500] Page 27
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 539
+[28/500] Page 28
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 559
+[29/500] Page 29
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 579
+[30/500] Page 30
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 599
+[31/500] Page 31
+Job tren page: 20
+Job moi unique: 20
+Tong unique hien tai: 619
+[32/500] Page 32
+Job tren page: 5
+Job moi unique: 5
+Tong unique hien tai: 624
+[33/500] Page 33
+Job tren page: 0
+Job moi unique: 0
+Tong unique hien tai: 624
+Page khong co job. Dung discovery.
+======================================================================
+KET QUA DISCOVERY
+======================================================================
+So page thanh cong: 33
+So page that bai: 0
+Tong job URL unique: 624
+File: data/raw/itviec/itviec_urls_20261111_152117_659903.json
+======================================================================
+ITVIEC BATCH COLLECTOR
+======================================================================
+Discovery file: /opt/vn-it-job-market/data/raw/itviec/itviec_urls_20261111_152117_659903.json
+Tong URL discovery: 624
+Batch number: 1
+Tong so batch: 25
+Batch size: 25
+Index: 0 -> 24
+So URL trong batch: 25
+[1/25]
+https://itviec.com/it-jobs/ky-su-cau-noi-brse-da-nang-azoom-vietnam-1416
+OK: itviec_8642634b74318a2069f64075 - Ky su cau noi BrSE -
+[2/25]
+https://itviec.com/it-jobs/ios-developer-swift-hcmc-gotymex-4328
+OK: itviec_e741e5baaf3b88e85a110068 - iOS Developer Swift, C
+[3/25]
+https://itviec.com/it-jobs/database-developer-oracle-postgresql-cesa-vietnam-part-of-ceva-logistic-4657
+OK: itviec_4268ab317cac96137bbc00ff - Database Developer Oracle / PostgreSQL
+[4/25]
+https://itviec.com/it-jobs/embedded-software-test-engineer-n3-onsite-in-japan-fujifilm-business-innovation-viet-nam-1041
+OK: itviec_432048d8bd454b48225dde87 - Embedded Software Test Engineer N3, onsite in Japan
+[5/25]
+https://itviec.com/it-jobs/senior-expert-database-administrator-oracle-cong-ty-co-phan-thanh-toan-so-mobifone-1453
+OK: itviec_b42bce2788c27678b44faae7 - Senior/Expert Database Administrator Oracle
+[6/25]
+https://itviec.com/it-jobs/avvc-events-engineer-tech-lounge-av-hanoi-nab-innovation-centre-vietnam-0637
+OK: itviec_3c34716175993816399401d5 - AVVC Events Engineer - Tech Lounge  AV Hanoi
+[7/25]
+https://itviec.com/it-jobs/6-business-analyst-trung-tam-cong-nghe-thong-tin-mobifone-5459
+OK: itviec_47c90b8477ef24ee6788a35a - 6 Business Analyst
+[8/25]
+https://itviec.com/it-jobs/middle-senior-cloud-engineer-devops-kubernetes-cong-ty-co-phan-chung-khoan-vps-1642
+OK: itviec_fcd6e464e6059f1308f6dc75 - Middle/Senior Cloud Engineer DevOps, Kubernetes
+[9/25]
+https://itviec.com/it-jobs/danang-pmo-project-leader-japanese-n2-nec-vietnam-1719
+OK: itviec_afe785d3fff8b73b39ce938c - Danang PMO/ Project Leader Japanese N2
+[10/25]
+https://itviec.com/it-jobs/chuyen-vien-quan-ly-du-an-phan-mem-trung-tam-cong-nghe-thong-tin-mobifone-5846
+OK: itviec_723f533d761b14c18e18892e - Chuyen vien quan ly du an phan mem
+[11/25]
+https://itviec.com/it-jobs/sap-fi-consultant-lg-cns-viet-nam-5327
+OK: itviec_5b4a625421bfcbce3931fd05 - SAP FI Consultant
+[12/25]
+https://itviec.com/it-jobs/senior-principal-ruby-on-rails-developer-aws-backend-andpad-vietnam-co-ltd-4221
+OK: itviec_e9a4319da0d7570f4cf116ea - Senior/Principal Ruby on Rails Developer AWS, Backend
+[13/25]
+https://itviec.com/it-jobs/senior-golang-engineer-backend-aws-mysql-andpad-vietnam-co-ltd-3524
+OK: itviec_a8c405da2991d3f677cb6f22 - Senior Golang Engineer Backend, AWS, MySQL
+[14/25]
+https://itviec.com/it-jobs/software-development-engineer-in-test-sdet-andpad-vietnam-co-ltd-4158
+OK: itviec_c4f20f0eab1e1d9423b31308 - Software Development Engineer in Test SDET
+[15/25]
+https://itviec.com/it-jobs/senior-platform-engineer-linux-k8s-git-ci-cd-mb-life-5711
+OK: itviec_5f02ebf3334b0a585d73506e - Senior Platform Engineer Linux, K8S, Git, CI/CD
+[16/25]
+https://itviec.com/it-jobs/lead-data-engineer-azure-aws-gcp-mb-life-2945
+OK: itviec_d578abcef73d462b6f961b91 - Lead Data Engineer Azure / AWS / GCP
+[17/25]
+https://itviec.com/it-jobs/senior-developer-japanese-n3-cube-system-viet-nam-4119
+OK: itviec_eb372fbd989fb29c44eb1ccb - Senior Developer Japanese N3
+[18/25]
+https://itviec.com/it-jobs/staff-ai-engineer-report-to-cto-perform-ai-0058
+OK: itviec_987fd838fc667655a771d7d0 - Staff AI Engineer - Report to CTO
+[19/25]
+https://itviec.com/it-jobs/bridge-engineer-japanese-n2-up-to-60m-1-month-bonus-hybrid-one-0528
+OK: itviec_7b3bb68f10b5296213b8de7c - Bridge Engineer Japanese N2  Up to 60M+1 month bonus
+[20/25]
+https://itviec.com/it-jobs/fullstack-software-engineerall-levels-cloud-ci-cd-vietlink-5823
+OK: itviec_863bc648bb1abc7998395bb8 - Fullstack Software EngineerAll Levels Cloud  CI/CD
+[21/25]
+https://itviec.com/it-jobs/core-system-operations-it-support-sql-sbsi-4g061-msb-0203
+OK: itviec_79b057a345791459424c4bb5 - Core System Operations IT Support, SQL  SBSI  4G061
+[22/25]
+https://itviec.com/it-jobs/it-solution-engineer-japanese-speaking-pre-sales-vitalify-asia-5439
+OK: itviec_2dfa13d660380937c0821071 - IT Solution Engineer Japanese Speaking / Pre-Sales
+[23/25]
+https://itviec.com/it-jobs/senior-fullstack-engineer-php-nextjs-propnex-5004
+OK: itviec_ae11729599e06d861fa73558 - Senior Fullstack Engineer PHP, NextJS
+[24/25]
+https://itviec.com/it-jobs/principal-frontend-engineer-reactjs-vuejs-andpad-vietnam-co-ltd-4134
+OK: itviec_ccd2ba485726d3b2dfa19965 - Principal Frontend Engineer ReactJS/ VueJS
+[25/25]
+https://itviec.com/it-jobs/da-nang-system-analyst-project-management-specialist-cong-ty-tnhh-tech-mojo-3655
+OK: itviec_2be78f738043900e5c1136a6 -  System Analyst/ Project Management Specialist
+======================================================================
+KET QUA BATCH
+======================================================================
+Batch: 1/25
+Du kien: 25
+Thanh cong: 25
+That bai: 0
+Batch complete: True
+Stopped early: False
+File: data/raw/itviec/batches/itviec_batch_001_20261111_082215_181177.json
+======================================================================
+======================================================================
+ITVIEC BATCH COLLECTOR
+======================================================================
+Discovery file: /opt/vn-it-job-market/data/raw/itviec/itviec_urls_20261111_152117_659903.json
+Tong URL discovery: 624
+Batch number: 2
+Tong so batch: 25
+Batch size: 25
+Index: 25 -> 49
+So URL trong batch: 25
+[1/25]
+https://itviec.com/it-jobs/chuyen-vien-ho-tro-tich-hop-dich-vu-khoi-ngan-hang-so-mb-bank-2355
+OK: itviec_8ba21333a56e1797a5b61600 - Chuyen vien Ho tro Tich hop Dich vu - Khoi Ngan hang So
+[2/25]
+https://itviec.com/it-jobs/technical-architect-kotlin-java-spring-boot-ai-tma-solutions-4634
+OK: itviec_fe68716c63995cce6e467823 - Technical Architect Kotlin, Java, Spring Boot, AI
+[3/25]
+https://itviec.com/it-jobs/da-nang-technical-architect-one-tech-stop-vietnam-company-ltd-5915
+OK: itviec_2474f32065b4f435d1b4385d -  Technical Architect
+[4/25]
+https://itviec.com/it-jobs/senior-data-scientist-spiraledge-4031
+OK: itviec_872109a426a21fa7921fa220 - Senior Data Scientist
+[5/25]
+https://itviec.com/it-jobs/senior-data-scientist-daiichi-life-viet-nam-2241
+OK: itviec_661a4bd5568afd6427af4698 - Senior Data Scientist
+[6/25]
+https://itviec.com/it-jobs/ho-chi-minh-product-owner-one-tech-stop-vietnam-company-ltd-0506
+OK: itviec_1ee99004e1abfb0d42c33fbd -  Product Owner
+[7/25]
+https://itviec.com/it-jobs/ho-chi-minh-technical-architect-one-tech-stop-vietnam-company-ltd-0546
+OK: itviec_c6626f5b4edae6b287bb5711 -  Technical Architect
+[8/25]
+https://itviec.com/it-jobs/manual-quality-assurance-senior-lead-vinsmart-future-4125
+OK: itviec_56e24f10071b988433f83021 - Manual Quality Assurance Senior/Lead
+[9/25]
+https://itviec.com/it-jobs/backend-engineer-insurance-or-banking-domain-lg-cns-viet-nam-0107
+OK: itviec_79e5d67d85b4b60e009e6943 - Backend Engineer Insurance Or Banking Domain
+[10/25]
+https://itviec.com/it-jobs/ai-engineer-kobo-asia-0856
+OK: itviec_9614e0f871e62b325ba56106 - AI Engineer
+[11/25]
+https://itviec.com/it-jobs/system-designer-brse-japanese-speaking-kobo-asia-1438
+OK: itviec_59addf249dbe04abf186dd36 - System Designer - BrSE Japanese speaking
+[12/25]
+https://itviec.com/it-jobs/japanese-tester-qa-qc-kobo-asia-5926
+OK: itviec_6c65676de2b61467fc39c42a - Japanese Tester QA/QC
+[13/25]
+https://itviec.com/it-jobs/senior-data-scientist-gsm-platform-vinsmart-future-3338
+OK: itviec_5bc7c1e1335a45056dde87fd - Senior Data Scientist - GSM Platform
+[14/25]
+https://itviec.com/it-jobs/giam-sat-chat-luong-qc-qa-tester-alttekglobal-atg-corporation-3918
+OK: itviec_d5e1ef97c69ce7b43f4fa8fb - Giam Sat Chat Luong QC/QA/TESTER
+[15/25]
+https://itviec.com/it-jobs/fullstack-developer-javascripts-sping-postgresql-usol-vietnam-4634
+OK: itviec_8300fd13885048eed9e8d331 - Fullstack Developer Java, VueJS, PostgreSQL, SQL
+[16/25]
+https://itviec.com/it-jobs/middle-senior-backend-engineer-java-vinsmart-future-0047
+OK: itviec_449aea2eebce7a8a25219b65 - Middle/Senior Backend Engineer Java
+[17/25]
+https://itviec.com/it-jobs/senior-data-analyst-gft-technologies-vietnam-1945
+OK: itviec_88bf1c4273a8fc2c0d3be57c - Senior Data Analyst
+[18/25]
+https://itviec.com/it-jobs/senior-fullstack-engineer-itviec-recruitment-consulting-1246
+OK: itviec_4cee4da1de5f118223a7f9c0 - Senior Fullstack Engineer
+[19/25]
+https://itviec.com/it-jobs/senior-c-developer-c-11-algorithms-linux-itviec-recruitment-consulting-0905
+OK: itviec_646c9ac8ac1dbae6b4896808 - Senior C++ Developer C++11, Algorithms, Linux
+[20/25]
+https://itviec.com/it-jobs/engineering-manager-itviec-recruitment-consulting-1031
+OK: itviec_b88a4ae543eb5ea9e2173045 - Engineering Manager
+[21/25]
+https://itviec.com/it-jobs/senior-network-engineer-datacenter-security-operation-iij-global-solutions-viet-nam-4440
+OK: itviec_f0acdb098a7ac6dbf603d0bf - Senior Network Engineer  Datacenter, Security
+[22/25]
+https://itviec.com/it-jobs/lead-penetration-tester-pentester-itviec-recruitment-consulting-2038
+OK: itviec_e4523bcc9b3399ff97c94d44 - Lead Penetration Tester Pentester
+[23/25]
+https://itviec.com/it-jobs/new-product-development-engineer-fullstack-english-porters-asia-vietnam-co-ltd-5903
+OK: itviec_16dfaaa933ac5d4a73e8afc1 - New Product Development EngineerFullstack  English
+[24/25]
+https://itviec.com/it-jobs/senior-technical-product-owner-savings-zalopay-5509
+OK: itviec_bf61d027ba0ab42e2bfd9f40 - Senior Technical Product Owner Savings
+[25/25]
+https://itviec.com/it-jobs/engineering-team-lead-java-ai-native-hrs-group-1400
+OK: itviec_41c17510acb104c5b1399f4b - Engineering Team Lead Java, AI-native
+======================================================================
+KET QUA BATCH
+======================================================================
+Batch: 2/25
+Du kien: 25
+Thanh cong: 25
+That bai: 0
+Batch complete: True
+Stopped early: False
+File: data/raw/itviec/batches/itviec_batch_002_20261111_082327_652537.json
+======================================================================
+======================================================================
+ITVIEC BATCH COLLECTOR
+======================================================================
+Discovery file: /opt/vn-it-job-market/data/raw/itviec/itviec_urls_20261111_152117_659903.json
+Tong URL discovery: 624
+Batch number: 3
+Tong so batch: 25
+Batch size: 25
+Index: 50 -> 74
+So URL trong batch: 25
+[1/25]
+https://itviec.com/it-jobs/senior-fullstack-engineer-java-ai-native-hrs-group-0858
+OK: itviec_8905b702d9578e500e6223b3 - Senior Fullstack Engineer Java, AI-native
+[2/25]
+https://itviec.com/it-jobs/bridge-software-engineer-n2-jlpt-itviec-recruitment-consulting-5139
+OK: itviec_0e25ce9a6df55b757d9310c4 - Bridge Software Engineer N2 JLPT
+[3/25]
+https://itviec.com/it-jobs/scrum-master-japanese-speaking-itviec-recruitment-consulting-5453
+OK: itviec_d64e2fea28fabe1203f4262a - Scrum Master Japanese Speaking
+[4/25]
+https://itviec.com/it-jobs/tmo-business-analyst-brd-user-story-banking-ngan-hang-a-chau-acb-2519
+OK: itviec_7426ccde468229df0b04b781 - TMO - Business Analyst BRD, User Story, Banking
+[5/25]
+https://itviec.com/it-jobs/lead-java-engineer-nab-innovation-centre-vietnam-3220
+OK: itviec_f1c5b8ec10f2e27c92e4fa73 - Lead Java Engineer Spring Boot, Microservices, AWS
+[6/25]
+https://itviec.com/it-jobs/data-scientist-ml-aws-azure-cloud-vietinbank-1153
+OK: itviec_7b033cb98c7c19021773dfcc - Data Scientist ML, AWS, Azure, Cloud
+[7/25]
+https://itviec.com/it-jobs/bridge-system-engineer-japanese-n1-n2-itviec-recruitment-consulting-1038
+OK: itviec_d87d047391fde3b73a7c66dc - Bridge System Engineer Japanese N1/N2
+[8/25]
+https://itviec.com/it-jobs/business-project-associate-china-market-preferred-athena-studio-1354
+OK: itviec_f1177a77ed2a9bd96960f908 - Business Project Associate China Market Preferred
+[9/25]
+https://itviec.com/it-jobs/lead-business-analyst-fpt-is-2100
+OK: itviec_85813e1755162da2f591e2c6 - Lead Business Analyst
+[10/25]
+https://itviec.com/it-jobs/senior-game-developer-cocos2d-x-cocos-creator-athena-studio-4445
+OK: itviec_992f2e24900ebf13a7098611 - Senior Game Developer Cocos2d-x/Cocos Creator
+[11/25]
+https://itviec.com/it-jobs/remote-dx-manager-jira-notion-sql-posthog-orgscale-recruitment-5003
+OK: itviec_cbd39a615acd75fdb1843ec0 - Remote - DX Manager Jira, Notion, SQL, PostHog
+[12/25]
+https://itviec.com/it-jobs/finops-and-entitlements-manager-aws-azure-hansen-technologies-3220
+OK: itviec_357026f16c249f6b2d06ca3c - FinOps and Entitlements Manager AWS, Azure
+[13/25]
+https://itviec.com/it-jobs/java-developer-springboot-oracle-kafka-postgresql-goline-corporation-0412
+OK: itviec_c623a3db6df335b2b585ae64 - Java Developer SpringBoot, Oracle, Kafka, PostgreSQL
+[14/25]
+https://itviec.com/it-jobs/automotive-embedded-software-engineer-asap-hitachi-digital-services-1115
+OK: itviec_7e6216b5b32028f52ec650b7 - Automotive Embedded Software Engineer ASAP
+[15/25]
+https://itviec.com/it-jobs/servicenow-itsm-developer-lg-cns-viet-nam-1435
+OK: itviec_7479c32299716e52b2fd167f - ServiceNow ITSM Developer
+[16/25]
+https://itviec.com/it-jobs/senior-data-security-data-division-mb-bank-5536
+OK: itviec_dfb568890b826ca294791849 - Senior Data Security - Data Division
+[17/25]
+https://itviec.com/it-jobs/data-product-semantic-layer-engineer-fpt-software-0228
+OK: itviec_b3317606f48792e01004deb9 - Data Product  Semantic Layer Engineer
+[18/25]
+https://itviec.com/it-jobs/data-quality-management-specialist-data-division-mb-bank-5856
+OK: itviec_61d3ca882589620cbc4301dc - Data Quality Management Specialist - Data Division
+[19/25]
+https://itviec.com/it-jobs/technical-lead-katalon-1647
+OK: itviec_75f36dff45c77d4ba304bab0 - Technical Lead
+[20/25]
+https://itviec.com/it-jobs/ux-ui-design-game-cong-ty-co-phan-sabogame-0114
+OK: itviec_5468bf802c1954c75f79d58b - UX/UI Design Game
+[21/25]
+https://itviec.com/it-jobs/cloud-architect-aws-azure-gcp-lg-cns-viet-nam-3657
+OK: itviec_af012e6ca78ff64a6c883252 - Cloud Architect AWS/Azure/GCP
+[22/25]
+https://itviec.com/it-jobs/junior-business-analyst-onsite-hanoi-asap-synergix-technologies-0544
+OK: itviec_a7e64d5dc77c7bf4c8417c17 - Junior Business Analyst - Onsite Hanoi - ASAP
+[23/25]
+https://itviec.com/it-jobs/system-engineer-embedded-automotive-hella-vietnam-2437
+OK: itviec_6bac79caa9dbed7685066b9e - System Engineer Embedded Automotive
+[24/25]
+https://itviec.com/it-jobs/technical-lead-java-itviec-recruitment-consulting-3800
+OK: itviec_1f207881b3298394f711b88d - Technical Lead Java
+[25/25]
+https://itviec.com/it-jobs/ai-quality-engineer-bbv-vietnam-3627
+OK: itviec_7a00c78c5ac620eacb0469be - AI Quality Engineer
+======================================================================
+KET QUA BATCH
+======================================================================
+Batch: 3/25
+Du kien: 25
+Thanh cong: 25
+That bai: 0
+Batch complete: True
+Stopped early: False
+File: data/raw/itviec/batches/itviec_batch_003_20261111_082441_024976.json
+======================================================================
+======================================================================
+ITVIEC BATCH COLLECTOR
+======================================================================
+Discovery file: /opt/vn-it-job-market/data/raw/itviec/itviec_urls_20261111_152117_659903.json
+Tong URL discovery: 624
+Batch number: 4
+Tong so batch: 25
+Batch size: 25
+Index: 75 -> 99
+So URL trong batch: 25
+[1/25]
+https://itviec.com/it-jobs/chief-developer-technical-lead-onsite-hanoi-synergix-technologies-5044
+OK: itviec_047a0b94de9b52ed75b9c373 - Chief Developer/Technical Lead - Onsite Hanoi
+[2/25]
+https://itviec.com/it-jobs/senior-dba-database-administrator-mysql-mongodb-ctcp-san-giao-dich-tai-san-ma-hoa-viet-nam-thinh-vuong-caex-4805
+OK: itviec_4d69ccbe9bb373c9b8f3b8b9 - Senior DBA/ Database Administrator MySQL, MongoDB
+$ 

@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nhật ký công việc on Báo cáo thực tập</title><link>https://ngoc-lan44.github.io/1-worklog/</link><description>Recent content in Nhật ký công việc on Báo cáo thực tập</description><generator>Hugo</generator><language>vi</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://ngoc-lan44.github.io/1-worklog/index.xml" rel="self" type="application/rss+xml"/><item><title>1.1. Worklog Tuần 1</title><link>https://ngoc-lan44.github.io/1-worklog/1.1-week1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.1-week1/</guid><description>&lt;h3 id="mục-tiêu-tuần-1">Mục tiêu Tuần 1:&lt;/h3>
+&lt;ul>
+&lt;li>Nắm bắt giao diện AWS Management Console, khởi tạo tài khoản và thiết lập các biện pháp an toàn tài chính.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Khởi tạo &amp;amp; Bảo mật Tài khoản AWS:&lt;/strong> Thực hành khởi tạo tài khoản AWS Free Tier và thiết lập bảo mật cơ bản.&lt;/td>
+ &lt;td style="text-align: center">10/08/2026&lt;/td>
+ &lt;td style="text-align: center">10/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Account&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Khám phá AWS Console:&lt;/strong> Khám phá giao diện AWS Console, cấu hình các tùy chọn khu vực (Region) và Availability Zones.&lt;/td>
+ &lt;td style="text-align: center">11/08/2026&lt;/td>
+ &lt;td style="text-align: center">11/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Account&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Nguyên lý AWS Billing:&lt;/strong> Tìm hiểu nguyên lý hoạt động của AWS Billing và các khoản phí tiềm ẩn.&lt;/td>
+ &lt;td style="text-align: center">12/08/2026&lt;/td>
+ &lt;td style="text-align: center">12/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Budgets&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Cấu hình AWS Budgets:&lt;/strong> Đặt hạn mức chi phí (Budget Limit) và tạo cảnh báo qua email.&lt;/td>
+ &lt;td style="text-align: center">13/08/2026&lt;/td>
+ &lt;td style="text-align: center">13/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Budgets&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Quản lý AWS Support:&lt;/strong> Khảo sát các gói AWS Support, cách tạo Support Ticket khi cần hỗ trợ kỹ thuật hoặc tài khoản.&lt;/td>
+ &lt;td style="text-align: center">14/08/2026&lt;/td>
+ &lt;td style="text-align: center">14/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Support&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-1">Kết quả Tuần 1:&lt;/h3>
+&lt;p>Hoàn thành thiết lập tài khoản AWS an toàn, biết cách kiểm soát ngân sách tránh phát sinh chi phí ngoài ý muốn.&lt;/p></description></item><item><title>1.2. Worklog Tuần 2</title><link>https://ngoc-lan44.github.io/1-worklog/1.2-week2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.2-week2/</guid><description>&lt;h3 id="mục-tiêu-tuần-2">Mục tiêu Tuần 2:&lt;/h3>
+&lt;ul>
+&lt;li>Nắm vững nguyên tắc phân quyền tối thiểu (Least Privilege) và quản lý định danh người dùng trên AWS.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Kiến trúc AWS IAM &amp;amp; Root User:&lt;/strong> Tìm hiểu kiến trúc của AWS IAM (Identity and Access Management) và tầm quan trọng của Root User.&lt;/td>
+ &lt;td style="text-align: center">17/08/2026&lt;/td>
+ &lt;td style="text-align: center">17/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>IAM User &amp;amp; IAM Group:&lt;/strong> Tạo IAM User và IAM Group; phân bổ User vào Group để quản lý tập trung.&lt;/td>
+ &lt;td style="text-align: center">18/08/2026&lt;/td>
+ &lt;td style="text-align: center">18/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>JSON IAM Policy:&lt;/strong> Phân tích cấu trúc của JSON IAM Policy và cách cấp quyền (Allow/Deny) cho các tài nguyên.&lt;/td>
+ &lt;td style="text-align: center">19/08/2026&lt;/td>
+ &lt;td style="text-align: center">19/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Khởi tạo IAM Role:&lt;/strong> Khởi tạo IAM Role, phân biệt sự khác nhau giữa IAM Role và IAM User.&lt;/td>
+ &lt;td style="text-align: center">20/08/2026&lt;/td>
+ &lt;td style="text-align: center">20/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Cơ chế Assume Role:&lt;/strong> Thực hành cơ chế &amp;ldquo;Assume Role&amp;rdquo; (Switch Role) để mượn quyền tạm thời giữa các tài khoản.&lt;/td>
+ &lt;td style="text-align: center">21/08/2026&lt;/td>
+ &lt;td style="text-align: center">21/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-2">Kết quả Tuần 2:&lt;/h3>
+&lt;p>Xây dựng được mô hình phân quyền an toàn, không sử dụng Root User cho các tác vụ hàng ngày.&lt;/p></description></item><item><title>1.3. Worklog Tuần 3</title><link>https://ngoc-lan44.github.io/1-worklog/1.3-week3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.3-week3/</guid><description>&lt;h3 id="mục-tiêu-tuần-3">Mục tiêu Tuần 3:&lt;/h3>
+&lt;ul>
+&lt;li>Hiểu cách thiết kế mạng riêng ảo, định tuyến lưu lượng và thiết lập các lớp bảo mật mạng.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Kiến trúc Amazon VPC:&lt;/strong> Phân tích các thành phần kiến trúc của Amazon VPC (IPv4 CIDR, Subnets, Route Tables).&lt;/td>
+ &lt;td style="text-align: center">24/08/2026&lt;/td>
+ &lt;td style="text-align: center">24/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Cấu hình Subnet:&lt;/strong> Tạo Public Subnet (gắn Internet Gateway) và Private Subnet.&lt;/td>
+ &lt;td style="text-align: center">25/08/2026&lt;/td>
+ &lt;td style="text-align: center">25/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Bảo mật mạng:&lt;/strong> Phân biệt và thiết lập quy tắc bảo mật mạng với Security Groups (Stateful) và Network ACLs (Stateless).&lt;/td>
+ &lt;td style="text-align: center">26/08/2026&lt;/td>
+ &lt;td style="text-align: center">26/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Kiểm tra định tuyến:&lt;/strong> Triển khai thử nghiệm 1 máy chủ ảo (EC2) vào trong Public Subnet để kiểm tra định tuyến mạng.&lt;/td>
+ &lt;td style="text-align: center">27/08/2026&lt;/td>
+ &lt;td style="text-align: center">27/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Kết nối mạng lai (Hybrid):&lt;/strong> Nghiên cứu giải pháp kết nối mạng kết lai (Hybrid) thông qua AWS Site-to-Site VPN.&lt;/td>
+ &lt;td style="text-align: center">28/08/2026&lt;/td>
+ &lt;td style="text-align: center">28/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-3">Kết quả Tuần 3:&lt;/h3>
+&lt;p>Thiết kế được một VPC cơ bản có khả năng phân tách vùng mạng an toàn và vùng mạng công cộng.&lt;/p></description></item><item><title>1.4. Worklog Tuần 4</title><link>https://ngoc-lan44.github.io/1-worklog/1.4-week4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.4-week4/</guid><description>&lt;h3 id="mục-tiêu-tuần-4">Mục tiêu Tuần 4:&lt;/h3>
+&lt;ul>
+&lt;li>Làm chủ việc cấp phát, kết nối và cấu hình máy chủ tính toán trên hạ tầng AWS.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Tổng quan Amazon EC2:&lt;/strong> Tìm hiểu các thế hệ Amazon EC2, cách chọn Instance Type phù hợp với nhu cầu và hệ điều hành (AMI).&lt;/td>
+ &lt;td style="text-align: center">31/08/2026&lt;/td>
+ &lt;td style="text-align: center">31/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Chuẩn bị Security Group &amp;amp; Key Pair:&lt;/strong> Chuẩn bị Security Group (Mở port 22/80) và tạo Key Pair để chuẩn bị khởi tạo EC2.&lt;/td>
+ &lt;td style="text-align: center">01/09/2026&lt;/td>
+ &lt;td style="text-align: center">01/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Khởi tạo &amp;amp; Kết nối SSH:&lt;/strong> Khởi tạo Amazon Linux 2023 Instance, thực hành kết nối bảo mật qua SSH.&lt;/td>
+ &lt;td style="text-align: center">02/09/2026&lt;/td>
+ &lt;td style="text-align: center">02/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lưu trữ Amazon EBS:&lt;/strong> Nghiên cứu về ổ cứng mạng Amazon EBS: Cách tạo, gắn (attach) và snapshot sao lưu dữ liệu.&lt;/td>
+ &lt;td style="text-align: center">03/09/2026&lt;/td>
+ &lt;td style="text-align: center">03/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dọn dẹp tài nguyên EC2:&lt;/strong> Quy trình dọn dẹp tài nguyên EC2 (Stop/Terminate) để tối ưu chi phí sau khi thực hành.&lt;/td>
+ &lt;td style="text-align: center">04/09/2026&lt;/td>
+ &lt;td style="text-align: center">04/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-4">Kết quả Tuần 4:&lt;/h3>
+&lt;p>Biết cách vận hành linh hoạt máy chủ Linux trên cloud, hiểu được quy trình lifecycle của EC2.&lt;/p></description></item><item><title>1.5. Worklog Tuần 5</title><link>https://ngoc-lan44.github.io/1-worklog/1.5-week5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.5-week5/</guid><description>&lt;h3 id="mục-tiêu-tuần-5">Mục tiêu Tuần 5:&lt;/h3>
+&lt;ul>
+&lt;li>Quản trị kho lưu trữ Object Storage và tiếp cận cách thao tác AWS qua dòng lệnh (Command Line).&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Kiến trúc Amazon S3:&lt;/strong> Tổng quan về kiến trúc Object Storage của Amazon S3 và các hạng mục Storage Classes (Standard, Glacier).&lt;/td>
+ &lt;td style="text-align: center">07/09/2026&lt;/td>
+ &lt;td style="text-align: center">07/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – S3&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Cài đặt AWS CLI:&lt;/strong> Cài đặt và cấu hình chứng thực bảo mật cho công cụ AWS CLI trên máy trạm cục bộ.&lt;/td>
+ &lt;td style="text-align: center">08/09/2026&lt;/td>
+ &lt;td style="text-align: center">08/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS CLI&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Thao tác S3 trên Web Console:&lt;/strong> Khởi tạo S3 Bucket, thao tác tải lên/tải xuống file thông qua giao diện Web Console.&lt;/td>
+ &lt;td style="text-align: center">09/09/2026&lt;/td>
+ &lt;td style="text-align: center">09/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – S3&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Quản trị S3 bằng CLI:&lt;/strong> Thực hành quản trị S3 bằng các lệnh CLI cơ bản (aws s3 ls, aws s3 cp, aws s3 sync).&lt;/td>
+ &lt;td style="text-align: center">10/09/2026&lt;/td>
+ &lt;td style="text-align: center">10/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS CLI&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>An toàn dữ liệu S3:&lt;/strong> Thiết lập các cơ chế an toàn dữ liệu: Bật S3 Versioning và Block Public Access.&lt;/td>
+ &lt;td style="text-align: center">11/09/2026&lt;/td>
+ &lt;td style="text-align: center">11/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – S3&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-5">Kết quả Tuần 5:&lt;/h3>
+&lt;p>Hiểu cách S3 hoạt động độc lập và biết sử dụng AWS CLI để tăng tốc độ thao tác tài nguyên.&lt;/p></description></item><item><title>1.6. Worklog Tuần 6</title><link>https://ngoc-lan44.github.io/1-worklog/1.6-week6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.6-week6/</guid><description>&lt;h3 id="mục-tiêu-tuần-6">Mục tiêu Tuần 6:&lt;/h3>
+&lt;ul>
+&lt;li>Phân biệt các hệ quản trị CSDL trên cloud (SQL vs NoSQL) và kịch bản sử dụng.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Khảo sát Amazon RDS:&lt;/strong> Khảo sát dịch vụ Amazon RDS (Relational Database) và các Database Engine được hỗ trợ.&lt;/td>
+ &lt;td style="text-align: center">14/09/2026&lt;/td>
+ &lt;td style="text-align: center">14/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Amazon RDS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Hạ tầng mạng cho CSDL:&lt;/strong> Thiết lập DB Subnet Group và mở port Security Group.&lt;/td>
+ &lt;td style="text-align: center">15/09/2026&lt;/td>
+ &lt;td style="text-align: center">15/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Amazon RDS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Triển khai RDS &amp;amp; Sao lưu:&lt;/strong> Triển khai thử nghiệm 1 RDS Instance, tìm hiểu tính năng Automated Backups và Snapshots.&lt;/td>
+ &lt;td style="text-align: center">16/09/2026&lt;/td>
+ &lt;td style="text-align: center">16/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Amazon RDS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Làm quen Amazon DynamoDB:&lt;/strong> Tìm hiểu CSDL NoSQL: Cấu trúc Bảng (Table), Khóa phân vùng (Partition Key) và Khóa sắp xếp (Sort Key).&lt;/td>
+ &lt;td style="text-align: center">17/09/2026&lt;/td>
+ &lt;td style="text-align: center">17/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – DynamoDB&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>So sánh RDS &amp;amp; DynamoDB:&lt;/strong> Đối chiếu ưu, nhược điểm giữa RDS và DynamoDB về khả năng mở rộng và mô hình tính giá (Provisioned vs On-demand).&lt;/td>
+ &lt;td style="text-align: center">18/09/2026&lt;/td>
+ &lt;td style="text-align: center">18/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – DynamoDB&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-6">Kết quả Tuần 6:&lt;/h3>
+&lt;p>Nắm vững đặc thù của CSDL quan hệ và CSDL NoSQL, biết cách lựa chọn dịch vụ phù hợp với ứng dụng.&lt;/p></description></item><item><title>1.7. Worklog Tuần 7</title><link>https://ngoc-lan44.github.io/1-worklog/1.7-week7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.7-week7/</guid><description>&lt;h3 id="mục-tiêu-tuần-7">Mục tiêu Tuần 7:&lt;/h3>
+&lt;ul>
+&lt;li>Hiểu mô hình kiến trúc Serverless và cách thực thi mã mà không cần quản lý máy chủ.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Khái niệm Serverless:&lt;/strong> Tìm hiểu Serverless Computing và cơ chế hoạt động Event-driven của AWS Lambda.&lt;/td>
+ &lt;td style="text-align: center">21/09/2026&lt;/td>
+ &lt;td style="text-align: center">21/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>IAM Execution Role:&lt;/strong> Thiết lập IAM Execution Role cho Lambda để cấp quyền tương tác với các dịch vụ AWS khác.&lt;/td>
+ &lt;td style="text-align: center">22/09/2026&lt;/td>
+ &lt;td style="text-align: center">22/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Thực hành Lambda Python:&lt;/strong> Phân tích bài thực hành mẫu: Viết mã Python cho Lambda Function tự động Start/Stop EC2.&lt;/td>
+ &lt;td style="text-align: center">23/09/2026&lt;/td>
+ &lt;td style="text-align: center">23/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Gỡ lỗi &amp;amp; Giám sát Log:&lt;/strong> Đọc log lỗi (Debugging) và kiểm soát quá trình chạy của Lambda thông qua CloudWatch Logs.&lt;/td>
+ &lt;td style="text-align: center">24/09/2026&lt;/td>
+ &lt;td style="text-align: center">24/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lập lịch với EventBridge:&lt;/strong> Ứng dụng Amazon EventBridge (CloudWatch Events) để thiết lập lịch chạy (cron job) cho Lambda.&lt;/td>
+ &lt;td style="text-align: center">25/09/2026&lt;/td>
+ &lt;td style="text-align: center">25/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">AWS – EventBridge&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-7">Kết quả Tuần 7:&lt;/h3>
+&lt;p>Triển khai được các tác vụ tự động hóa (Automation) đơn giản trên nền tảng Serverless.&lt;/p></description></item><item><title>1.8. Worklog Tuần 8</title><link>https://ngoc-lan44.github.io/1-worklog/1.8-week8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.8-week8/</guid><description>&lt;h3 id="mục-tiêu-tuần-8">Mục tiêu Tuần 8:&lt;/h3>
+&lt;ul>
+&lt;li>Thiết lập khả năng quan sát (Observability), giám sát hiệu suất và ghi vết bảo mật.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Hệ sinh thái CloudWatch:&lt;/strong> Tìm hiểu hệ sinh thái giám sát Amazon CloudWatch: Metrics (chỉ số), Logs (nhật ký) và Events.&lt;/td>
+ &lt;td style="text-align: center">28/09/2026&lt;/td>
+ &lt;td style="text-align: center">28/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Theo dõi CloudWatch Metrics:&lt;/strong> Đọc biểu đồ CloudWatch Metrics để theo dõi sức khỏe tài nguyên (CPU Utilization, Network In/Out).&lt;/td>
+ &lt;td style="text-align: center">29/09/2026&lt;/td>
+ &lt;td style="text-align: center">29/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Phân tích Log ứng dụng:&lt;/strong> Phân tích Log ứng dụng bằng công cụ truy vấn CloudWatch Logs Insights.&lt;/td>
+ &lt;td style="text-align: center">30/09/2026&lt;/td>
+ &lt;td style="text-align: center">30/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Cấu hình CloudWatch Alarms:&lt;/strong> Thiết lập cảnh báo tự động gửi email thông báo khi tài nguyên vượt ngưỡng giới hạn.&lt;/td>
+ &lt;td style="text-align: center">01/10/2026&lt;/td>
+ &lt;td style="text-align: center">01/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Nghiên cứu AWS CloudTrail:&lt;/strong> Phân biệt sự khác nhau giữa giám sát hiệu năng (CloudWatch) và giám sát quyền hạn/kiểm toán API (CloudTrail).&lt;/td>
+ &lt;td style="text-align: center">02/10/2026&lt;/td>
+ &lt;td style="text-align: center">02/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">AWS – CloudTrail&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-8">Kết quả Tuần 8:&lt;/h3>
+&lt;p>Có khả năng giám sát trạng thái tài nguyên theo thời gian thực và tra cứu lịch sử thay đổi hệ thống.&lt;/p></description></item><item><title>1.9. Worklog Tuần 9</title><link>https://ngoc-lan44.github.io/1-worklog/1.9-week9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.9-week9/</guid><description>&lt;h3 id="mục-tiêu-tuần-9">Mục tiêu Tuần 9:&lt;/h3>
+&lt;ul>
+&lt;li>Giải quyết bài toán chịu tải cao (High Availability) bằng cơ chế tự động co giãn.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Elastic Load Balancing (ELB):&lt;/strong> Tìm hiểu nguyên lý hoạt động của Elastic Load Balancing để phân tán lưu lượng mạng.&lt;/td>
+ &lt;td style="text-align: center">05/10/2026&lt;/td>
+ &lt;td style="text-align: center">05/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Application Load Balancer:&lt;/strong> Phân tích luồng hoạt động của Application Load Balancer, Listeners và Target Groups.&lt;/td>
+ &lt;td style="text-align: center">06/10/2026&lt;/td>
+ &lt;td style="text-align: center">06/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Chuẩn bị Launch Template:&lt;/strong> Định nghĩa khuôn mẫu khởi tạo hàng loạt cho các máy chủ EC2.&lt;/td>
+ &lt;td style="text-align: center">07/10/2026&lt;/td>
+ &lt;td style="text-align: center">07/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Cấu hình Auto Scaling Group:&lt;/strong> Cài đặt số lượng min, max, desired cho máy chủ ảo trong ASG.&lt;/td>
+ &lt;td style="text-align: center">08/10/2026&lt;/td>
+ &lt;td style="text-align: center">08/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Chính sách Dynamic Scaling:&lt;/strong> Cấu hình Dynamic Scaling dựa vào cảnh báo CloudWatch (vd: tăng máy chủ khi CPU &amp;gt; 80%).&lt;/td>
+ &lt;td style="text-align: center">09/10/2026&lt;/td>
+ &lt;td style="text-align: center">09/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-9">Kết quả Tuần 9:&lt;/h3>
+&lt;p>Nắm vững giải pháp thiết kế ứng dụng có khả năng tự phục hồi và tự động đáp ứng lưu lượng tăng đột biến.&lt;/p></description></item><item><title>1.10. Worklog Tuần 10</title><link>https://ngoc-lan44.github.io/1-worklog/1.10-week10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.10-week10/</guid><description>&lt;h3 id="mục-tiêu-tuần-10">Mục tiêu Tuần 10:&lt;/h3>
+&lt;ul>
+&lt;li>Nâng cấp trải nghiệm người dùng trên Dashboard, chuẩn hóa ngôn ngữ và dọn dẹp mã nguồn để tối ưu hiệu năng bảo trì.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Tái thiết kế Bố cục (Layout Review):&lt;/strong> Quy hoạch lại lưới hiển thị Responsive cho Dashboard (4 cột Desktop, 2 cột Laptop, 1 cột Mobile cho thẻ KPI) và chuyển biểu đồ địa điểm sang thanh ngang.&lt;/td>
+ &lt;td style="text-align: center">12/10/2026&lt;/td>
+ &lt;td style="text-align: center">12/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.streamlit.io/">Streamlit – Layouts &amp;amp; Containers&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Tối ưu Typography &amp;amp; CSS:&lt;/strong> Tinh chỉnh theme.css, thiết lập kích thước font chuẩn (Tiêu đề 28-32px, KPI 26-30px, nội dung 14px) và loại bỏ hiệu ứng hiển thị sai lệch.&lt;/td>
+ &lt;td style="text-align: center">13/10/2026&lt;/td>
+ &lt;td style="text-align: center">13/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN – CSS Typography &amp;amp; Theming&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Việt hóa hệ thống (Localization):&lt;/strong> Dịch toàn bộ nhãn hiển thị, menu, form xác thực, bảng quản trị và thông báo lỗi sang tiếng Việt qua ui_labels.py, giữ nguyên thuật ngữ kỹ thuật (AWS, EC2, Senior, Junior).&lt;/td>
+ &lt;td style="text-align: center">14/10/2026&lt;/td>
+ &lt;td style="text-align: center">14/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.python.org/3/library/i18n.html">Python – Localization Guidelines&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Hoàn thiện Analytics &amp;amp; Data Quality:&lt;/strong> Lập trình công cụ kiểm định chất lượng dữ liệu với 12 quy tắc (trùng ID, thiếu trường, sai mức lương) và nâng cấp thuật toán nhận diện cấp bậc (Director, Architect).&lt;/td>
+ &lt;td style="text-align: center">15/10/2026&lt;/td>
+ &lt;td style="text-align: center">15/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/">AWS – Data Quality Best Practices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dọn dẹp mã nguồn (Unused Code Cleanup):&lt;/strong> Gỡ bỏ các tính năng dư thừa, chuyển kiểm thử sang FakeS3/FakeDynamo, xóa ròng 944 dòng code và đạt 145 Unit Tests PASS.&lt;/td>
+ &lt;td style="text-align: center">16/10/2026&lt;/td>
+ &lt;td style="text-align: center">16/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.pytest.org/">Pytest – Unit Testing Documentation&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-10">Kết quả Tuần 10:&lt;/h3>
+&lt;p>Hoàn thiện giao diện Dashboard Việt hóa gọn gàng, đồng nhất, bổ sung kiểm định chất lượng dữ liệu 12 quy tắc và tối ưu mã nguồn với 145 Unit Tests PASS.&lt;/p></description></item><item><title>1.11. Worklog Tuần 11</title><link>https://ngoc-lan44.github.io/1-worklog/1.11-week11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.11-week11/</guid><description>&lt;h3 id="mục-tiêu-tuần-11">Mục tiêu Tuần 11:&lt;/h3>
+&lt;ul>
+&lt;li>Chuyển đổi cơ chế Soft-Delete từ lưu trữ file S3 sang hệ thống giao dịch ACID trên Amazon DynamoDB nhằm đảm bảo tính toàn vẹn dữ liệu.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Thiết kế Data Model DynamoDB:&lt;/strong> Phân rã dữ liệu kiểm duyệt thành 2 bảng: Bảng trạng thái (State Table, partition key record_id) và bảng nhật ký (Audit Table, sort key theo revision).&lt;/td>
+ &lt;td style="text-align: center">19/10/2026&lt;/td>
+ &lt;td style="text-align: center">19/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html">AWS – DynamoDB Data Modeling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lập trình Transaction (ACID):&lt;/strong> Phát triển logic TransactWriteItems trong dynamo_moderation_store.py ghi đồng thời metadata, trạng thái việc làm và log sự kiện, ngăn chặn Race Condition.&lt;/td>
+ &lt;td style="text-align: center">20/10/2026&lt;/td>
+ &lt;td style="text-align: center">20/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis.html">AWS – DynamoDB Transactions&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Cơ chế S3 Projection:&lt;/strong> Viết luồng đồng bộ định kỳ snapshot từ DynamoDB lên S3 và cập nhật View trên Amazon Athena sang snapshot v3, giữ BI Dashboard hoạt động mượt mà.&lt;/td>
+ &lt;td style="text-align: center">21/10/2026&lt;/td>
+ &lt;td style="text-align: center">21/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/athena/latest/ug/views.html">AWS – Amazon Athena Views&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Viết Script Migration (Phase 2 to Phase 3):&lt;/strong> Lập trình deploy_moderation_phase3.py để khóa (fence) bản ghi S3 cũ và sao chép audit log sang DynamoDB theo cơ chế idempotent, tự phục hồi.&lt;/td>
+ &lt;td style="text-align: center">22/10/2026&lt;/td>
+ &lt;td style="text-align: center">22/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html">AWS – Boto3 DynamoDB Guide&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Tối ưu hiệu năng (Performance Tuning):&lt;/strong> Tinh chỉnh Cache bằng memoization an toàn với ContextVar và cấu trúc lại AWS SDK calls, giảm thời gian tải trang Tổng quan từ 409ms xuống 260ms.&lt;/td>
+ &lt;td style="text-align: center">23/10/2026&lt;/td>
+ &lt;td style="text-align: center">23/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.python.org/3/library/contextvars.html">Python – ContextVars Documentation&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-11">Kết quả Tuần 11:&lt;/h3>
+&lt;p>Chuyển đổi thành công backend kiểm duyệt sang DynamoDB ACID Transaction, đồng bộ mượt mà với S3/Athena và giảm ~36% độ trễ tải trang Dashboard.&lt;/p></description></item><item><title>1.12. Worklog Tuần 12</title><link>https://ngoc-lan44.github.io/1-worklog/1.12-week12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/1-worklog/1.12-week12/</guid><description>&lt;h3 id="mục-tiêu-tuần-12">Mục tiêu Tuần 12:&lt;/h3>
+&lt;ul>
+&lt;li>Triển khai môi trường Production an toàn và tự động trên AWS EC2, thiết lập các lớp bảo mật mạng, chứng chỉ HTTPS, và các cơ chế giám sát.&lt;/li>
+&lt;/ul>
+&lt;h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Thứ&lt;/th>
+ &lt;th style="text-align: left">Công việc&lt;/th>
+ &lt;th style="text-align: center">Ngày bắt đầu&lt;/th>
+ &lt;th style="text-align: center">Ngày hoàn thành&lt;/th>
+ &lt;th style="text-align: left">Nguồn tài liệu&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>2&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Sao lưu &amp;amp; Khôi phục dữ liệu:&lt;/strong> Lập trình công cụ backup_data.py tạo bản sao lưu toàn vẹn (mã hóa SHA-256) cho các dữ liệu quan trọng (data/raw, data/clean, users/*).&lt;/td>
+ &lt;td style="text-align: center">26/10/2026&lt;/td>
+ &lt;td style="text-align: center">26/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html">AWS – S3 Backup &amp;amp; Recovery&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>3&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Bảo vệ ứng dụng &amp;amp; Mạng nội bộ:&lt;/strong> Cấu hình Nginx chặn yêu cầu bên ngoài (chỉ mở /healthz) và phát triển script open_private.ps1 tích hợp AWS Systems Manager (SSM) tạo đường hầm bảo mật.&lt;/td>
+ &lt;td style="text-align: center">27/10/2026&lt;/td>
+ &lt;td style="text-align: center">27/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html">AWS – Systems Manager Session Manager&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>4&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Tự động hóa chứng chỉ SSL/TLS:&lt;/strong> Lập trình auto_https.py truy vấn thông tin EC2 (qua IMDSv2) để tự động nhận chứng chỉ HTTPS từ Let&amp;rsquo;s Encrypt và cấu hình Nginx kể cả khi IP EC2 thay đổi.&lt;/td>
+ &lt;td style="text-align: center">28/10/2026&lt;/td>
+ &lt;td style="text-align: center">28/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html">AWS – EC2 IMDSv2 &amp;amp; Let&amp;rsquo;s Encrypt&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>5&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Giám sát &amp;amp; Kiểm soát chi phí (IaC):&lt;/strong> Ứng dụng CloudFormation (build_alerts.py) tạo cảnh báo tài nguyên (Disk &amp;gt; 80%, RAM &amp;gt; 85%) và tình trạng pipeline qua SNS, giữ chi phí trong mức 40 USD/tháng.&lt;/td>
+ &lt;td style="text-align: center">29/10/2026&lt;/td>
+ &lt;td style="text-align: center">29/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html">AWS – CloudFormation &amp;amp; SNS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>6&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Giám sát liên tục &amp;amp; Tự động hóa Pipeline:&lt;/strong> Viết script Systemd (vnjob-health.timer, health_metrics.py) kiểm tra máy chủ mỗi 5 phút, cấu hình CloudWatch Agent và Pipeline Timers cào dữ liệu tự động hằng ngày.&lt;/td>
+ &lt;td style="text-align: center">30/10/2026&lt;/td>
+ &lt;td style="text-align: center">30/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html">AWS – CloudWatch Agent on EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="kết-quả-tuần-12">Kết quả Tuần 12:&lt;/h3>
+&lt;p>Hoàn thành triển khai môi trường Production an toàn và tự động, sẵn sàng khả năng tự phục hồi. Tối ưu giám sát và ngân sách.&lt;/p></description></item></channel></rss>

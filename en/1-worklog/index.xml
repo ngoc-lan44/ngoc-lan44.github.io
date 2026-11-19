@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Worklog on Internship Report</title><link>https://ngoc-lan44.github.io/en/1-worklog/</link><description>Recent content in Worklog on Internship Report</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://ngoc-lan44.github.io/en/1-worklog/index.xml" rel="self" type="application/rss+xml"/><item><title>1.1. Worklog Week 1</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.1-week1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.1-week1/</guid><description>&lt;h3 id="week-1-objectives">Week 1 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Master the AWS Management Console interface, initialize the account, and establish financial safety measures.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>AWS Account Creation &amp;amp; Security:&lt;/strong> Practice creating an AWS Free Tier account and configuring basic security settings.&lt;/td>
+ &lt;td style="text-align: center">10/08/2026&lt;/td>
+ &lt;td style="text-align: center">10/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Account&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>AWS Console Navigation:&lt;/strong> Explore the AWS Console interface and configure Region and Availability Zone options.&lt;/td>
+ &lt;td style="text-align: center">11/08/2026&lt;/td>
+ &lt;td style="text-align: center">11/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Account&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>AWS Billing Fundamentals:&lt;/strong> Understand the working principles of AWS Billing and identify potential hidden costs.&lt;/td>
+ &lt;td style="text-align: center">12/08/2026&lt;/td>
+ &lt;td style="text-align: center">12/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Budgets&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>AWS Budgets Configuration:&lt;/strong> Set up Cost Budget Limits and create automated billing alerts via email.&lt;/td>
+ &lt;td style="text-align: center">13/08/2026&lt;/td>
+ &lt;td style="text-align: center">13/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Budgets&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>AWS Support Management:&lt;/strong> Survey AWS Support plans and practice creating Support Tickets for technical or account assistance.&lt;/td>
+ &lt;td style="text-align: center">14/08/2026&lt;/td>
+ &lt;td style="text-align: center">14/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Support&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-1-results">Week 1 Results:&lt;/h3>
+&lt;p>Completed the secure AWS account setup and learned how to control the budget to avoid unexpected costs.&lt;/p></description></item><item><title>1.2. Worklog Week 2</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.2-week2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.2-week2/</guid><description>&lt;h3 id="week-2-objectives">Week 2 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Master the Principle of Least Privilege and manage user identities and access on AWS.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>IAM Architecture &amp;amp; Root User:&lt;/strong> Learn the architecture of AWS IAM (Identity and Access Management) and the importance of securing the Root User.&lt;/td>
+ &lt;td style="text-align: center">17/08/2026&lt;/td>
+ &lt;td style="text-align: center">17/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>IAM Users &amp;amp; Groups:&lt;/strong> Create IAM Users and IAM Groups; assign Users to Groups for centralized management.&lt;/td>
+ &lt;td style="text-align: center">18/08/2026&lt;/td>
+ &lt;td style="text-align: center">18/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>IAM Policies:&lt;/strong> Analyze the structure of JSON IAM Policies and how to grant/deny permissions (Allow/Deny) for resources.&lt;/td>
+ &lt;td style="text-align: center">19/08/2026&lt;/td>
+ &lt;td style="text-align: center">19/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>IAM Roles:&lt;/strong> Initialize IAM Roles and distinguish the differences between IAM Roles and IAM Users.&lt;/td>
+ &lt;td style="text-align: center">20/08/2026&lt;/td>
+ &lt;td style="text-align: center">20/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Assume Role (Switch Role):&lt;/strong> Practice the Assume Role mechanism to temporarily delegate permissions across accounts.&lt;/td>
+ &lt;td style="text-align: center">21/08/2026&lt;/td>
+ &lt;td style="text-align: center">21/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – IAM&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-2-results">Week 2 Results:&lt;/h3>
+&lt;p>Built a secure permission management model without using the Root User for daily operational tasks.&lt;/p></description></item><item><title>1.3. Worklog Week 3</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.3-week3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.3-week3/</guid><description>&lt;h3 id="week-3-objectives">Week 3 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Understand how to design a virtual private cloud, route network traffic, and establish network security layers.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>VPC Architecture:&lt;/strong> Analyze the core architectural components of Amazon VPC (IPv4 CIDR, Subnets, Route Tables).&lt;/td>
+ &lt;td style="text-align: center">24/08/2026&lt;/td>
+ &lt;td style="text-align: center">24/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Subnet Configuration:&lt;/strong> Configure networking by creating Public Subnets (attached to an Internet Gateway) and Private Subnets.&lt;/td>
+ &lt;td style="text-align: center">25/08/2026&lt;/td>
+ &lt;td style="text-align: center">25/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Network Security:&lt;/strong> Distinguish and configure network security rules using Security Groups (Stateful) and Network ACLs (Stateless).&lt;/td>
+ &lt;td style="text-align: center">26/08/2026&lt;/td>
+ &lt;td style="text-align: center">26/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Routing Verification:&lt;/strong> Deploy a test virtual server (EC2) into the Public Subnet to verify network routing.&lt;/td>
+ &lt;td style="text-align: center">27/08/2026&lt;/td>
+ &lt;td style="text-align: center">27/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Hybrid Connectivity:&lt;/strong> Research hybrid networking solutions using AWS Site-to-Site VPN.&lt;/td>
+ &lt;td style="text-align: center">28/08/2026&lt;/td>
+ &lt;td style="text-align: center">28/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – VPC&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-3-results">Week 3 Results:&lt;/h3>
+&lt;p>Designed a foundational VPC capable of isolating secure private network zones from public network zones.&lt;/p></description></item><item><title>1.4. Worklog Week 4</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.4-week4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.4-week4/</guid><description>&lt;h3 id="week-4-objectives">Week 4 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Master provisioning, connecting to, and configuring compute instances on AWS infrastructure.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>EC2 Fundamentals:&lt;/strong> Explore Amazon EC2 generations, selecting suitable Instance Types and operating systems (AMI).&lt;/td>
+ &lt;td style="text-align: center">31/08/2026&lt;/td>
+ &lt;td style="text-align: center">31/08/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Access Preparation:&lt;/strong> Prepare Security Groups (opening ports 22/80) and create Key Pairs for EC2 initialization.&lt;/td>
+ &lt;td style="text-align: center">01/09/2026&lt;/td>
+ &lt;td style="text-align: center">01/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Instance Launch &amp;amp; SSH:&lt;/strong> Launch an Amazon Linux 2023 Instance and practice secure connection via SSH.&lt;/td>
+ &lt;td style="text-align: center">02/09/2026&lt;/td>
+ &lt;td style="text-align: center">02/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Amazon EBS Storage:&lt;/strong> Study Amazon EBS network volumes: creating, attaching, and taking snapshots for data backup.&lt;/td>
+ &lt;td style="text-align: center">03/09/2026&lt;/td>
+ &lt;td style="text-align: center">03/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Resource Cleanup:&lt;/strong> Practice EC2 resource cleanup procedures (Stop/Terminate) to optimize costs after hands-on labs.&lt;/td>
+ &lt;td style="text-align: center">04/09/2026&lt;/td>
+ &lt;td style="text-align: center">04/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-4-results">Week 4 Results:&lt;/h3>
+&lt;p>Gained flexibility in operating Linux servers on the cloud and understood the complete EC2 instance lifecycle.&lt;/p></description></item><item><title>1.5. Worklog Week 5</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.5-week5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.5-week5/</guid><description>&lt;h3 id="week-5-objectives">Week 5 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Manage Object Storage repositories and learn to interact with AWS services via the Command Line Interface.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Amazon S3 Overview:&lt;/strong> Study Amazon S3 Object Storage architecture and Storage Classes (Standard, Glacier).&lt;/td>
+ &lt;td style="text-align: center">07/09/2026&lt;/td>
+ &lt;td style="text-align: center">07/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – S3&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>AWS CLI Setup:&lt;/strong> Install and configure security credentials for the AWS CLI tool on a local workstation.&lt;/td>
+ &lt;td style="text-align: center">08/09/2026&lt;/td>
+ &lt;td style="text-align: center">08/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS CLI&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>S3 Web Console Operations:&lt;/strong> Create an S3 Bucket and perform file upload/download operations via the Web Console.&lt;/td>
+ &lt;td style="text-align: center">09/09/2026&lt;/td>
+ &lt;td style="text-align: center">09/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – S3&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>S3 Management via CLI:&lt;/strong> Practice managing S3 using basic CLI commands (aws s3 ls, aws s3 cp, aws s3 sync).&lt;/td>
+ &lt;td style="text-align: center">10/09/2026&lt;/td>
+ &lt;td style="text-align: center">10/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS CLI&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>S3 Data Protection:&lt;/strong> Configure data safety mechanisms by enabling S3 Versioning and Block Public Access.&lt;/td>
+ &lt;td style="text-align: center">11/09/2026&lt;/td>
+ &lt;td style="text-align: center">11/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – S3&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-5-results">Week 5 Results:&lt;/h3>
+&lt;p>Understood how S3 operates independently and leveraged AWS CLI to accelerate cloud resource operations.&lt;/p></description></item><item><title>1.6. Worklog Week 6</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.6-week6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.6-week6/</guid><description>&lt;h3 id="week-6-objectives">Week 6 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Distinguish between cloud database management systems (SQL vs NoSQL) and their appropriate use cases.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Amazon RDS Survey:&lt;/strong> Explore Amazon RDS (Relational Database Service) and its supported Database Engines.&lt;/td>
+ &lt;td style="text-align: center">14/09/2026&lt;/td>
+ &lt;td style="text-align: center">14/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Amazon RDS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Database Networking:&lt;/strong> Configure database network infrastructure by setting up DB Subnet Groups and opening Security Group ports.&lt;/td>
+ &lt;td style="text-align: center">15/09/2026&lt;/td>
+ &lt;td style="text-align: center">15/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Amazon RDS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>RDS Deployment &amp;amp; Backups:&lt;/strong> Deploy a test RDS Instance and explore Automated Backups and Snapshots.&lt;/td>
+ &lt;td style="text-align: center">16/09/2026&lt;/td>
+ &lt;td style="text-align: center">16/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Amazon RDS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Amazon DynamoDB Basics:&lt;/strong> Get familiar with Amazon DynamoDB (NoSQL): Table structure, Partition Key, and Sort Key.&lt;/td>
+ &lt;td style="text-align: center">17/09/2026&lt;/td>
+ &lt;td style="text-align: center">17/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – DynamoDB&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>RDS vs DynamoDB Comparison:&lt;/strong> Compare pros and cons of RDS and DynamoDB regarding scalability and pricing models (Provisioned vs On-demand).&lt;/td>
+ &lt;td style="text-align: center">18/09/2026&lt;/td>
+ &lt;td style="text-align: center">18/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – DynamoDB&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-6-results">Week 6 Results:&lt;/h3>
+&lt;p>Mastered the characteristics of relational and NoSQL databases and learned how to choose the right service for specific applications.&lt;/p></description></item><item><title>1.7. Worklog Week 7</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.7-week7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.7-week7/</guid><description>&lt;h3 id="week-7-objectives">Week 7 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Understand the Serverless architectural model and how to execute code without managing servers.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Serverless Fundamentals:&lt;/strong> Learn Serverless Computing concepts and the Event-driven execution model of AWS Lambda.&lt;/td>
+ &lt;td style="text-align: center">21/09/2026&lt;/td>
+ &lt;td style="text-align: center">21/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>IAM Execution Role:&lt;/strong> Configure IAM Execution Roles for Lambda to grant permissions for interacting with other AWS services.&lt;/td>
+ &lt;td style="text-align: center">22/09/2026&lt;/td>
+ &lt;td style="text-align: center">22/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Lambda Automation Lab:&lt;/strong> Analyze a sample lab: Write Python code for a Lambda Function to automatically Start/Stop EC2 instances.&lt;/td>
+ &lt;td style="text-align: center">23/09/2026&lt;/td>
+ &lt;td style="text-align: center">23/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Debugging &amp;amp; Logging:&lt;/strong> Read error logs (Debugging) and monitor Lambda executions via CloudWatch Logs.&lt;/td>
+ &lt;td style="text-align: center">24/09/2026&lt;/td>
+ &lt;td style="text-align: center">24/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – AWS Lambda&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Scheduled Execution:&lt;/strong> Apply Amazon EventBridge (CloudWatch Events) to set up scheduled cron jobs for Lambda.&lt;/td>
+ &lt;td style="text-align: center">25/09/2026&lt;/td>
+ &lt;td style="text-align: center">25/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">AWS – EventBridge&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-7-results">Week 7 Results:&lt;/h3>
+&lt;p>Successfully deployed simple automation tasks on a Serverless platform.&lt;/p></description></item><item><title>1.8. Worklog Week 8</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.8-week8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.8-week8/</guid><description>&lt;h3 id="week-8-objectives">Week 8 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Establish system observability, performance monitoring, and security auditing.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>CloudWatch Ecosystem:&lt;/strong> Explore the Amazon CloudWatch monitoring ecosystem: Metrics, Logs, and Events.&lt;/td>
+ &lt;td style="text-align: center">28/09/2026&lt;/td>
+ &lt;td style="text-align: center">28/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Metrics Analysis:&lt;/strong> Read CloudWatch Metrics graphs to track resource health (CPU Utilization, Network In/Out).&lt;/td>
+ &lt;td style="text-align: center">29/09/2026&lt;/td>
+ &lt;td style="text-align: center">29/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Log Querying:&lt;/strong> Analyze application logs using the CloudWatch Logs Insights query tool.&lt;/td>
+ &lt;td style="text-align: center">30/09/2026&lt;/td>
+ &lt;td style="text-align: center">30/09/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>CloudWatch Alarms:&lt;/strong> Configure automated CloudWatch Alarms to send email notifications when resources exceed thresholds.&lt;/td>
+ &lt;td style="text-align: center">01/10/2026&lt;/td>
+ &lt;td style="text-align: center">01/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – CloudWatch&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>AWS CloudTrail Auditing:&lt;/strong> Study AWS CloudTrail and distinguish between performance monitoring (CloudWatch) and API/permission auditing (CloudTrail).&lt;/td>
+ &lt;td style="text-align: center">02/10/2026&lt;/td>
+ &lt;td style="text-align: center">02/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">AWS – CloudTrail&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-8-results">Week 8 Results:&lt;/h3>
+&lt;p>Acquired the capability to monitor real-time resource status and audit historical system changes.&lt;/p></description></item><item><title>1.9. Worklog Week 9</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.9-week9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.9-week9/</guid><description>&lt;h3 id="week-9-objectives">Week 9 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Solve High Availability and heavy load challenges using automatic scaling mechanisms.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Elastic Load Balancing:&lt;/strong> Learn the operating principles of Elastic Load Balancing (ELB) to distribute network traffic.&lt;/td>
+ &lt;td style="text-align: center">05/10/2026&lt;/td>
+ &lt;td style="text-align: center">05/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Application Load Balancer:&lt;/strong> Analyze the workflow of Application Load Balancer, Listeners, and Target Groups.&lt;/td>
+ &lt;td style="text-align: center">06/10/2026&lt;/td>
+ &lt;td style="text-align: center">06/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Launch Templates:&lt;/strong> Prepare Launch Templates to define standardized configurations for provisioning EC2 instances at scale.&lt;/td>
+ &lt;td style="text-align: center">07/10/2026&lt;/td>
+ &lt;td style="text-align: center">07/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Auto Scaling Group (ASG):&lt;/strong> Configure Auto Scaling Groups with min, max, and desired capacity for virtual servers.&lt;/td>
+ &lt;td style="text-align: center">08/10/2026&lt;/td>
+ &lt;td style="text-align: center">08/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Dynamic Scaling Policies:&lt;/strong> Configure Dynamic Scaling policies triggered by CloudWatch Alarms (e.g., scale out when CPU &amp;gt; 80%).&lt;/td>
+ &lt;td style="text-align: center">09/10/2026&lt;/td>
+ &lt;td style="text-align: center">09/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsfcaj.com/">Cloud Journey – Auto Scaling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-9-results">Week 9 Results:&lt;/h3>
+&lt;p>Mastered architectural solutions for designing self-healing applications that automatically handle traffic spikes.&lt;/p></description></item><item><title>1.10. Worklog Week 10</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.10-week10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.10-week10/</guid><description>&lt;h3 id="week-10-objectives">Week 10 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Upgrade the Dashboard user experience, standardize language localization, and clean up source code to optimize maintainability.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Layout Review:&lt;/strong> Redesigned the responsive grid layout for the Dashboard (4 columns on Desktop, 2 on Laptop, 1 on Mobile for KPI cards) and converted location charts to Horizontal Bar charts.&lt;/td>
+ &lt;td style="text-align: center">12/10/2026&lt;/td>
+ &lt;td style="text-align: center">12/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.streamlit.io/">Streamlit – Layouts &amp;amp; Containers&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Typography &amp;amp; CSS Refinement:&lt;/strong> Tuned theme.css, standardized font sizing (Page Title 28-32px, KPI 26-30px, Body 14px), and removed visual glitches.&lt;/td>
+ &lt;td style="text-align: center">13/10/2026&lt;/td>
+ &lt;td style="text-align: center">13/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN – CSS Typography &amp;amp; Theming&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Vietnamese Localization:&lt;/strong> Translated all UI labels, menus, auth forms, admin tables, and error messages into Vietnamese via ui_labels.py while preserving technical terms (AWS, EC2, Senior, Junior).&lt;/td>
+ &lt;td style="text-align: center">14/10/2026&lt;/td>
+ &lt;td style="text-align: center">14/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.python.org/3/library/i18n.html">Python – Localization Guidelines&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Analytics &amp;amp; Data Quality:&lt;/strong> Built a 12-rule data quality validator (duplicate IDs, missing fields, invalid salaries) with internal scoring and upgraded seniority level recognition (Director, Architect).&lt;/td>
+ &lt;td style="text-align: center">15/10/2026&lt;/td>
+ &lt;td style="text-align: center">15/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/">AWS – Data Quality Best Practices&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Unused Code Cleanup:&lt;/strong> Audited and removed redundant features (Historical Trends, Skill Analysis, Job Portals), migrated all tests to FakeS3/FakeDynamo, deleting 944 net lines of code with 145 passing Unit Tests.&lt;/td>
+ &lt;td style="text-align: center">16/10/2026&lt;/td>
+ &lt;td style="text-align: center">16/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.pytest.org/">Pytest – Unit Testing Documentation&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-10-results">Week 10 Results:&lt;/h3>
+&lt;p>Delivered a clean, fully localized Vietnamese Dashboard with improved responsive UX, automated 12-rule data quality checks, and a streamlined codebase passing 145 unit tests.&lt;/p></description></item><item><title>1.11. Worklog Week 11</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.11-week11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.11-week11/</guid><description>&lt;h3 id="week-11-objectives">Week 11 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Migrate the Soft-Delete mechanism from S3 file storage to an ACID-compliant transactional system on Amazon DynamoDB to ensure data integrity.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>DynamoDB Data Model Design:&lt;/strong> Split moderation data into two dedicated tables: State Table (partition key record_id) and Audit Table (sort key by revision) for paginated queries and full audit trails.&lt;/td>
+ &lt;td style="text-align: center">19/10/2026&lt;/td>
+ &lt;td style="text-align: center">19/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html">AWS – DynamoDB Data Modeling&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>ACID Transactions:&lt;/strong> Implemented TransactWriteItems logic in dynamo_moderation_store.py to atomically update metadata, job status, and event logs, preventing race conditions during concurrent Admin actions.&lt;/td>
+ &lt;td style="text-align: center">20/10/2026&lt;/td>
+ &lt;td style="text-align: center">20/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis.html">AWS – DynamoDB Transactions&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>S3 Projection Mechanism:&lt;/strong> Built a periodic snapshot sync pipeline from DynamoDB to S3 and updated Amazon Athena Views to point to snapshot v3, keeping BI Dashboard queries uninterrupted.&lt;/td>
+ &lt;td style="text-align: center">21/10/2026&lt;/td>
+ &lt;td style="text-align: center">21/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/athena/latest/ug/views.html">AWS – Amazon Athena Views&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Migration Script (Phase 2 to Phase 3):&lt;/strong> Developed deploy_moderation_phase3.py to fence legacy S3 records and migrate audit logs to DynamoDB with idempotent execution and auto-recovery.&lt;/td>
+ &lt;td style="text-align: center">22/10/2026&lt;/td>
+ &lt;td style="text-align: center">22/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html">AWS – Boto3 DynamoDB Guide&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Performance Tuning:&lt;/strong> Optimized caching architecture with ContextVar-safe memoization and refactored AWS SDK calls, reducing warm-cache Overview page load time from 409ms to 260ms.&lt;/td>
+ &lt;td style="text-align: center">23/10/2026&lt;/td>
+ &lt;td style="text-align: center">23/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.python.org/3/library/contextvars.html">Python – ContextVars Documentation&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-11-results">Week 11 Results:&lt;/h3>
+&lt;p>Successfully upgraded the moderation backend to ACID-compliant DynamoDB transactions with seamless S3/Athena projection and reduced Dashboard load latency by ~36%.&lt;/p></description></item><item><title>1.12. Worklog Week 12</title><link>https://ngoc-lan44.github.io/en/1-worklog/1.12-week12/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ngoc-lan44.github.io/en/1-worklog/1.12-week12/</guid><description>&lt;h3 id="week-12-objectives">Week 12 Objectives:&lt;/h3>
+&lt;ul>
+&lt;li>Deploy a secure, automated Production environment on AWS EC2 with network security layers, HTTPS certificates, and continuous monitoring.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-implement-this-week">Tasks to Implement This Week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: center">Start Date&lt;/th>
+ &lt;th style="text-align: center">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Mon&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Backup &amp;amp; Recovery Scripting:&lt;/strong> Developed backup_data.py to create SHA-256 verified integrity backups for critical datasets (data/raw, data/clean, users/*).&lt;/td>
+ &lt;td style="text-align: center">26/10/2026&lt;/td>
+ &lt;td style="text-align: center">26/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html">AWS – S3 Backup &amp;amp; Recovery&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Tue&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>App Protection &amp;amp; Private Networking:&lt;/strong> Configured Nginx to block external requests (allowing only /healthz) and built open_private.ps1 using AWS Systems Manager (SSM) for secure admin tunneling.&lt;/td>
+ &lt;td style="text-align: center">27/10/2026&lt;/td>
+ &lt;td style="text-align: center">27/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html">AWS – Systems Manager Session Manager&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Wed&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Automated SSL/TLS Management:&lt;/strong> Built auto_https.py querying EC2 metadata (via IMDSv2) to automate Let&amp;rsquo;s Encrypt HTTPS certificate issuance and Nginx configuration even when EC2 IPs change.&lt;/td>
+ &lt;td style="text-align: center">28/10/2026&lt;/td>
+ &lt;td style="text-align: center">28/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html">AWS – EC2 IMDSv2 &amp;amp; Let&amp;rsquo;s Encrypt&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Thu&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Monitoring &amp;amp; Cost Control (IaC):&lt;/strong> Used CloudFormation (build_alerts.py) to automate resource alerts (Disk &amp;gt; 80%, RAM &amp;gt; 85%) and pipeline status notifications via SNS, keeping costs within $40/month.&lt;/td>
+ &lt;td style="text-align: center">29/10/2026&lt;/td>
+ &lt;td style="text-align: center">29/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html">AWS – CloudFormation &amp;amp; SNS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;strong>Fri&lt;/strong>&lt;/td>
+ &lt;td style="text-align: left">&lt;strong>Continuous Health Monitoring &amp;amp; Pipeline Automation:&lt;/strong> Created Systemd timers (vnjob-health.timer, health_metrics.py) for 5-minute health checks, configured CloudWatch Agent, and automated daily data scraping.&lt;/td>
+ &lt;td style="text-align: center">30/10/2026&lt;/td>
+ &lt;td style="text-align: center">30/10/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html">AWS – CloudWatch Agent on EC2&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="week-12-results">Week 12 Results:&lt;/h3>
+&lt;p>Completed the secure and automated Production deployment on AWS EC2 with self-healing readiness, continuous monitoring, and budget optimization.&lt;/p></description></item></channel></rss>
