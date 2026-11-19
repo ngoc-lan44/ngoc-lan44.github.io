@@ -33,7 +33,7 @@ chapter: false
 <li value="1"><a href="1-worklog">Nhật ký công việc</a></li>
 <li value="2"><a href="2-proposal">Bản đề xuất</a></li>
 <li value="3"><a href="3-blogs">Các bài blog đã đăng</a></li>
-<li value="4"><a href="3-eventParticipated">Các sự kiện meetup đã tham gia</a></li>
+<li value="4"><a href="3-eventparticipated">Các sự kiện meetup đã tham gia</a></li>
 <li value="5"><a href="5-workshop">Workshop</a></li>
 <li value="6"><a href="5-self-evaluation">Tự đánh giá</a></li>
 <li value="7"><a href="6-feedback">Chia sẻ, đóng góp ý kiến</a></li>
